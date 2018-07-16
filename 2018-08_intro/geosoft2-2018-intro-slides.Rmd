@@ -1,0 +1,319 @@
+---
+title: "Geosoftware II - WiSe 2018/19"
+subtitle: "_Enhancing discovery of geospatial datasets in data repositories_"
+author: "Daniel Nüst, Prof. Edzer Pebesma"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "wwu-theme.css"]
+    nature:
+      countIncrementalSlides: false
+      beforeInit: ["macros.js"]
+      ratio: "16:9"
+# use RStudio Addin "Inifinite Moon Reader" for live preview
+---
+
+```{r live_preview, include=FALSE, eval=FALSE}
+library("xaringan")
+xaringan::infinite_moon_reader()
+```
+
+```{r pdf_webshot, include=FALSE, eval=FALSE}
+library("webshot")
+print(knitr::current_input())
+system("cat *.Rmd | grep -v '^--$' | grep -v 'ratio:' > print.Rmd")
+rmarkdown::render('print.Rmd', 'xaringan::moon_reader')
+file_name <- paste0("file://", normalizePath("print.html"))
+webshot(file_name, "geosoft2-2018-intro.pdf")
+system("rm -r print.Rmd print.html print_files")
+```
+
+class: wwu-bluegreen
+
+# Agenda
+
+- Learning objectives
+- Teachers
+- Project
+- Course programme
+- Research topics
+
+---
+class: wwu-green
+
+## Learning objectives
+
+--
+
+- project management & working in teams
+
+--
+
+- _client & customer_ relationship similar to business projects
+
+--
+
+- handle and extend _large_ open source projects
+
+--
+
+- develop specific features as _small_ independent open source projects
+
+--
+
+- **software development skills for spatial applications**
+
+???
+
+project: GitLab, GitHub, team work
+
+client & customer: (bid, communication, delivery)
+
+FOSS projects: install, maintain, develop further, even in new programming languages
+
+small & large: and gain experiences about the difference
+
+---
+class: center,middle,wwu-greenblue
+
+# Teachers
+
+???
+
+## Daniel Nüst
+
+- Dipl.-Geoinf.
+- Wiss. Mitarbeiter @ [ifgi](https://www.uni-muenster.de/Geoinformatics/)
+- Offene Reproduzierbare Forschung ([o2r](http://o2r.info/))
+- Davor: [52°North](https://52north.org/) (consultant,<br />Forschungsprojekte, Softwareentwickler)
+- **Free & Open Source Software und Reproducible Research**
+- [https://github.com/nuest](https://github.com/nuest)
+- [https://orcid.org/0000-0002-0024-5046](https://orcid.org/0000-0002-0024-5046)
+- [@nordholmen](https://twitter.com/nordholmen)
+- Ultimate Frisbee
+
+---
+class: center,middle,wwu-cassis
+
+# Project
+
+--
+
+### or ... "Challenge"
+
+--
+
+## _Enhancing discovery of geospatial datasets in data repositories_
+
+---
+class: wwu-bluegreen
+
+# Problem
+
+--
+
+##### more and more research data is be published, incl. geospatial data
+
+--
+
+##### finding the right data and publications get's harder
+
+--
+
+##### recommendation of "similar/related products" commonplace in online shopping, but missing in research data repositories and geospatial catalogues
+
+???
+
+A large value, or potentially a trap for the consumer, in online shopping lies in
+recommendation systems.  These systems suggest similar products based on all
+or specific customer’s shopping behaviour.  In a similar vein, discovering related
+works and similar research is a challenge for scientists.  The challenge applies to
+their own work (who is working in my area of expertise or region of interest?)
+and finding relevant literature (what publications exist on topic X?).
+With the increased requirements by funding agencies to publish data in open
+repositories, this project should tap into the wealth of published research data
+and provide new ways to connect and discover datasets based on their geospatial
+properties.  By extending our catalogue platform and data repository, we except
+to gain a significant advantage over competitors.
+
+---
+class: wwu-lightgreen
+
+# Solution
+
+--
+
+## &nbsp;
+
+#### _Extend a repository platform or a geospatial catalogue with geospatial similarity measurements for contained records to suggest related records to users._
+
+???
+
+**leverage geospatial aspects of data to connect previously unconnected records
+
+---
+class: wwu-lightgreen
+# Benefits
+
+--
+
+##### scientists can search better for similar or related work
+
+--
+
+##### preservationists improve data collections
+
+--
+
+##### operators of data repositories or catalogue services can easily integrate similarity measures in their deployments
+
+???
+
+scientists: during research, writing manuscripts, or evaluating papers
+
+---
+class: wwu-bluegreen
+
+### Scholarly Computational Research '18
+
+Issue: half time of computational research too small
+
+--
+
+- executable digital notebook ([R Markdown](http://rmarkdown.rstudio.com/), [Jupyter Notebook](https://jupyter.org/)) under version control following best practices of software development
+
+--
+
+- [good file names](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf) and _plain text_ files wherever possible (geo?)
+
+--
+
+- Dokumentation for "future you" as the best collaborateur
+
+--
+
+- **Transparency** & collaboration - "show me", not "trust me"
+
+---
+class: center,middle,wwu-lightgreen
+
+# Course programme
+
+Wednesdays, 14:00-16:00 hrs
+
+First meeting @ October 10 2018
+
+---
+# Schedule
+
+--
+
+- presentation of **fundamental topics** (individual, groups of two), see [github.com/Geosoft2/geosoft2-2018](https://github.com/Geosoft2/geosoft2-2018)
+
+--
+
+- **invitation to bid** & detailed course schedule
+
+--
+
+- **project work** (3-4 teams): planning, implementation, presentation, peer code review
+
+--
+
+- individual **reports**
+
+???
+
+fundamental topics: help each other understanding the problem and existing domains quicker: handout, presentation
+research topics and bid on first meeting (all handouts ready one week in advance)
+research topics and questions about bid at second meeting, groups announced
+
+**invitation to bid has a list of functional and non-functional requirements to implement**
+
+project work: groups will be made by us
+
+reports: a couple of pages
+
+---
+# Efforts
+
+--
+
+.pull-left[
+- 9  ECTS = 270  working  hours
+- average workload of ![:inline_highlight](**16.9 hrs per week** per student) (16 weeks)
+]
+
+--
+
+.pull-right[
+- 24 hours preparation during the semester break
+- 16 hours for preparing & attending initial & final presentations
+- 12 hours for the individual report and code peer review
+- ![:inline_highlight](218 hours) over ~11 weeks for planning & implementation
+]
+
+???
+
+**what to expect**
+
+11 weeks implementation does NOT count Christmas holidays
+
+---
+# Grading
+
+| What | Work load (hrs) | Grade contribution (%) |
+| ---- | ---- | ----|
+| initial training, presentations, code peer review & individual report | 52 | 20 |
+| planning & prototyping | 32 | 15 | 
+| implementation | 186 | 65 |
+
+???
+
+Grading is based on code contributions on the software development platform.
+Therefore, we require each student to contribute under their **own account**.
+
+A **fork & pull** development model is highly encouraged because it allows to list the relevant pull requests in a final personal report presenting learning achievements, role in the team, personal contributions in a single PDF document (max. 3 pages).
+
+We strongly encourage vertical splitting of tasks (a student works on UI, backend, and installation) instead of horizontal (one team member does maintenance, another backend, a third frontend) even at the cost of effectiveness.
+
+
+---
+class: wwu-lightgreen
+
+# Research topics
+
+--
+
+- scholarly publishing: history and future [Ilka Pleiser]
+- academic search engines [Christin Bösch]
+- data publishing requirements in science [Carolin Bronowicz]
+- research data lifecycle & best practices [Cornelia Zygar]
+- geospatial data formats & libraries\* **[NN]**
+- time series data formats & libraries [Katharina Hovestadt]
+- FOSS repositories & preservation\* **[NN]**
+- publication metadata [Lia Kirsch]
+- Geodata catalogues & geospatial metadata [Aysel Tandik]
+- metadata extraction [Lukas Jahnich]
+- spatial similarity calculation\* [Jannis Fröhlking, Benjamin Dietz]
+- agile software development [Daniel Nüst]
+
+???
+
+11 topics
+
+for the * topics please find a partner
+
+Extra topics: Open Science, ..
+
+---
+# Next
+
+- register on LernWeb
+- quick research into your topic (1 hr) > send Daniel outline of your handout > receive further suggestions
+- prepare topic
+- submit handout via GitHub before October
+
+--
+
+![:highlight_inline](See you October 10 - **have a good summer!**)
