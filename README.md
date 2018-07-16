@@ -41,7 +41,18 @@ Be prepared for questions by your fellow students and the teachers, but also pre
 Make sure you cover at least the mentioned keywords.
 More is better, but only really better if you evaluate alternatives, phrase opinions, and provide guidelines for your fellow students.
 
-**to be announced**
+- scholarly publishing: history and future
+- academic search engines
+- data publishing requirements in science
+- research data lifecycle & best practices
+- geospatial data formats & libraries
+- time series data formats & libraries
+- FOSS repositories & preservation
+- publication metadata
+- Geodata catalogues & geospatial metadata
+- metadata extraction
+- spatial similarity calculation
+- agile software development
 
 ## Further resources
 
