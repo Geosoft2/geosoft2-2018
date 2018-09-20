@@ -6,9 +6,9 @@ Teachers: [@nuest](https://github.com/nuest/), [@edzer](http://github.com/edzer/
 
 ## Initial training resources
 
-Handouts for background technical presentations for Geosoftware II at ifgi.
-These handouts are the core of the preparation of a topic.
-It should be prepared in a manner so that fellow students can use it as a starting point for making decisions during their project work.
+Handouts for presentations on technical background and concepts required for this year's project task in Geosoftware II at ifgi.
+These handouts are the core of the preparation of a topic by each student/pair of students.
+The handout should be prepared in a manner so that fellow students can use it as a starting point for getting up to speed on new content and making decisions during their project work.
 
 ### Process
 
@@ -18,18 +18,19 @@ It should be prepared in a manner so that fellow students can use it as a starti
 1. Add a file `handout.md` file in your folder
     * Take a look at the [markdown syntax](https://guides.github.com/features/mastering-markdown/)
     * Split up your work into logical sections and use informative names for each of these
-1. Create a presentation based on your handout (optinal: add it to your folder)
-2. Add and push a tag `handout-submission-<name>` in your fork
+    * Add any additional files needed (graphics not already available online, for example) to your folder
+1. Add a git tag `handout-submission-<name>` and push it to your fork
 1. Send a pull request before the submission deadline containing your handout (not the presentation)
     * Give the pull request a useful name and description
     * Implement the feedback by the lecturers
     * Update the pull request by pushing the changes to your repository
-1. Present at the seminar
-2. Incorporate feedback from the presentation into the handout
-1. If you see an error or want to extend information of your own on a colleague's handout...
-    1. Update your fork (fetch and merge)
-    1. Make the changes
-    1. Send a pull request to the original author of the topic and present your changes
+1. Create a presentation based on your handout (optinal: add it to your folder)
+1. Present at the seminar (approx. 10 minuntes + 5 minutes questions and discussion, prepare to fill the 5 minutes with additional content if no questions are asked)
+1. Incorporate feedback from the presentation into the handout and update the pull request (don't forget to [sync your fork/merge `upstream master` beforehand](https://help.github.com/articles/syncing-a-fork/))
+1. If you see an error in or want to add information to a colleague's handout ...
+    1. Make a comment to the open PR if it is still open
+    1. At any later point in time: make the changes yourself (fetch and merge into your fork, make the changes, send a pull request to the original author of the topic and present your changes, original author may then merge and send a PR to the main repository)
+1. Teacher merges the final handout version after grading
 
 ### Evaluation
 
