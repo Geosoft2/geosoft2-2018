@@ -59,3 +59,4 @@ More is better, but only really better if you evaluate alternatives, phrase opin
 
 * Coding guidelines (*How to write good code?*) are in `code-guidelines.md`.
 * Code review guidelines (*How to do the code review?*) are in `code-review.md`.
+* A code of conduct for a welcoming and positive environment is in `code-of-conduct.md`.
