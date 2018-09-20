@@ -1,0 +1,96 @@
+---
+title: "Agile und kollaborative Softwareentwicklung"
+subtitle: "Effektive & effiziente Zusammenarbeit und Projektmanagement in Geosoftware II, WS 18/19"
+author: "Daniel Nüst (ifgi, o2r)"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "wwu-theme.css"]
+    nature:
+      countIncrementalSlides: false
+      beforeInit: ["https://platform.twitter.com/widgets.js", "macros.js"]
+# use RStudio Addin "Inifinite Moon Reader" for live preview
+---
+
+```{r pdf_webshot, include=FALSE, eval=FALSE}
+library("webshot")
+system("cat slides.Rmd | grep -v '^--$' > print.Rmd")
+rmarkdown::render('print.Rmd', 'xaringan::moon_reader')
+file_name <- paste0("file://", normalizePath("print.html"))
+webshot(file_name, "agile-softwareentwicklung.pdf")
+system("rm -r print.Rmd print.html print_files")
+```
+
+---
+class: middle, center
+background-color: #000000
+
+<center>
+<blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">&quot;In carpentry, you measure twice and cut once. In software development, you never measure and make cuts until you run out of time.&quot; - Adam Morse</p>&mdash; Programming Wisdom (@CodeWisdom) <a href="https://twitter.com/CodeWisdom/status/989483498707832832?ref_src=twsrc%5Etfw">26. April 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+
+[https://twitter.com/CodeWisdom/status/989483498707832832](https://twitter.com/CodeWisdom/status/989483498707832832)
+
+???
+
+Motivation - ein Tweet von CodeWisdom heraus gegriffen
+
+---
+class: wwu-lightgreen
+
+# Agenda
+
+--
+
+### Grundlagen und Konzepte
+
+### Scrum
+
+### Resourcen
+
+### Begriffe - Quiz
+
+---
+
+# Definition
+
+- ![:inline_highlight](Replikation) Wiederholung eines Experiments
+(andere Forscher, andere Software, andere Daten)
+
+--
+
+
+---
+class: inverse, center, middle
+
+# Scrum
+
+---
+class: wwu-darkblue
+
+# Rollwn
+
+- ...
+
+---
+class: wwu-cassis, center, middle
+
+# Forschungskompendien
+
+---
+
+---
+class: wwu-bluegreen
+
+...
+
+
+---
+class: center, middle
+
+# Danke!
+
+## Was sind Eure Fragen?
+
+Die Folien basieren auf dem R Paket [**xaringan**](https://github.com/yihui/xaringan).
