@@ -37,41 +37,52 @@ Das _Manifesto for Agile Software Development_ ([http://agilemanifesto.org/](htt
 
 **Prinzipien hinter dem Agilen Manifest**
 
-> Wir folgen diesen Prinzipien:
-> Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufrieden zu stellen.
+> _Wir folgen diesen Prinzipien:_
+> _Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufrieden zu stellen._
 >
-> Heisse Anforderungsänderungen selbst spät in der Entwicklung willkommen.
-> Agile Prozesse nutzen Veränderungen zum Wettbewerbsvorteil des Kunden.
+> _Heisse[n] Anforderungsänderungen selbst spät in der Entwicklung willkommen._
+> _Agile Prozesse nutzen Veränderungen zum Wettbewerbsvorteil des Kunden._
 >
-> Liefere funktionierende Software regelmäßig innerhalb weniger Wochen oder Monate und bevorzuge dabei die kürzere Zeitspanne.
+> _Liefere funktionierende Software regelmäßig innerhalb weniger Wochen oder Monate und bevorzuge dabei die kürzere Zeitspanne._
 >
-> Fachexperten und Entwickler müssen während des Projektes täglich zusammenarbeiten.
+> _Fachexperten und Entwickler müssen während des Projektes täglich zusammenarbeiten._
 >
-> Errichte Projekte rund um motivierte Individuen.
-> Gib ihnen das Umfeld und die Unterstützung, die sie benötigen und vertraue darauf, dass sie die Aufgabe erledigen.
+> _Errichte Projekte rund um motivierte Individuen._
+> _Gib ihnen das Umfeld und die Unterstützung, die sie benötigen und vertraue darauf, dass sie die Aufgabe erledigen._
 >
-> Die effizienteste und effektivste Methode Informationen an und innerhalb eines Entwicklungsteams zu übermitteln, ist im Gespräch von Angesicht zu Angesicht.
+> _Die effizienteste und effektivste Methode Informationen an und innerhalb eines Entwicklungsteams zu übermitteln, ist im Gespräch von Angesicht zu Angesicht._
 >
->Funktionierende Software ist das wichtigste Fortschrittsmaß.
+> _Funktionierende Software ist das wichtigste Fortschrittsmaß._
 >
-> Agile Prozesse fördern nachhaltige Entwicklung.
-> Die Auftraggeber, Entwickler und Benutzer sollten ein gleichmäßiges Tempo auf unbegrenzte Zeit halten können.
+> _Agile Prozesse fördern nachhaltige Entwicklung._
+> _Die Auftraggeber, Entwickler und Benutzer sollten ein gleichmäßiges Tempo auf unbegrenzte Zeit halten können._
 >
-> Ständiges Augenmerk auf technische Exzellenz und gutes Design fördert Agilität.
+> _Ständiges Augenmerk auf technische Exzellenz und gutes Design fördert Agilität._
 >
-> Einfachheit -- die Kunst, die Menge nicht getaner Arbeit zu maximieren -- ist essenziell.
+> _Einfachheit -- die Kunst, die Menge nicht getaner Arbeit zu maximieren -- ist essenziell._
 >
-> Die besten Architekturen, Anforderungen und Entwürfe entstehen durch selbstorganisierte Teams.
+> _Die besten Architekturen, Anforderungen und Entwürfe entstehen durch selbstorganisierte Teams._
 >
-> In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann und passt sein Verhalten entsprechend an.
-> [[Quelle](http://agilemanifesto.org/iso/de/principles.html)]
+> _In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann und passt sein Verhalten entsprechend an._ [[Quelle](http://agilemanifesto.org/iso/de/principles.html)]
 
-Leider kann man sich heute nicht mehr als Unterzeichner eintragen, aber wir wollen dennoch versuchen diese Ziele und Prinzipien im Kurs im Leben zu erfüllen.
+Leider kann man sich heute nicht mehr als Unterzeichner eintragen, aber wir wollen dennoch versuchen diese Ziele und Prinzipien im Kurs im Leben zu erfüllen:
+Der Kurs sollte also ein Umfeld des Vertrauens und Reflektierens schaffen, das einem selbstorganisierten motivierten Team erlaubt die beste, einfache, und funktionierende Software früh und regelmäßig zu liefern.
 
 ## Methoden & Prozesse
 
-...
+Agile Methoden halten den Aufwand flach und führen zu dem was man braucht, nicht zu dem was geplant wurde.
+Beispiele:
 
+- Paarprogrammierung
+- Testgetriebene Entwicklung
+- Refaktorierung
+- User stories & Story-Cards
+
+Agile Prozesse reduzieren organisatorischen Aufwand (Overhead, Planung) und richten den Fokus der Softwareentwicklung auf menschliche Aspekte, Flexibilität, und frühe Auslieferung + Feedback (_Iterationen_).
+
+- [Extreme Programming](https://de.wikipedia.org/wiki/Extreme_Programming) (XP)
+- [Behavior Driven Development](https://de.wikipedia.org/wiki/Behavior_Driven_Development) (BDD, verhaltensgetriebene Softwareentwicklung)
+- [Scrum](#scrum)
 
 ## Sonstiges
 
@@ -86,34 +97,66 @@ Vieles erklärt sich am Besten, wenn man die Geschichte oder die schlechteren Al
 
 ## Scrum
 
-**Ressourcen**:
+> _Scrum (aus englisch scrum für „[das] Gedränge“) ist ein Vorgehensmodell des Projekt- und Produktmanagements, insbesondere zur agilen Softwareentwicklung._
+> _Es wurde ursprünglich in der Softwaretechnik entwickelt, ist aber davon unabhängig._ [[Quelle](https://de.wikipedia.org/wiki/Scrum)]
 
-- https://en.wikipedia.org/wiki/Scrum_(software_development) oder https://de.wikipedia.org/wiki/Scrum
+Scrum hat sich von einem agilen Prozess entwickelt zu einem allgemeinen Projektmanagement-Werkzeug.
+Sein Erfolg liegt in seiner Einfachheit und Flexibilität begründet.
+
+**Scrum in 101 Wörtern**:
+Im Scrum werden Produktfeatures in Form von User Stories in einem langfristigen Plan, dem Produkt-Backlog, gesammelt.
+Die wichtigsten Stories werden zuerst umgesetzt, und zwar in abgeschlossenen zeitlichen Abschnitten, den Sprints.
+Sprints haben eine feste Dauer, werden gemeinsam vom Team geplant und ausgewertet.
+Am Ende jedes Sprints steht ein funktionierendes Produkt.
+Der Fortschritt oder Probleme (nicht abgeschlossene User Story) sind sichtbar.
+Das iterative bzw. inkrementelle Vorgehen erlaubt eine kontinuierliche Anpassung an die (ggf. unvorhergesehen) Anforderungen bzw. strukturierte Zerlegung einer komplexen Aufgabe.
+Entwickler sprechen jeden Tag miteinander ("gestern, Probleme, heute").
+Der Kunde wird von ersten Prototyp an aktiv in die Entwicklung mit einbezogen.
+
+Wie bei allen guten Werkzeugen denkt man sich meistens "na ist ja klar, das ist eine gute Idee", jedoch ist der Wert eine gewissen _Disziplin im Ablauf_ und vor allem eine _gemeinsame Sprache_ gar nicht hoch genug einzuschätzen.
+
+Für den _ersten Einsatz_ reicht ein Studium der [Wikipedia-Seite _Scrum_](https://de.wikipedia.org/wiki/Scrum), um dies dann nach ein paar Wochen mit eine der folgenden **Ressourcen** aufzufrischen bzw. zu vertiefen:
+
+- Video [Introduction to Scrum](https://www.youtube.com/watch?v=D8vT7G0WATM)
+- https://en.wikipedia.org/wiki/Scrum_(software_development)
 - https://github.com/Geosoft2/geosoft2-2014-fundamentals/blob/master/06-scrum/scrum.md
-- [Introduction to Scrum Video](https://www.youtube.com/watch?v=D8vT7G0WATM)
-- Karten für _planning poker_ können bei Daniel ausgebort werden!
+- "Scrum: A Breathtakingly Brief and Agile Introduction", Chris Sims & Hillary Louise Johson [auf Anfrage]
 
-**Wichtig**: Auf Basis dieser Infos könnt ihr nun ein _eigenes agiles Vorgehen passend für euer Team_ entwickeln - nur bitte nicht die Erfahrungen und Weißheit der Entwickler und Projektleiter vor euch ignorieren!
+**Wichtig**: Auf Basis dieser Infos könnt ihr nun ein _eigenes agiles Vorgehen passend für euer Team_ entwickeln - nur bitte nicht die Erfahrungen und Weißheit der Entwickler und Projektleiter vor euch ignorieren, und auch die unten stehenden [Tipps](#tipps) ernst nehmen!
+
+Karten für _planning poker_ können bei Daniel ausgeborgt werden!
 
 ## Begriffe
 
-- Backlog
-- KISS
-- Scrum
-- KISS
-- 
+Die folgenden Begriffe können leicht über Suchmaschinen erläutert werden und dienen hier hauptsächlich um aufzulisten bzw. zu wiederholen, welche Werkzeuge/Namen/Methoden man zumindest in Grundzügen kennen sollte.
 
-The Planning Game. Zu Beginn jeder Iteration wird eine Planung mit dem gesamten Team erstellt.
-–Kleine Releases mit ständigem Kundenfeedback. Der Auftraggeber ist im besten Fall vor Ort. Offshoring der Arbeit ist eher ungeeignet.
-–Einfaches Design. Es wird nur für den Moment, nicht für die Zukunft implementiert.
-–Pair Programming. Zumindest bei zentralen Modulen ist es sinnvoll, den Code zu zweit zu programmieren.
-–Continuous Integration. Die Software wird nach jeder Änderung automatisiert getestet.
-–Collective Ownership, Coding Standards. Jeder kann an jeder Stelle im Code mitarbeiten, und das Team hat sich auf Standards geeinigt, so dass der Code wie aus einem Guss aussieht.
+- user story
+- Backlogs (sprint, product)
+- KISS-Prinzip
+- Scrum
+- Daily (standup)
+- [Anti-Patterns](https://de.wikipedia.org/wiki/Anti-Pattern)
+- Fail fast
+- Sprint
+- Unix philosophy
+- Software craftsmanschip
+- pull request (PR)
+- DRY
+- merge request
+- task board
+- [Mythos des Mann-Monats](https://de.wikipedia.org/wiki/Vom_Mythos_des_Mann-Monats)
+- Planning game/planning poker
+- Code-Freeze
+- jour fixe
+- Collective ownership & coding standards
+- Definition of done (DoD)
+- [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
+- Pair programming
+- Continuous integration (CI)
 
 ## Scrum & Kollaboration @ Geosoft II
 
 Kollaborative Softwareentwicklung behandelt die Kommunikation und Koordination bei einem gemeinsamen Arbeiten an einem Softwareprojekt. Eine gute Beschreibung findet ihr im Handout ["Collaborative Software Development", Geosoft II im WS 14/15](https://github.com/Geosoft2/geosoft2-2014-fundamentals/blob/master/01-collaborative-software-dev/handout.md).
-
 
 **Versionsmanagement** an sich ist selbstverständlich.
 Es sollte `git` eingesetzt werden, weil es aktueller und weit verbreiteter Standard ist.
@@ -140,3 +183,19 @@ Hier könnt ihr beliebig viele Kanäle für euer Team, für einzelne Aufgaben od
 
 **Wichtig**: Es gibt natürlich Alternativen! Wikis, Basecamp, SourceForge, SVN - alle haben (IMHO: viele hatten) ihren Platz in der Softwareentwicklung und können eingesetzt werden wenn das Team sich darin einig ist.
 Eine Auflistung und Einordnung findet ihr im Handout ["Collaborative Software Development", Geosoft II im WS 14/15](https://github.com/Geosoft2/geosoft2-2014-fundamentals/blob/master/01-collaborative-software-dev/handout.md).
+
+Als **Variante von Scrum** für den Einsatz in diesem Kurs empfiehlt es sich, wegzulassen was nicht effektiv umgesetzt werden kann.
+
+Ein "echtes" Scrum Team braucht nicht nur Jahre bis eine verlässliche Schätzung der leistbaren Arbeit pro Sprint möglich ist, sondern auch eine gewissen Personenanzahl um alle Rollen zu besetzen.
+Auch sind die beteiligten Entwickler (Studenten) nicht im gleichen Maße verfügbar, es müssen Belastungsspitzen durch Klausuren oder andere Kurse abgefangen werden.
+
+Folgende Tipps haben sich aus den letzten Jahren ergeben:
+<a id="tipps" ></a>
+
+- **Sprints**
+  - eine Sprintdauer von 2 Wochen ist ein guter Kompromiss zwischen individueller Flexibilität und regelmäßigen Treffen
+  - ein tägliches Standup ist unrealistisch, 2 Mal die Woche jedoch sinnvoll um kontinuierlichen Fortschritt zu gewährleisten
+  - Routine und Zeitplan einhalten - es lohnt sich!
+- **Rollen** (Product Owner, Entwicklerteam, Scrum Master) werden nicht klar verteilt bzw. wechseln zügig (z.B. jede Woche ein andere Scrum Master); die Dozenten stehen gerne als beratende Scrum Master zur Verfügung
+- die Dozenten nehmen die Rolle der **Stakeholer** ein, sie sind Kunden, Andender, und Management
+- die **Lernerfahrung** ist wichtig, daher nehmt euch klare Zeitfenster (im positiven wie begrenzenden Sinne) für Aufgabenschätzung und Retrospektive
