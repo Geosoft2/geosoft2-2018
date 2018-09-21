@@ -70,7 +70,7 @@ Der Kurs sollte also ein Umfeld des Vertrauens und Reflektierens schaffen, das e
 
 ## Methoden & Prozesse
 
-Agile Methoden halten den Aufwand flach und führen zu dem was man braucht, nicht zu dem was geplant wurde.
+Agile Methoden halten den Aufwand gering und führen zu dem was man braucht, nicht zu dem was geplant wurde.
 Beispiele:
 
 - Paarprogrammierung
@@ -79,6 +79,7 @@ Beispiele:
 - User stories & Story-Cards
 
 Agile Prozesse reduzieren organisatorischen Aufwand (Overhead, Planung) und richten den Fokus der Softwareentwicklung auf menschliche Aspekte, Flexibilität, und frühe Auslieferung + Feedback (_Iterationen_).
+Beispiele
 
 - [Extreme Programming](https://de.wikipedia.org/wiki/Extreme_Programming) (XP)
 - [Behavior Driven Development](https://de.wikipedia.org/wiki/Behavior_Driven_Development) (BDD, verhaltensgetriebene Softwareentwicklung)
@@ -104,16 +105,16 @@ Scrum hat sich von einem agilen Prozess entwickelt zu einem allgemeinen Projektm
 Sein Erfolg liegt in seiner Einfachheit und Flexibilität begründet.
 
 **Scrum in 101 Wörtern**:
-Im Scrum werden Produktfeatures in Form von User Stories in einem langfristigen Plan, dem Produkt-Backlog, gesammelt.
+Im Scrum werden Produktfeatures in Form von User Stories mit einer definierten Größe (Aufwand) in einem langfristigen Plan, dem Produkt-Backlog, gesammelt.
 Die wichtigsten Stories werden zuerst umgesetzt, und zwar in abgeschlossenen zeitlichen Abschnitten, den Sprints.
-Sprints haben eine feste Dauer, werden gemeinsam vom Team geplant und ausgewertet.
+Sprints haben eine feste Dauer und Größe, werden gemeinsam vom Team geplant und ausgewertet.
 Am Ende jedes Sprints steht ein funktionierendes Produkt.
 Der Fortschritt oder Probleme (nicht abgeschlossene User Story) sind sichtbar.
 Das iterative bzw. inkrementelle Vorgehen erlaubt eine kontinuierliche Anpassung an die (ggf. unvorhergesehen) Anforderungen bzw. strukturierte Zerlegung einer komplexen Aufgabe.
 Entwickler sprechen jeden Tag miteinander ("gestern, Probleme, heute").
 Der Kunde wird von ersten Prototyp an aktiv in die Entwicklung mit einbezogen.
 
-Wie bei allen guten Werkzeugen denkt man sich meistens "na ist ja klar, das ist eine gute Idee", jedoch ist der Wert eine gewissen _Disziplin im Ablauf_ und vor allem eine _gemeinsame Sprache_ gar nicht hoch genug einzuschätzen.
+Wie bei allen guten Werkzeugen denkt man sich meistens "na ist ja klar, das ist eine gute Idee", jedoch ist der Wert eine gewissen _Disziplin und Rhythmus im Ablauf_ und vor allem eine _gemeinsame Sprache_ gar nicht hoch genug einzuschätzen.
 
 Für den _ersten Einsatz_ reicht ein Studium der [Wikipedia-Seite _Scrum_](https://de.wikipedia.org/wiki/Scrum), um dies dann nach ein paar Wochen mit eine der folgenden **Ressourcen** aufzufrischen bzw. zu vertiefen:
 
@@ -122,7 +123,7 @@ Für den _ersten Einsatz_ reicht ein Studium der [Wikipedia-Seite _Scrum_](https
 - https://github.com/Geosoft2/geosoft2-2014-fundamentals/blob/master/06-scrum/scrum.md
 - "Scrum: A Breathtakingly Brief and Agile Introduction", Chris Sims & Hillary Louise Johson [auf Anfrage]
 
-**Wichtig**: Auf Basis dieser Infos könnt ihr nun ein _eigenes agiles Vorgehen passend für euer Team_ entwickeln - nur bitte nicht die Erfahrungen und Weißheit der Entwickler und Projektleiter vor euch ignorieren, und auch die unten stehenden [Tipps](#tipps) ernst nehmen!
+**Wichtig**: Auf Basis dieser Infos könnt ihr nun ein _eigenes agiles Vorgehen passend für euer Team_ entwickeln - nur bitte nicht die Erfahrungen und Weisheit der Entwickler und Projektleiter vor euch ignorieren, und auch die unten stehenden [Tipps](#tipps) ernst nehmen!
 
 Karten für _planning poker_ können bei Daniel ausgeborgt werden!
 
@@ -130,29 +131,29 @@ Karten für _planning poker_ können bei Daniel ausgeborgt werden!
 
 Die folgenden Begriffe können leicht über Suchmaschinen erläutert werden und dienen hier hauptsächlich um aufzulisten bzw. zu wiederholen, welche Werkzeuge/Namen/Methoden man zumindest in Grundzügen kennen sollte.
 
-- user story
-- Backlogs (sprint, product)
-- KISS-Prinzip
-- Scrum
-- Daily (standup)
 - [Anti-Patterns](https://de.wikipedia.org/wiki/Anti-Pattern)
-- Fail fast
-- Sprint
-- Unix philosophy
-- Software craftsmanschip
-- pull request (PR)
-- DRY
-- merge request
-- task board
-- [Mythos des Mann-Monats](https://de.wikipedia.org/wiki/Vom_Mythos_des_Mann-Monats)
-- Planning game/planning poker
+- backlogs (sprint, product)
+- burn chart
 - Code-Freeze
-- jour fixe
 - Collective ownership & coding standards
-- Definition of done (DoD)
-- [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
-- Pair programming
 - Continuous integration (CI)
+- Daily (standup)
+- Definition of done (DoD)
+- DRY
+- fail fast
+- jour fixe
+- KISS-Prinzip
+- merge request
+- [Mythos des Mann-Monats](https://de.wikipedia.org/wiki/Vom_Mythos_des_Mann-Monats)
+- Pair programming
+- Planning game/planning poker
+- pull request (PR)
+- Scrum
+- Software craftsmanschip
+- Sprint
+- task board
+- [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
+- user story
 
 ## Scrum & Kollaboration @ Geosoft II
 
@@ -197,5 +198,5 @@ Folgende Tipps haben sich aus den letzten Jahren ergeben:
   - ein tägliches Standup ist unrealistisch, 2 Mal die Woche jedoch sinnvoll um kontinuierlichen Fortschritt zu gewährleisten
   - Routine und Zeitplan einhalten - es lohnt sich!
 - **Rollen** (Product Owner, Entwicklerteam, Scrum Master) werden nicht klar verteilt bzw. wechseln zügig (z.B. jede Woche ein andere Scrum Master); die Dozenten stehen gerne als beratende Scrum Master zur Verfügung
-- die Dozenten nehmen die Rolle der **Stakeholer** ein, sie sind Kunden, Andender, und Management
+- die Dozenten nehmen die Rolle der **Stakeholder** ein, sie sind Kunden, Andender, und Management
 - die **Lernerfahrung** ist wichtig, daher nehmt euch klare Zeitfenster (im positiven wie begrenzenden Sinne) für Aufgabenschätzung und Retrospektive
