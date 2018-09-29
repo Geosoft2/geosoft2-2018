@@ -225,3 +225,5 @@ Kratz J and Strasser C. Data publication consensus and controversies [version 3;
 NIH (2013) Grants Policy Statement. Retrived from https://grants.nih.gov/grants/policy/nihgps_2013/nihgps_ch8.htm#_Toc271264951
 
 Deutsche Forschungsgemeinschaft (2013) Sicherung guter wissenschaftlicher Praxis. Retrived from http://www.dfg.de/download/pdf/dfg_im_profil/reden_stellungnahmen/download/empfehlung_wiss_praxis_1310.pdf
+
+F1000Research. Data publication consensus and controversies. Retrieved from: (https://f1000research.com/articles/3-94/v3
