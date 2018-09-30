@@ -10,9 +10,7 @@ Katharina Hovestadt und Carolin Wortmann
   - B. Einwohnerentwicklung, Temperaturmessungen im Laufe eines Zeitabschnittes
 - Unterscheidung zwischen diskret und kontinuierlich
   - kontinuierlich: y(t)
-  - diskret: y
-# t
- mit t aus {1,…,n} als zeitdiskreter  stochastischer Prozess; die Zeitintervalle zwischen den einzelnen Punkten das Zeitreihe sind konstant
+  - diskret: yt mit t aus {1,…,n} als zeitdiskreter  stochastischer Prozess; die Zeitintervalle zwischen den einzelnen Punkten das Zeitreihe sind konstant
 - [Zeitreihenanalyse](https://de.statista.com/statistik/lexikon/definition/144/zeitreihenanalyse/) **:**
   - Zweck:
     - Untersuchung und Verständnis der einer Datenreihe zugrunde liegenden Kräfte, Strukturen, Abhängigkeiten und Muster
