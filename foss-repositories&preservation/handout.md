@@ -107,7 +107,8 @@
         -usually contains documents (letters, records, newspapers, etc) or other types of media kept for historical interest
         -preserve information for access and use by a Designated Community
 ##### 3.1.4 Data Pyramid
-- ![GitHub Logo](/images/DataPyramid.jpg)
+
+![Alt-Text](images/DataPyramid.png)
 
 ### 3.2 Digital Preservation
 #### 3.2.1 Purpose
@@ -133,7 +134,7 @@
 ##### 3.2.3.1 Fixity
 - Process of validating that a file has not changed or been altered from a previous state. While checksums are the primary mechanism for monitoring fixity at the individual file level, an important additional consideration for monitoring fixity is file attendance
 ##### 3.2.3.1 Characterization
-- Characterization of digital materials is the identification and description of what a file is and of its defining technical characteristics [18] often captured by technical metadata, which records its technical attributes like creation or production environment
+- Characterization of digital materials is the identification and description of what a file is and of its defining technical characteristics often captured by technical metadata, which records its technical attributes like creation or production environment
 ##### 3.2.3.1 Sustainability
 - Unlike traditional, temporary strategies, and more permanent solutions, digital sustainability implies a more active and continuous process. Digital sustainability concentrates less on the solution and technology and more on building an infrastructure and approach that is flexible with an emphasis on interoperability, continued maintenance and continuous development
 ##### 3.2.3.1 Renderability
@@ -186,7 +187,9 @@
         - People or groups advocate to influence decisions within political, economic and social systems. “[advocacy] is integral to all aspects of archival work.”
 #### 3.2.6 The OAIS Reference Model
 - The functional model gives a detailed break-down of digital preservation and dissemination workflows – in short, it explains how an (idealized) archive works. It therefore is a good starting point for anyone who seeks to obtain a systematic overview of these workflows or wants to analyze and understand workflows in an existing archive.
-- (/images/OAIS1.jpg)
-- (/images/OAIS2.jpg)
+
+![Alt-Text](images/OAIS1.png)
+
+![ALT-Text](images/OAIS2.png)
 
 ## Quellenangaben
