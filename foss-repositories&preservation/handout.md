@@ -1,7 +1,5 @@
-# Geosoftware II - Daniel Nüst und Prof. Dr. Edzer Pebesma
-# Wintersemester 2018 / 2019
 # FOSS Repositories & Preservation
-# Niklas Aßelmann & Yannick Paulsen
+> Niklas Aßelmann & Yannick Paulsen
 
 ## Table of Content
 
@@ -19,8 +17,7 @@
       - [2.1.2.7 Tag](#2127-tag)
       - [2.1.2.8 Version Control](#2128-version-control)
       - [2.1.2.9 Working Tree](#2129-working-tree)
-    + [2.1.3 Importance of choosing a suited repo-software](#213-importance-of-choosing-a-suited-repo-software)
-    + [2.1.4 Repository vs. Archive](#214-repository-vs-archive)
+    + [2.1.3 Repository vs. Archive](#213-repository-vs-archive)
   * [2.2 Overview of the repository-software](#22-overview-of-the-repository-software)
     + [2.2.1 Zenodo](#221-zenodo)
     + [2.2.2 b2share](#222-b2share)
@@ -29,10 +26,9 @@
     + [2.2.5 Fedora](#225-fedora)
     + [2.2.6 Archivematica](#226-archivematica)
   * [2.3 Comparison](#23-comparison)
-    + [2.3.1 Criteria explained](#231-criteria-explained)
-    + [2.3.2 user-wise Comparison](#232-user-wise-comparison)
-    + [2.3.3 developer-wise Comparison](#233-developer-wise-comparison)
-    + [2.3.4 resume](#234-resume)
+    + [2.3.1 user-wise Comparison](#232-user-wise-comparison)
+    + [2.3.2 developer-wise Comparison](#233-developer-wise-comparison)
+    + [2.3.3 resume](#234-resume)
 - [3 Preservation](#3-preservation)
   * [3.1 Data Preservation](#31-data-preservation)
     + [3.1.1 Generall Meaning](#311-generall-meaning)
@@ -86,35 +82,74 @@ it is often stored on a server, which can be accessed by multiple users
 - The trunk contains the current version of a software project 
 - This may include multiple source code files, as well as other resources used by the program
 ##### 2.1.2.2 Branch
-- Branches are used to store new versions of the program 
+- Branches are used to store new versions of the program and represent an independent line of development 
 - A developer may create a new branch whenever he makes substantial revisions to the program 
 - If a branch contains unwanted changes, it can be discontinued
-- A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process discussed in Git Basics, the first module of this series. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.
 ##### 2.1.2.3 Commit
 - By committing changes to a repository, developers can quickly revert to a previous version of a program if a recent update causes bugs or other problems
 ##### 2.1.2.4 Push/Pull
-
+- Push requests upload all local branch commits to the repository
+- Pull requests download the bookmark history and incorporates changes
 ##### 2.1.2.5 Merge
+- Combines the specified branch’s history into the current branch  
 ##### 2.1.2.6 Fork
+- Instead of using a single server-side repository to act as the “central” codebase, forking gives every developer a server-side repository 
+- This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one
 ##### 2.1.2.7 Tag
 - Tags are used to save versions of a project, but are not meant for active development 
 - For example, a developer may create a "release tag" each time a new version of the software is released
 ##### 2.1.2.8 Version Control
+- A system that records changes to a file or set of files over time so that you can recall specific versions later
 ##### 2.1.2.9 Working Tree
-#### 2.1.3 Importance of choosing a suited repo-software 
-#### 2.1.4 Repository vs. Archive 
-### 2.2 Overview of the repository-software 
+- The tree of actual checked out files, normally containing the contents of the HEAD commit's tree and any local changes you've made but haven't yet committed
+#### 2.1.3 Repository vs. Archive 
+- Archive and repository are often referred synonymous
+- Archives are storage rooms for files kept for historical interest
+- Whereas in repositories the main interest is preservation and safety of the data
+### 2.2 Overview of the repository-software
+#### 2.2.0 Invenio
+![Alt-Text](images/1157480.png)
+- open source software framework for large-scale digital repositories that provides the tools for management of digital assets in an institutional repository and research data management systems
+- initially developed by CERN
+- Stable version: 3.0.0 (07.07.18) 
 #### 2.2.1 Zenodo 
+![Alt-Text](images/zenodo-gradient-2500.png)
+- Research data repository
+- Created by OpenAIRE and CERN to provide a place for researchers to deposit datasets
+- Launched in 2013, allowing researchers in any subject area to upload files up to 50 GB
+- General-purpose open access repository based on Invenio
 #### 2.2.2 b2share 
+![Alt-Text](images/logo-b2share.png)
+- Research data repository
+- Created by EUDAT CDI services
+- Launched in 2014, based on Invenio 
 #### 2.2.3 Inspire 
-#### 2.2.4 dSpace SYNECT 
+![Alt-Text](images/inspire_logo_hep.png)
+- Open access digital library for the field of high energy physics
+- Successor of the Stanford Physics Information Retrieval System (SPIRES) database
+- Launched in 2012, based on Invenio
+#### 2.2.4 DSpace 
+![Alt-Text](images/DSpace_transparent_logo.png)
+- Open source repository software package typically used for creating open access repositories for scholarly and/or published digital content
+- Shares some feature overlap with content management systems and document management systems, the DSpace repository software serves a specific need as a digital archives system, focused on the long-term storage, access and preservation of digital content
+- initial release in 2002 developed from MIT and HP Labs
+- Stable release: 6.2 (08.09.17)
 #### 2.2.5 Fedora 
+![Alt-Text](images/fedora_logo_10in.png)
+- Modular open source repository system for the management and dissemination of digital content
+- It is especially suited for digital libraries and archives, both for access and preservation of very large and complex digital collections of historic and cultural materials as well as scientific data
+- Stable version: Fedora 4.7.5 (12.02.18)
 #### 2.2.6 Archivematica 
+![Alt-Text](images/ArchivematicaTranslucent.png)
+- web- and standards-based, open-source application which allows your institution to preserve long-term access to digital content
+- Stable version: 1.7.2 (11.09.18)
 ### 2.3 Comparison 
-#### 2.3.1 Criteria explained
-#### 2.3.2 user-wise Comparison
-#### 2.3.3 developer-wise Comparison
-#### 2.3.4 resume
+#### 2.3.1 User-wise Comparison
+
+#### 2.3.2 Developer-wise Comparison
+
+#### 2.3.3 Resume
+
 ## 3 Preservation
 ### 3.1 Data Preservation
 #### 3.1.1 Generall Meaning
@@ -187,7 +222,7 @@ it is often stored on a server, which can be accessed by multiple users
 ##### 3.2.4.1 Online Computer Library Center 4 Point Strategie
 - 1.Assessing the risks for loss of content posed by technology variables such as commonly used proprietary file formats and software applications
 - 2. Evaluating the digital content objects to determine what type and degree of format conversion or other preservation actions should be applied
-- 3. etermining the appropriate metadata needed for each object type and how it is associated with the objects
+- 3. Determining the appropriate metadata needed for each object type and how it is associated with the objects
 - 4. Providing access to the content
 ##### 3.2.4.2 Refreshing
 - Refreshing is the transfer of data between two types of the same storage medium so there are no bitrot changes or alteration of data. This process has to be carried out whatever other preservation strategies are adopted and has a low risk of losing data if executed and documented properly 
