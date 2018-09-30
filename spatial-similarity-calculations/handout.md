@@ -5,7 +5,7 @@ _Authors: Benjamin Dietz, Jannis Fröhlking_
 - [1 Why spatial similarity calculations](#1-why-spatial-similarity-calculations)
 - [2 Our first idea of spatial similarity calculation](#2-our-first-idea-of-spatial-similarity-calculation)
 - [3 Categories to measure spatial similarity](#3-categories-to-measure-spatial-similarity)
-  * [3.1 Topological] (#31-topological)
+  * [3.1 Topological](#31-topological)
     + [3.1.1 Example: The 9-intersection model](#311-the-9-intersection-model)
   * [3.2 Directional](#32-directional)
   * [3.3 Metric distance](#33-metric-distance)  
