@@ -26,9 +26,8 @@
     + [2.2.5 Fedora](#225-fedora)
     + [2.2.6 Archivematica](#226-archivematica)
   * [2.3 Comparison](#23-comparison)
-    + [2.3.1 user-wise Comparison](#232-user-wise-comparison)
-    + [2.3.2 developer-wise Comparison](#233-developer-wise-comparison)
-    + [2.3.3 resume](#234-resume)
+    + [2.3.1 Comparison](#231-comparison)
+    + [2.3.2 Resume](#232-resume)
 - [3 Preservation](#3-preservation)
   * [3.1 Data Preservation](#31-data-preservation)
     + [3.1.1 Generall Meaning](#311-generall-meaning)
@@ -158,7 +157,7 @@ it is often stored on a server, which can be accessed by multiple users
 ![Alt-Text](images/dSpaceFedora9.PNG)
 ![Alt-Text](images/dSpaceFedora10.PNG)
 
-#### 2.3.3 Resume
+#### 2.3.2 Resume
 :warning: to be done
 
 ## 3 Preservation
