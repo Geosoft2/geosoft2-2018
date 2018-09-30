@@ -126,7 +126,7 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
 
     ![alt
     text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Geohash_Representation.PNG?raw=true "")
-    &quot;difference&quot; as contra expression for &quot;similarity&quot;:
+  Geohash representation of a set of points
 
 ## **3.4 Attribute (not in our focus):**  
 
@@ -146,8 +146,8 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
 
   **Which map is the best and should be the resulting map?:**
 
-  ->  possible approach: calculate the similarity degree between the original map and each generalized map and select the one with the greatest similarity degree as the resulting map
-  ->  reason for that approach: the more similar two maps are, the more common information the two maps contain
+  - possible approach: calculate the similarity degree between the original map and each generalized map and select the one with the greatest similarity degree as the resulting map
+  - reason for that approach: the more similar two maps are, the more common information the two maps contain
 
 
 
@@ -156,6 +156,14 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
 
 
 # 5 Calculation of spatial similarity with respect to properties
+
+  - spatial similarity measurement is different from document/ texts similarity assessment (matching keywords) because:
+  - spatial similarity relations involve various elements, such as spatial relationship, spatial distribution, geometric attributes, thematic attributes and semantic relationship
+  - different application may have different requirements and priorities which makes calculation of spatial similarity relations complicated
+  - the definition of similarity is closely application-oriented, based on corresponding assumptions and functions lay on experience
+  - the spectrum from each spatial similarity degree goes from 0 (not similar at all) to 1 (equal)
+  - “difference” as contra expression for “similarity”
+
 
 The upcoming definitions of spatial similarity relations/ degrees are explained with the following example of the two object A1 and A2:
 
@@ -206,7 +214,7 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
 
   - in the geography the spatial similarity relation is **scale dependent** meaning the more an object is simplified (generalized), the less similar it is if compared to the original object: Sim(A, A1) > Sim(A, A2) > … > Sim(A, An-1) > Sim(A, An)
 
-__Example where the property &quot;shape&quot; does not fit perfectly for calculation similarity and our own idea how to solve this problem:__
+### Example where the property &quot;shape&quot; does not fit perfectly for calculation similarity and our own idea how to solve this problem:
 
 We use this example for showing that the property &quot;shape&quot; is not for all objects well defined:
 ![alt
@@ -219,9 +227,9 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
 Calculating the similarity of the two objects with the formulas from Def. 1 and Def. 2 as above, we get a similarity of 62.8 % between the two objects although most people would probably say the similarity of those two is about 90 % or higher.
 
 
-Our own idea for solving this problem:
+__Our own idea for solving this problem:__
 
-_Repetition: Douglas-Peucker-Algorithmus_
+__Repetition__: _Douglas-Peucker-Algorithmus_
 
   - _define an epsilon (how far deviations from a line should be tolerated)_
   - _remove all edges that distance to the currently considered line are smaller than the epsilon_
