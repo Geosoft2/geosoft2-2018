@@ -5,87 +5,100 @@
 
 ## Table of Content
 
-- [1 Introduction](#1)    
-- [2 FOSS Repositories](#2)
-    * [2.1 Prerequesite Knowledge](#2.1)
-        + [2.1.1 Repository Definition](#2.1.1)
-        + [2.1.2 Basic Terminology](#2.1.2)
-            - [2.1.2.1 Archive](#2.1.2.1)
-            - [2.1.2.2 Branch](#2.1.2.2)
-            - [2.1.2.3 Commit](#2.1.2.3)
-            - [2.1.2.4 Push/Pull](#2.1.2.4)
-            - [2.1.2.5 Merge](#2.1.2.5)
-            - [2.1.2.6 Fork](#2.1.2.6)
-            - [2.1.2.7 Tag](#2.1.2.7)
-            - [2.1.2.8 Version Control](#2.1.2.8)
-            - [2.1.2.9 Working Tree](#2.1.2.9)
-            - [2.1.2.10 ](#2.1.2.10)
-            - [2.1.2.11 ](#2.1.2.11)
-            - [2.1.2.12 ](#2.1.2.12)
-        + [2.1.3 Importance of choosing a suited repo-software](#2.1.3)
-        + [2.1.4 Repository vs. Archive](#2.1.4)
-    * [2.2 Overview of the repository-software](#2.2)
-        + [2.2.1 Zenodo](#2.2.1)
-        + [2.2.2 b2share](#2.2.2)
-        + [2.2.3 Inspire](#2.2.3)
-        + [2.2.4 dSpace SYNECT](#2.2.4)
-        + [2.2.5 Fedora](#2.2.5)
-        + [2.2.6 Archivematica](#2.2.6)
-    * [2.3 Comparison](#2.3)
-        + [2.3.1 Criteria explained](#2.3.1)
-        + [2.3.2 user-wise Comparison](#2.3.2)
-        + [2.3.3 developer-wise Comparison](#2.3.3)
-        + [2.3.4 resume](#2.3.4)
-- [3 Preservation](#3)       
-    * [3.1 Data Preservation](#3.1)     
-        + [3.1.1 General Meaning](#3.1.1)
-        + [3.1.2 Goal](#3.1.2)
-        + [3.1.3 Methods](#3.1.3)
-        + [3.1.4 Data Pyramid](#3.1.4)
-    * [3.2 Digital Preservation](#3.2) 
-        + [3.2.1 Purpose](#3.2.1)
-        + [3.2.2 Problems](#3.2.2)
-        + [3.2.3 Foundamentels](#3.2.3)
-            - [3.2.3.1 Appraisal](#3.2.3.1)
-            - [3.2.3.2 Identification](#3.2.3.2)
-            - [3.2.3.3 Integrity](#3.2.3.3)
-            - [3.2.3.4 Fixity](#3.2.3.4)
-            - [3.2.3.5 Characterization](#3.2.3.5)
-            - [3.2.3.6 Sustainability](#3.2.3.6)
-            - [3.2.3.7 Renderability](#3.2.3.7)
-            - [3.2.3.8 Physical media obsolescence](#3.2.3.8)
-            - [3.2.3.9 Format obsolescence](#3.2.3.9)
-            - [3.2.3.10 Significant properties](#3.2.3.10)
-            - [3.2.3.11 Authenticity](#3.2.3.11)
-            - [3.2.3.12 Access](#3.2.3.12)
-            - [3.2.3.13 Preservation metadata](#3.2.3.13)
-        + [3.2.4 Strategies](#3.2.4)
-            - [3.2.4.1 Online Computer Library Center 4 Point Strategie](#3.2.4.1)
-            - [3.2.4.2 Refreshing](#3.2.4.2)
-            - [3.2.4.3 Migration](#3.2.4.3)
-            - [3.2.4.4 Replication](#3.2.4.4)
-            - [3.2.4.5 Emulation](#3.2.4.5)
-            - [3.2.4.6 Encapsulat](#3.2.4.6)
-            - [3.2.4.7 Persistent Archives concept](#3.2.4.7)
-            - [3.2.4.8 Metadata attachment](#3.2.4.8)
-        + [3.2.5 Software Preservation Network (SPN)](#3.2.5)
-        + [3.2.6 The OAIS Reference Model](#3.2.6)     
-- [Source Disclosures](#source)
+- [1 Introduction](#1-introduction)
+- [2 FOSS Repositories](#2-foss-repositories)
+  * [2.1 Prerequesite Knowledge](#21-prerequesite-knowledge)
+    + [2.1.1 Repository Definition](#211-repository-definition)
+    + [2.1.2 Basic Terminology](#212-basic-terminology)
+      - [2.1.2.1 Trunk](#2121-trunk)
+      - [2.1.2.2 Branch](#2122-branch)
+      - [2.1.2.3 Commit](#2123-commit)
+      - [2.1.2.4 Push/Pull](#2124-push-pull)
+      - [2.1.2.5 Merge](#2125-merge)
+      - [2.1.2.6 Fork](#2126-fork)
+      - [2.1.2.7 Tag](#2127-tag)
+      - [2.1.2.8 Version Control](#2128-version-control)
+      - [2.1.2.9 Working Tree](#2129-working-tree)
+    + [2.1.3 Importance of choosing a suited repo-software](#213-importance-of-choosing-a-suited-repo-software)
+    + [2.1.4 Repository vs. Archive](#214-repository-vs-archive)
+  * [2.2 Overview of the repository-software](#22-overview-of-the-repository-software)
+    + [2.2.1 Zenodo](#221-zenodo)
+    + [2.2.2 b2share](#222-b2share)
+    + [2.2.3 Inspire](#223-inspire)
+    + [2.2.4 dSpace SYNECT](#224-dspace-synect)
+    + [2.2.5 Fedora](#225-fedora)
+    + [2.2.6 Archivematica](#226-archivematica)
+  * [2.3 Comparison](#23-comparison)
+    + [2.3.1 Criteria explained](#231-criteria-explained)
+    + [2.3.2 user-wise Comparison](#232-user-wise-comparison)
+    + [2.3.3 developer-wise Comparison](#233-developer-wise-comparison)
+    + [2.3.4 resume](#234-resume)
+- [3 Preservation](#3-preservation)
+  * [3.1 Data Preservation](#31-data-preservation)
+    + [3.1.1 Generall Meaning](#311-generall-meaning)
+    + [3.1.2 Goal](#312-goal)
+    + [3.1.3 Methods](#313-methods)
+      - [3.1.4 Data Pyramid](#314-data-pyramid)
+  * [3.2 Digital Preservation](#32-digital-preservation)
+    + [3.2.1 Purpose](#321-purpose)
+    + [3.2.2 Problems](#322-problems)
+    + [3.2.3 Foundamentels](#323-foundamentels)
+      - [3.2.3.1 Appraisal](#3231-appraisal)
+      - [3.2.3.1 Identification](#3231-identification)
+      - [3.2.3.1 Integrity](#3231-integrity)
+      - [3.2.3.1 Fixity](#3231-fixity)
+      - [3.2.3.1 Characterization](#3231-characterization)
+      - [3.2.3.1 Sustainability](#3231-sustainability)
+      - [3.2.3.1 Renderability](#3231-renderability)
+      - [3.2.3.1 Physical media obsolescence](#3231-physical-media-obsolescence)
+      - [3.2.3.1 Format obsolescence](#3231-format-obsolescence)
+      - [3.2.3.1 Significant properties](#3231-significant-properties)
+      - [3.2.3.1 Authenticity](#3231-authenticity)
+      - [3.2.3.1 Access](#3231-access)
+      - [3.2.3.1 Preservation metadata](#3231-preservation-metadata)
+    + [3.2.4 Strategies](#324-strategies)
+      - [3.2.4.1 Online Computer Library Center 4 Point Strategie](#3241-online-computer-library-center-4-point-strategie)
+      - [3.2.4.2 Refreshing](#3242-refreshing)
+      - [3.2.4.3 Migration](#3243-migration)
+      - [3.2.4.3 Replication](#3243-replication)
+      - [3.2.4.4 Emulation](#3244-emulation)
+      - [3.2.4.5 Encapsulat](#3245-encapsulat)
+      - [3.2.4.6 Persistent Archives concept](#3246-persistent-archives-concept)
+      - [3.2.4.7 Metadata attachment](#3247-metadata-attachment)
+    + [3.2.5 Software Preservation Network (SPN)](#325-software-preservation-network--spn-)
+    + [3.2.6 The OAIS Reference Model](#326-the-oais-reference-model)
+- [Source Disclosures](#source-disclosures)
 
 <!-- toc -->
 
 ## 1 Introduction
+- Our topic "FOSS Repositories and Preservation is dealing with Free/Libre Open Source Software to store any kind of data. In a world where more and more data is produzed every day, these repositories provide software that can store and preserve reseach data we are gonne need for our projects. In the following we are gonna introduce you some of these softwares and the basic principles of preservation.
 ## 2 FOSS Repositories
 ### 2.1 Prerequesite Knowledge
 #### 2.1.1 Repository Definition
+- A repository is a central file storage location and provides a structured way for programmers to store development files
+- It is used by version control systems to store multiple versions of files 
+- While a repository can be configured on a local machine for a single user, 
+it is often stored on a server, which can be accessed by multiple users 
+- Repositories can be helpful for any type of software development, but it is especially important for large development projects
 #### 2.1.2 Basic Terminology
-##### 2.1.2.1 Archive
+##### 2.1.2.1 Trunk
+- The trunk contains the current version of a software project 
+- This may include multiple source code files, as well as other resources used by the program
 ##### 2.1.2.2 Branch
+- Branches are used to store new versions of the program 
+- A developer may create a new branch whenever he makes substantial revisions to the program 
+- If a branch contains unwanted changes, it can be discontinued
+- A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process discussed in Git Basics, the first module of this series. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.
 ##### 2.1.2.3 Commit
+- By committing changes to a repository, developers can quickly revert to a previous version of a program if a recent update causes bugs or other problems
 ##### 2.1.2.4 Push/Pull
+
 ##### 2.1.2.5 Merge
 ##### 2.1.2.6 Fork
 ##### 2.1.2.7 Tag
+- Tags are used to save versions of a project, but are not meant for active development 
+- For example, a developer may create a "release tag" each time a new version of the software is released
 ##### 2.1.2.8 Version Control
 ##### 2.1.2.9 Working Tree
 #### 2.1.3 Importance of choosing a suited repo-software 
