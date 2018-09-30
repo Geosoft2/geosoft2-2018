@@ -296,8 +296,8 @@ Pandas – source: [https://pandas-docs.github.io/pandas-docs-travis/generated/p
 
 Bsp:
 
-data.plot()
-
+data.plot() <br>
+![](plott.png)
 
 Pandas - source: [http://earthpy.org/pandas-basics.html](http://earthpy.org/pandas-basics.html)
 
