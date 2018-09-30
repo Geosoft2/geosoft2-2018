@@ -144,11 +144,22 @@ it is often stored on a server, which can be accessed by multiple users
 - web- and standards-based, open-source application which allows your institution to preserve long-term access to digital content
 - Stable version: 1.7.2 (11.09.18)
 ### 2.3 Comparison 
-#### 2.3.1 User-wise Comparison
+#### 2.3.1 Comparison
+:warning: to be done
 
-#### 2.3.2 Developer-wise Comparison
+![Alt-Text](images/dSpaceFedora1.png)
+![Alt-Text](images/dSpaceFedora2.png)
+![Alt-Text](images/dSpaceFedora3.png)
+![Alt-Text](images/dSpaceFedora4.png)
+![Alt-Text](images/dSpaceFedora5.png)
+![Alt-Text](images/dSpaceFedora6.png)
+![Alt-Text](images/dSpaceFedora7.png)
+![Alt-Text](images/dSpaceFedora8.png)
+![Alt-Text](images/dSpaceFedora9.png)
+![Alt-Text](images/dSpaceFedora10.png)
 
 #### 2.3.3 Resume
+:warning: to be done
 
 ## 3 Preservation
 ### 3.1 Data Preservation
