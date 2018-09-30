@@ -1,82 +1,108 @@
 # Geosoftware II - Daniel Nüst und Prof. Dr. Edzer Pebesma
 # Wintersemester 2018 / 2019
 # FOSS Repositories & Preservation
-# Niklas Aßelmann & Yannik Paulsen
+# Niklas Aßelmann & Yannick Paulsen
 
 ## Table of Content
 
-[1. Introduction](##1)    
-[2. FOSS Repositories](##2)
-[2.1 Prerequesite Knowledge](###2.1)
-[2.1.1 Repository Definition](####2.1.1)
-[2.1.2 Basic Terminology](####2.1.2)
-[2.1.2.1 Archive](#####2.1.2.1)
-[2.1.2.2 Branch](#####2.1.2.2)
-[2.1.2.3 Commit](#####2.1.2.3)
-[2.1.2.4 Push/Pull](#####2.1.2.4)
-[2.1.2.5 Merge](#####2.1.2.5)
-[2.1.2.6 Fork](#####2.1.2.6)
-[2.1.2.7 Tag](#####2.1.2.7)
-[2.1.2.8 Version Control](#####2.1.2.8)
-[2.1.2.9 Working Tree](#####2.1.2.9)
-[2.1.2.10 ](#####2.1.2.10)
-[2.1.2.11 ](#####2.1.2.11)
-[2.1.2.12 ](#####2.1.2.12)
-[2.1.3 Importance of choosing a suited repo-software](####2.1.3)
-[2.1.4 Repository vs. Archive](####2.1.4)
-[2.2 Overview of the repository-software](###2.2)
-[2.2.1 Zenodo](####2.2.1)
-[2.2.2 b2share](####2.2.2)
-[2.2.3 Inspire](####2.2.3)
-[2.2.4 dSpace SYNECT](####2.2.4)
-[2.2.5 Fedora](####2.2.5)
-[2.2.6 Archivematica](####2.2.6)
-[2.3 Comparison](###2.3)
-[2.3.1 Criteria explained](####2.3.1)
-[2.3.2 user-wise Comparison](####2.3.2)
-[2.3.3 developer-wise Comparison](####2.3.3)
-[2.3.4 resume](####2.3.4)
-[3. Preservation](##3)       
-[3.1 Data Preservation](###3.1)     
-[3.1.1 General Meaning](####3.1.1)
-[3.1.2 Goal](####3.1.2)
-[3.1.3 Methods](####3.1.3)
-[3.1.4 Data Pyramid](####3.1.4)
-[3.2 Digital Preservation](###3.2) 
-[3.2.1 Purpose](####3.2.1)
-[3.2.2 Problems](####3.2.2)
-[3.2.3 Foundamentels](####3.2.3)
-[3.2.3.1 Appraisal](#####3.2.3.1)
-[3.2.3.2 Identification](#####3.2.3.2)
-[3.2.3.3 Integrity](#####3.2.3.3)
-[3.2.3.4 Fixity](#####3.2.3.4)
-[3.2.3.5 Characterization](#####3.2.3.5)
-[3.2.3.6 Sustainability](#####3.2.3.6)
-[3.2.3.7 Renderability](#####3.2.3.7)
-[3.2.3.8 Physical media obsolescence](#####3.2.3.8)
-[3.2.3.9 Format obsolescence](#####3.2.3.9)
-[3.2.3.10 Significant properties](#####3.2.3.10)
-[3.2.3.11 Authenticity](#####3.2.3.11)
-[3.2.3.12 Access](#####3.2.3.12)
-[3.2.3.13 Preservation metadata](#####3.2.3.13)
-[3.2.4 Strategies](####3.2.4)
-[3.2.4.1 Online Computer Library Center 4 Point Strategie](#####3.2.4.1)
-[3.2.4.2 Refreshing](#####3.2.4.2)
-[3.2.4.3 Migration](#####3.2.4.3)
-[3.2.4.4 Replication](#####3.2.4.4)
-[3.2.4.5 Emulation](#####3.2.4.5)
-[3.2.4.6 Encapsulat](#####3.2.4.6)
-[3.2.4.7 Persistent Archives concept](#####3.2.4.7)
-[3.2.4.8 Metadata attachment](#####3.2.4.8)
-[3.2.5 Software Preservation Network (SPN)](####3.2.5)
-[3.2.6 The OAIS Reference Model](####3.2.6)     
-[Source Disclosures](##source)
+- [1 Introduction](#1)    
+- [2 FOSS Repositories](#2)
+    * [2.1 Prerequesite Knowledge](#2.1)
+        + [2.1.1 Repository Definition](#2.1.1)
+        + [2.1.2 Basic Terminology](#2.1.2)
+            - [2.1.2.1 Archive](#2.1.2.1)
+            - [2.1.2.2 Branch](#2.1.2.2)
+            - [2.1.2.3 Commit](#2.1.2.3)
+            - [2.1.2.4 Push/Pull](#2.1.2.4)
+            - [2.1.2.5 Merge](#2.1.2.5)
+            - [2.1.2.6 Fork](#2.1.2.6)
+            - [2.1.2.7 Tag](#2.1.2.7)
+            - [2.1.2.8 Version Control](#2.1.2.8)
+            - [2.1.2.9 Working Tree](#2.1.2.9)
+            - [2.1.2.10 ](#2.1.2.10)
+            - [2.1.2.11 ](#2.1.2.11)
+            - [2.1.2.12 ](#2.1.2.12)
+        + [2.1.3 Importance of choosing a suited repo-software](#2.1.3)
+        + [2.1.4 Repository vs. Archive](#2.1.4)
+    * [2.2 Overview of the repository-software](#2.2)
+        + [2.2.1 Zenodo](#2.2.1)
+        + [2.2.2 b2share](#2.2.2)
+        + [2.2.3 Inspire](#2.2.3)
+        + [2.2.4 dSpace SYNECT](#2.2.4)
+        + [2.2.5 Fedora](#2.2.5)
+        + [2.2.6 Archivematica](#2.2.6)
+    * [2.3 Comparison](#2.3)
+        + [2.3.1 Criteria explained](#2.3.1)
+        + [2.3.2 user-wise Comparison](#2.3.2)
+        + [2.3.3 developer-wise Comparison](#2.3.3)
+        + [2.3.4 resume](#2.3.4)
+- [3 Preservation](#3)       
+    * [3.1 Data Preservation](#3.1)     
+        + [3.1.1 General Meaning](#3.1.1)
+        + [3.1.2 Goal](#3.1.2)
+        + [3.1.3 Methods](#3.1.3)
+        + [3.1.4 Data Pyramid](#3.1.4)
+    * [3.2 Digital Preservation](#3.2) 
+        + [3.2.1 Purpose](#3.2.1)
+        + [3.2.2 Problems](#3.2.2)
+        + [3.2.3 Foundamentels](#3.2.3)
+            - [3.2.3.1 Appraisal](#3.2.3.1)
+            - [3.2.3.2 Identification](#3.2.3.2)
+            - [3.2.3.3 Integrity](#3.2.3.3)
+            - [3.2.3.4 Fixity](#3.2.3.4)
+            - [3.2.3.5 Characterization](#3.2.3.5)
+            - [3.2.3.6 Sustainability](#3.2.3.6)
+            - [3.2.3.7 Renderability](#3.2.3.7)
+            - [3.2.3.8 Physical media obsolescence](#3.2.3.8)
+            - [3.2.3.9 Format obsolescence](#3.2.3.9)
+            - [3.2.3.10 Significant properties](#3.2.3.10)
+            - [3.2.3.11 Authenticity](#3.2.3.11)
+            - [3.2.3.12 Access](#3.2.3.12)
+            - [3.2.3.13 Preservation metadata](#3.2.3.13)
+        + [3.2.4 Strategies](#3.2.4)
+            - [3.2.4.1 Online Computer Library Center 4 Point Strategie](#3.2.4.1)
+            - [3.2.4.2 Refreshing](#3.2.4.2)
+            - [3.2.4.3 Migration](#3.2.4.3)
+            - [3.2.4.4 Replication](#3.2.4.4)
+            - [3.2.4.5 Emulation](#3.2.4.5)
+            - [3.2.4.6 Encapsulat](#3.2.4.6)
+            - [3.2.4.7 Persistent Archives concept](#3.2.4.7)
+            - [3.2.4.8 Metadata attachment](#3.2.4.8)
+        + [3.2.5 Software Preservation Network (SPN)](#3.2.5)
+        + [3.2.6 The OAIS Reference Model](#3.2.6)     
+- [Source Disclosures](#source)
 
-## 1. Introduction
+<!-- toc -->
 
-## 2. FOSS Repositories
-
-## 3. Preservation
+## 1 Introduction
+## 2 FOSS Repositories
+### 2.1 Prerequesite Knowledge
+#### 2.1.1 Repository Definition
+#### 2.1.2 Basic Terminology
+##### 2.1.2.1 Archive
+##### 2.1.2.2 Branch
+##### 2.1.2.3 Commit
+##### 2.1.2.4 Push/Pull
+##### 2.1.2.5 Merge
+##### 2.1.2.6 Fork
+##### 2.1.2.7 Tag
+##### 2.1.2.8 Version Control
+##### 2.1.2.9 Working Tree
+#### 2.1.3 Importance of choosing a suited repo-software 
+#### 2.1.4 Repository vs. Archive 
+### 2.2 Overview of the repository-software 
+#### 2.2.1 Zenodo 
+#### 2.2.2 b2share 
+#### 2.2.3 Inspire 
+#### 2.2.4 dSpace SYNECT 
+#### 2.2.5 Fedora 
+#### 2.2.6 Archivematica 
+### 2.3 Comparison 
+#### 2.3.1 Criteria explained
+#### 2.3.2 user-wise Comparison
+#### 2.3.3 developer-wise Comparison
+#### 2.3.4 resume
+## 3 Preservation
 ### 3.1 Data Preservation
 #### 3.1.1 Generall Meaning
 - act of conserving and maintaining both the safety and integrity of data
