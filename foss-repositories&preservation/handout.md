@@ -147,16 +147,16 @@ it is often stored on a server, which can be accessed by multiple users
 #### 2.3.1 Comparison
 :warning: to be done
 
-![Alt-Text](images/dSpaceFedora1.png)
-![Alt-Text](images/dSpaceFedora2.png)
-![Alt-Text](images/dSpaceFedora3.png)
-![Alt-Text](images/dSpaceFedora4.png)
-![Alt-Text](images/dSpaceFedora5.png)
-![Alt-Text](images/dSpaceFedora6.png)
-![Alt-Text](images/dSpaceFedora7.png)
-![Alt-Text](images/dSpaceFedora8.png)
-![Alt-Text](images/dSpaceFedora9.png)
-![Alt-Text](images/dSpaceFedora10.png)
+![Alt-Text](images/dSpaceFedora1.PNG)
+![Alt-Text](images/dSpaceFedora2.PNG)
+![Alt-Text](images/dSpaceFedora3.PNG)
+![Alt-Text](images/dSpaceFedora4.PNG)
+![Alt-Text](images/dSpaceFedora5.PNG)
+![Alt-Text](images/dSpaceFedora6.PNG)
+![Alt-Text](images/dSpaceFedora7.PNG)
+![Alt-Text](images/dSpaceFedora8.PNG)
+![Alt-Text](images/dSpaceFedora9.PNG)
+![Alt-Text](images/dSpaceFedora10.PNG)
 
 #### 2.3.3 Resume
 :warning: to be done
