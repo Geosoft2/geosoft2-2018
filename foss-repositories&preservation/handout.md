@@ -125,15 +125,9 @@
     - Multi-Site Repositories
     - Trusted Digital Repostitory (TDR)
         -must cooperate with the Reference Model for an Open Archival Information System, as well as adhere to a set of rules or attributes that contribute to its trust such as having persistent financial responsibility, organizational buoyancy, administrative responsibility security and safety
-- Repository vs. Archive:
-    - Repository:
-        - location for storage, often for safety or preservation
-    - Archive: 
-        -storing earlier, and often historical material 
-        -usually contains documents (letters, records, newspapers, etc) or other types of media kept for historical interest
-        -preserve information for access and use by a Designated Community
 ##### 3.1.4 Data Pyramid
-- ![GitHub Logo](/images/logo.png)
+
+![Alt-Text](images/DataPyramid.png)
 
 ### 3.2 Digital Preservation
 #### 3.2.1 Purpose
@@ -159,7 +153,7 @@
 ##### 3.2.3.1 Fixity
 - Process of validating that a file has not changed or been altered from a previous state. While checksums are the primary mechanism for monitoring fixity at the individual file level, an important additional consideration for monitoring fixity is file attendance
 ##### 3.2.3.1 Characterization
-- Characterization of digital materials is the identification and description of what a file is and of its defining technical characteristics [18] often captured by technical metadata, which records its technical attributes like creation or production environment
+- Characterization of digital materials is the identification and description of what a file is and of its defining technical characteristics often captured by technical metadata, which records its technical attributes like creation or production environment
 ##### 3.2.3.1 Sustainability
 - Unlike traditional, temporary strategies, and more permanent solutions, digital sustainability implies a more active and continuous process. Digital sustainability concentrates less on the solution and technology and more on building an infrastructure and approach that is flexible with an emphasis on interoperability, continued maintenance and continuous development
 ##### 3.2.3.1 Renderability
@@ -212,7 +206,22 @@
         - People or groups advocate to influence decisions within political, economic and social systems. “[advocacy] is integral to all aspects of archival work.”
 #### 3.2.6 The OAIS Reference Model
 - The functional model gives a detailed break-down of digital preservation and dissemination workflows – in short, it explains how an (idealized) archive works. It therefore is a good starting point for anyone who seeks to obtain a systematic overview of these workflows or wants to analyze and understand workflows in an existing archive.
-- ![GitHub Logo](/images/logo.png)
-- ![GitHub Logo](/images/logo.png)
 
-##[Quellenangaben](##Quellenangaben)
+![Alt-Text](images/OAIS1.png)
+
+![ALT-Text](images/OAIS2.png)
+
+## Source Disclosures
+- https://www.gesis.org/en/services/archiving-and-registering/data-archiving/long-term-preservation/
+- http://www.softwarepreservationnetwork.org/
+- https://earthdata.nasa.gov/user-resources/standards-and-references/preservation-content-spec
+- https://www.sciencedirect.com/science/article/pii/S0920379612003225
+- https://en.wikipedia.org/wiki/Data_preservation
+- https://en.wikipedia.org/wiki/Digital_preservation
+- http://www.dcc.ac.uk/digital-curation/why-preserve-digital-data
+- http://www.unesco.org/new/en/communication-and-information/access-to-knowledge/preservation-of-documentary-heritage/digital-heritage/concept-of-digital-heritage/
+https://wikidiff.com/archive/repository
+- http://www.dpworkshop.org/dpm-eng/terminology/repository.html
+- User Guide for digital preservation OASI
+- Francine Berman, Got data?: a guide to data preservation in the information age (2008)
+- Marilyn Deegan & Simon Tanner, Digital Preservation 
