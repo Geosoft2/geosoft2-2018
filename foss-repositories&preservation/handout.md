@@ -22,7 +22,7 @@
     + [2.2.1 Zenodo](#221-zenodo)
     + [2.2.2 b2share](#222-b2share)
     + [2.2.3 Inspire](#223-inspire)
-    + [2.2.4 dSpace SYNECT](#224-dspace-synect)
+    + [2.2.4 DSpace](#224-dspace)
     + [2.2.5 Fedora](#225-fedora)
     + [2.2.6 Archivematica](#226-archivematica)
   * [2.3 Comparison](#23-comparison)
