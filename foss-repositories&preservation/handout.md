@@ -80,7 +80,7 @@
         -usually contains documents (letters, records, newspapers, etc) or other types of media kept for historical interest
         -preserve information for access and use by a Designated Community
 ##### 3.1.4 Data Pyramid
-- ![GitHub Logo](/images/logo.png)
+- ![GitHub Logo](/images/DataPyramid.jpg)
 
 ### 3.2 Digital Preservation
 #### 3.2.1 Purpose
@@ -159,7 +159,7 @@
         - People or groups advocate to influence decisions within political, economic and social systems. “[advocacy] is integral to all aspects of archival work.”
 #### 3.2.6 The OAIS Reference Model
 - The functional model gives a detailed break-down of digital preservation and dissemination workflows – in short, it explains how an (idealized) archive works. It therefore is a good starting point for anyone who seeks to obtain a systematic overview of these workflows or wants to analyze and understand workflows in an existing archive.
-- ![GitHub Logo](/images/logo.png)
-- ![GitHub Logo](/images/logo.png)
+- (/images/OAIS1.jpg)
+- (/images/OAIS2.jpg)
 
-##[Quellenangaben](##Quellenangaben)
+## Quellenangaben
