@@ -5,7 +5,7 @@ _Authors: Benjamin Dietz, Jannis Fröhlking_
 - [1 Why spatial similarity calculations](#1-why-spatial-similarity-calculations)
 - [2 Our first idea of spatial similarity calculation](#2-our-first-idea-of-spatial-similarity-calculation)
 - [3 Categories to measure spatial similarity](#3-categories-to-measure-spatial-similarity)
-  * [3.1 Topological](#31-topological)
+  * [3.1 Topological] (#31-topological)
     + [3.1.1 Example: The 9-intersection model](#311-the-9-intersection-model)
   * [3.2 Directional](#32-directional)
   * [3.3 Metric distance](#33-metric-distance)  
@@ -13,8 +13,8 @@ _Authors: Benjamin Dietz, Jannis Fröhlking_
   * [3.4 Attribute (not in our focus)](#34-attribute-(not-in-our-focus))
 - [4 Automated map generalization](#4-automated-map-generalization)
 - [5 Calculation of spatial similarity with respect to properties](#5-calculation-of-spatial-similarity-with-respect-to-properties)
-- [6 Summary](#7-summary)
-- [7 Sources](#6-sources)
+- [6 Summary](#6-summary)
+- [7 Sources](#7-sources)
 
 # 1 Why spatial similarity calculations?
 
@@ -30,7 +30,7 @@ _Authors: Benjamin Dietz, Jannis Fröhlking_
 
 
 
-# Own first idea of spatial similarity calculation
+# 2 Our first idea of spatial similarity calculation
 
   - transform vector to raster
   - similarity = equal pixels/overall pixels of addition of both spatial objects:
@@ -46,13 +46,13 @@ _Authors: Benjamin Dietz, Jannis Fröhlking_
 
 
 
-# Categories to measure spatial similarity
+# 3 Categories to measure spatial similarity
 
 The following categories are based on this initial example of two squares:
 
   ![alt text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/OriginalRelations.PNG?raw=true "Original relation")
 
-## **1. topological:**
+## **3.1 Topological:**
 
   - provide a notion of the general structure and the interactions of spatial objects
   - avoids geometry
@@ -98,7 +98,7 @@ describes binary topological relations in terms of the intersections of the inte
 - _asymmetric relations_: relations apply between line objects and region objects but not between a region and a line
   	➢  region can be left of directed line that coincident with part of its boundary, but without an external reference frame a line cannot be left-of any region
 
-## **2. directional:**    
+## **3.2 Directional:**    
 
   - qualitative spatial relation that describe how an object or a region is placed relative to other objects or regions
   - Examples: south, northeast, front, and back-right
@@ -106,7 +106,7 @@ describes binary topological relations in terms of the intersections of the inte
 ![alt
 text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Directional_Relation.PNG?raw=true "")
 
-## **3. metric distance:**
+## **3.3 Metric distance:**
 
   - direct measure between two points in some spatial space
 
@@ -128,7 +128,7 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
     text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Geohash_Representation.PNG?raw=true "")
     &quot;difference&quot; as contra expression for &quot;similarity&quot;:
 
-## **4. attribute (not in our focus):**  
+## **3.4 Attribute (not in our focus):**  
 
 
 ![alt
