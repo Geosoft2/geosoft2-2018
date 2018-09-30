@@ -99,13 +99,6 @@
     - Multi-Site Repositories
     - Trusted Digital Repostitory (TDR)
         -must cooperate with the Reference Model for an Open Archival Information System, as well as adhere to a set of rules or attributes that contribute to its trust such as having persistent financial responsibility, organizational buoyancy, administrative responsibility security and safety
-- Repository vs. Archive:
-    - Repository:
-        - location for storage, often for safety or preservation
-    - Archive: 
-        -storing earlier, and often historical material 
-        -usually contains documents (letters, records, newspapers, etc) or other types of media kept for historical interest
-        -preserve information for access and use by a Designated Community
 ##### 3.1.4 Data Pyramid
 
 ![Alt-Text](images/DataPyramid.png)
@@ -204,5 +197,5 @@
 https://wikidiff.com/archive/repository
 - http://www.dpworkshop.org/dpm-eng/terminology/repository.html
 - User Guide for digital preservation OASI
-- Got data?: a guide to data preservation in the information age (Francine Berman,2008)
-- Digital Preservation Marilyn Deegan, Simon Tanner
+- Francine Berman, Got data?: a guide to data preservation in the information age (2008)
+- Marilyn Deegan & Simon Tanner, Digital Preservation 
