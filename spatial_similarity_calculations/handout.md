@@ -4,40 +4,31 @@ _Authors: Benjamin Dietz, Jannis Fröhlking_
 
 ### Why spatial similarity calculations?
 
--
-### --discover the most relevant spatial datasets in the ever-growing global spatial data infrastructures (SDIs)
--
-### --finding similar objects to a given one becomes more popular and common in geographic informations systems
--
-### --crucial factor in intelligent and automatic spatial data processing such as automated map generalization
+  - Type some Markdown on the leftdiscover the most relevant spatial datasets in the ever-growing global spatial data infrastructures (SDIs)
+  - Type some Markdown on the leftfinding similar objects to a given one becomes more popular and common in geographic informations systems
+  - Type some Markdown on the leftcrucial factor in intelligent and automatic spatial data processing such as automated map generalization
 
-### **Problem:**
+    ### **Problem:**
 
--
-### --it is evident that the similarity degree between the original map (M0) and the generalized map (M1) decreases when the scale change increases
--
-### --but no achievements have been made on quantitatively describing this relation (similarity degree):
+  - Type some Markdown on the leftit is evident that the similarity degree between the original map (M0) and the generalized map (M1) decreases when the scale change increases
+  - Type some Markdown on the leftbut no achievements have been made on quantitatively describing this relation (similarity degree):
+	⟹map generalization system/ software does not know to what extent an original map (M0) should be generalized and when the algorithm should terminate
+  
 
-  -
-### ⟹⟹map generalization system/ software does not know to what extent an original map (M0) should be generalized and when the algorithm should terminate
 
 ### Own first idea of spatial similarity calculation
 
-- --transform vector to raster
-- --similarity = equal pixels/overall pixels of addition of both spatial objects:
+  - transform vector to raster
+  - similarity = equal pixels/overall pixels of addition of both spatial objects:
 
-|   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   | + |   |   | = |   |   |
-|   |   |   |   |   |   |   |   |
+  ![alt text](/pictures/OwnIdeaTable.PNG "Logo Title Text 1")
 
-- --Similarity:
-  - --two pixels remained (green) and four pixels are part of just one of the two objects (red)
-  - --result: Sim=2/6=⅓
+### **Similarity:**
+  - two pixels remained (green) and four pixels are part of just one of the two objects (red)
+  - result: Sim=2/6=⅓
 
-**Note:**
-
-- --these boolean similarity operations often cannot adequately account for the uncertainty and complexity inherent in spatial information
+### **Note:**
+  - these boolean similarity operations often cannot adequately account for the uncertainty and complexity inherent in spatial information
 
 ###
 
