@@ -192,4 +192,17 @@
 
 ![ALT-Text](images/OAIS2.png)
 
-## Quellenangaben
+## Source Disclosures
+- https://www.gesis.org/en/services/archiving-and-registering/data-archiving/long-term-preservation/
+- http://www.softwarepreservationnetwork.org/
+- https://earthdata.nasa.gov/user-resources/standards-and-references/preservation-content-spec
+- https://www.sciencedirect.com/science/article/pii/S0920379612003225
+- https://en.wikipedia.org/wiki/Data_preservation
+- https://en.wikipedia.org/wiki/Digital_preservation
+- http://www.dcc.ac.uk/digital-curation/why-preserve-digital-data
+- http://www.unesco.org/new/en/communication-and-information/access-to-knowledge/preservation-of-documentary-heritage/digital-heritage/concept-of-digital-heritage/
+https://wikidiff.com/archive/repository
+- http://www.dpworkshop.org/dpm-eng/terminology/repository.html
+- User Guide for digital preservation OASI
+- Got data?: a guide to data preservation in the information age (Francine Berman,2008)
+- Digital Preservation Marilyn Deegan, Simon Tanner
