@@ -50,40 +50,47 @@ Kommerziell:
 - [**Google Scholar**](https://scholar.google.com/) R Paket Google Scholar 
 - [**MS Academic Search**](https://academic.microsoft.com/)
 
-Nicht-kommerziell:
+Nicht-kommerziell (Auswahl):
 
 - [**BASE**](http://www.base-search.net/) (Bielefeld Academic Search Engine) indiziert Daten aus verschiedenen Quellen
 - [KVK](https://kvk.bibliothek.kit.edu) und [MetaGer](https://metager.de/) werden von Unis betrieben und durchsuchen mehrere Kataloge
 - **[OPAC](https://de.wikipedia.org/wiki/OPAC)s der Universitäten**, z.B. [DISCO](https://disco.uni-muenster.de/) der ULB; diese Bibliothekskataloge sind beschränkt auf Artikel, die für Universitätsangehörige offline oder online zugreifbar sind, vermehrt auch im Volltext.
 - [PubMed](https://de.wikipedia.org/wiki/PubMed) ist eine Meta-Datenbank mit medizinischen Artikeln (seit 1996, eigene IDs, betrieben durch NIH, USA, [mehr](https://en.wikipedia.org/wiki/PubMed)) und speziellen Suchfunktionen
+- [Science.gov](https://en.wikipedia.org/wiki/Science.gov) (förderierte Suche über Datenbanken öffentlicher US-amerikanischer Wissenschaftsorganisationen)
+- [Semantic Scholar](https://en.wikipedia.org/wiki/Semantic_Scholar) (betrieben von AI-Institut, [AI2](https://allenai.org/))
 
-## Portale von Verlagen mit Suchfunktion
+## Portale von Verlagen mit Suchfunktion (Auswahl)
 
-ScienceOpen.com
+- [ScienceOpen.com](https://en.wikipedia.org/wiki/ScienceOpen) (integriert multiple publisher, is hosting service)
+- Elsevier/RELX Group
+  - [ScienceDirect](https://en.wikipedia.org/wiki/ScienceDirect) (Lizenz-basierter Zugriff, einige hundert OA Zeitschriften)
+  - [Mendeley](https://en.wikipedia.org/wiki/Mendeley) (Zitationsverwaltung, soziales Netzwerk; Aufkauf + Geschäftsgebahren durche Elsevier kontrovers)
+  - [Scopus](https://en.wikipedia.org/wiki/Scopus) (abstracts und Zitationen, Metriken/Rankings)
+  - [LexisNexis.com](https://en.wikipedia.org/wiki/LexisNexis)
+- [Springer/Nature](https://en.wikipedia.org/wiki/Springer_Nature)
+  - [SpringerLink](https://link.springer.com/)
+- [PeerJ](https://en.wikipedia.org/wiki/PeerJ) (nur eigene Artikel)
+- [PLOS](https://en.wikipedia.org/wiki/PLOS) (Public Library of Science), nonprofit)
+- [PubMed](https://en.wikipedia.org/wiki/PubMed) (Medizin, Vorreiterrolle)
 
-Elsevier:
-
-- [ScienceDirect](http://www.sciencedirect.com/) (Lizenz-basierter Zugriff, einige hundert OA Zeitschriften)
-- Mendeley
-
-Springer/Nature:
-
-- SpringerLink
-
-PeerJ
-PLOS
-PubMed
+Jeder andere Verlag oder eigenständige unabhängige Journale haben eine Suchfunktion über ihre Artikel.
+Hier ist jedoch ein Finden des Artikels über Metadatendatenbanken (Autor, Titel, Kurzzusammenfassung) wahrscheinlicher (Journale müssen dort vertreten sein für ihre Relevanz) oder über Google (Indizierung der HTML-Seiten) möglich.
+Bei fachspezifischen Zeitschriften ist ein "finden" über das klassische Abonnement (digital oder analog) ebenfalls noch üblich, zum Beispiel auch über Newsletter mit Neuerscheinungen.
 
 ## Repositorien
 
 Auch wissenschaftliche Repositorien bieten Suchfunktionen an.
-Hier werden Manuscripte durch die Autoren selbst veröffentlicht, entweder vor dem Einreichen bei einer Zeitschrift ([preprint]()) oder auch danach (vgl. [Open Access]()).
+Hier werden Manuskripte durch die Autoren selbst veröffentlicht, entweder vor dem Einreichen bei einer Zeitschrift ([preprint](https://en.wikipedia.org/wiki/Preprint)) oder auch danach (vgl. [Open Access](https://de.wikipedia.org/wiki/Open_Access), versch. Strategien).
+Populäre _Beispiele_ sind
 
-- arXiv
-- OSF (betreiber von vielen _rXiv_s, siehe []())
+- [arXiv](https://en.wikipedia.org/wiki/ArXiv) (Vorreiter, Platzhirsch, Physik + mehr)
+- [OSF](https://en.wikipedia.org/wiki/Center_for_Open_Science#Open_Science_Framework) (Projet des COS, Betreiber von vielen _-rXiv_s, siehe [osf.io/preprints/](https://osf.io/preprints/))
 
-Bitte außerdem die Suchmöglichkeiten in Datenrepositorien (OSF, Zenodo, b2share, ... siehe https://www.re3data.org/) aus Nutzersicht erklären, hierzu kurz mit der Gruppe "FOSS repositories & preservation" absprechen dass die das nicht doppelt machen.
+Darüber hinaus können auch Datenrepositorien (OSF, Zenodo, b2share, Figshare ... siehe [re3data](https://www.re3data.org/)) für Artikel verwendet werden, auch wenn unüblich.
+Häufiger finden sich dort allerdings Poster oder Vortragsfolien.
+Öffentliche APIs sind normalerweise vorhanden.
 
+Viele Verlage bieten ebenfalls Preprint-Server an.
 
 ## Nicht-Artikel Suchseiten
 
@@ -93,11 +100,10 @@ Neben Artikeln gibt es öffentliche Datenbanken über andere wichtige Informatio
 - [DOAJ](https://doaj.org/) ist eigentlich ein Index von Open Access Fachzeitschriften, die Suchmaske kann aber auch Artikel finden
 - [DOAB](https://www.doabooks.org/) ist eine Datenbank für wissenschaftliche Bücher die unter einer Open Access - Lizenz veröffentlicht sind
 
-hier gibt es auch APIs
-
-
+Hier sind teilweise auch offene APIs vorhanden.
 
 ## Quellen
 
 - https://www.teachthought.com/learning/100-search-engines-for-academic-research/ (ausführliche Liste, sortiert nach Domänen)
+- https://en.wikipedia.org/wiki/List_of_academic_databases_and_search_engines (Tabellenform inkl. Zugriff + Eigentümer)
 - https://www.uniturm.de/magazin/organisation/wissenschaftlich-im-internet-recherchieren-1071
