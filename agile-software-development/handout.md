@@ -1,5 +1,7 @@
 # Agile und kollaborative Softwareenwicklung
 
+**Autor**: Daniel Nüst, [@nuest](https://github.com/nuest/)
+
 **Ziel**: Im Kurs Geosoftware II (WS 18/19) müssen neue Technologien erlernt und neue Software geschrieben werden um eine anspruchsvolle Aufgabenstellung im Team zu meistern.
 Niemand arbeitet alleine, also muss das Zusammenarbeiten ([Kollaboration, nicht Kooperation](https://www.twt.de/news/detail/kooperation-vs-kollaboration-das-sind-die-zentralen-unterschiede.html)) so gestaltet werden, dass alle Beteiligten Lernerfolge erzielen und Beiträge leisten, zugleich aer auch ein übergreifendes Entwicklungsziel erreicht wird.
 Hierzu sollen die Studenten agile Softwareentwicklung ausprobieren.
