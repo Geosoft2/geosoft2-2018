@@ -1,0 +1,92 @@
+---
+title: "Geosoftware II - WiSe 2018/19"
+subtitle: "_Enhancing discovery of geospatial datasets in data repositories_"
+author: "Daniel Nüst, Prof. Edzer Pebesma"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "wwu-theme.css"]
+    nature:
+      countIncrementalSlides: false
+      beforeInit: ["macros.js"]
+      ratio: "16:9"
+# use RStudio Addin "Inifinite Moon Reader" for live preview
+---
+
+```{r live_preview, include=FALSE, eval=FALSE}
+library("xaringan")
+xaringan::infinite_moon_reader()
+```
+
+class: wwu-bluegreen
+
+# Agenda 10.10.2018
+
+- Vorstellung der **Handouts** bzw. Vorrecherchen
+- Vorstellung der ![:highlight_inline](**invitation to bid**)
+- Verschiedenes
+
+---
+class: wwu-green,center,middle
+
+# Präsentation der Themen-Handouts
+
+---
+class: wwu-bluegreen
+
+# Themen
+
+1. scholarly publishing: history and future [Ilka Pleiser]
+1. data publishing requirements in science [Carolin Bronowicz]
+1. research data lifecycle & best practices [Cornelia Zygar]
+1. academic search engines [Daniel Nüst]
+1. metadata extraction [Lukas Jahnich]
+1. time series data formats & libraries [Katharina Hovestadt, Carolin Wortmann]
+
+---
+class: wwu-green,center,middle
+
+# Invitation to bid
+
+[Dokument siehe LearnWeb]
+
+???
+
+- heute Vorstellung
+- Angucken bis nächste Woche, Fragen vorbereiten!
+
+---
+class: wwu-lightgreen
+
+# Verschiedenes
+
+- Feedback zum Handout-Prozess
+
+--
+
+- Mattermost: https://zivmattermost.uni-muenster.de/signup_user_complete/?id=uzz3htfxtiry9nebyomgjkiaoh
+
+--
+
+- Zeitplan
+
+--
+
+- Fragen
+
+???
+
+allgemeines Feedback Handouts:
+
+- richtige Formatierung nutzen, semantisch (code blocks, `####` für Überschriften nicht für dicke Schrift)
+- Verzeichnis der Verweise unten, meist unkommentiert - ist das das Beste für den Leser?
+- Links, Links, Links - "das Internet"
+- wie habt ihr das Markdown erstellt (Werkzeuge)?
+
+--
+
+**Next**: bid lesen & Fragen vorbereiten, Handout Feedback & Updates bis Ende der Woche
+
+???
+
+Abchlusspräsentationstermin anpeilen: letzer Termin wäre 30.01., können aber wegen Klausuren auch gerne in die Woche darauf ausweichen.
