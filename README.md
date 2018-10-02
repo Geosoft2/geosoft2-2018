@@ -19,9 +19,10 @@ The handout should be prepared in a manner so that fellow students can use it as
     * Take a look at the [markdown syntax](https://guides.github.com/features/mastering-markdown/)
     * Split up your work into logical sections and use informative names for each of these
     * Add any additional files needed (graphics not already available online, for example) to your folder
+    * Add your GitHub username at the beginning of the document, e.g. [@nuest](https://github.com/nuest/)
 1. Add a git tag `handout-submission-<name>` and push it to your fork
 1. Send a pull request before the submission deadline containing your handout (not the presentation)
-    * Give the pull request a useful name and description
+    * Give the pull request a useful name and description, and @-mention all contributors in the pull request description
     * Implement the feedback by the lecturers
     * Update the pull request by pushing the changes to your repository
 1. Create a presentation based on your handout (optinal: add it to your folder)
