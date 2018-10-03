@@ -1,5 +1,6 @@
 # Handout - Data publishing requirements in science
-Carolin Bronowicz @carobro
+Carolin Bronowicz 
+[@carobro](https://github.com/carobro)
 
 ## Forschungsdaten - Definition?
 Keine festgelegte Definition, denn wie Forschungsdaten letztlich aussehen, hängt von der jeweiligen Disziplin ab. Formate sind auch nicht bestimmt festgelegt. Forschungsdaten können z.B. Mess-, Erhebungs- und Beobachtungsdaten sowie audio-visuelle Materialien, aber auch Softwareentwicklungen sein. Sie entstehen während des Forschungsprozesses und sind die Grundlage für wissenschaftliche Ergebnisse.
