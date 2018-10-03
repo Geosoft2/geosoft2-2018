@@ -31,7 +31,7 @@ Metadaten erfüllen den Zweck der Dokumentation nach einem vorgegebenen Schema. 
 - Große Anzahl von Zeitschriften und Verlagen unterstützt ergänzendes Material zu Forschungsartikeln, einschließlich Datensätze.
 - Ergänzendes Material ist für Abonnenten des Journals oder, wenn der Artikel oder das Journal für jedermann zugänglich ist, verfügbar.
 
-**Datenrepositorys/ Hosting von Daten auf öffentlicher Website (engl. data repositories)**
+**Datenrepositorien/ Hosting von Daten auf öffentlicher Website (engl. data repositories)**
 - Konzentrieren sich meist auf eine bestimmte Forschungsdisziplinen
 - bieten eine öffentlich zugängliche Webschnittstelle zum Suchen und Durchsuchen von gehosteten Datasets. Z.B. DRYAD Digital Repository, Pangea
 
