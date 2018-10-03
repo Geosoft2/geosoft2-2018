@@ -1,8 +1,8 @@
 
 
-## Time Series Data Formats &amp; Libraries
+# Time Series Data Formats &amp; Libraries
 
-Katharina Hovestadt und Carolin Wortmann
+Katharina Hovestadt @KathHv und Carolin Wortmann @carojw 
 
 ## [Time Series](http://itfeature.com/time-series-analysis-and-forecasting/time-series-analysis-forecasting)
 
@@ -34,10 +34,12 @@ Tabellarische Daten werden häufig im CSV-Format gespeichert.
 - Jedes Feld wird mit einem Komma von den Nachbarzellen getrennt
 - Beispiel:
 
+```
 Buchst., Stadt, Kand, Fluss, <br>
 R, Rheine, Ruanda, Rhein,<br>
 E, Emden,,2018-09-25T12:20,<br>
-H, Hamburg, Haiti, Hase<br>
+H, Hamburg, Haiti, Hase<br> 
+```
 
 ->
 
@@ -95,41 +97,41 @@ Standard: Datum und Zeit werden im Format xml-schema11-2 dargestellt, um dann ta
 Zur Tabellarischen Darstellung im CSV-Format werden die folgenden Datums- und Zeitformate unterstützt:
 
 - Datumsformat
-  - yyyy-MM-dd e.g., 2015-03-22
-  - yyyyMMdd e.g., 20150322
-  - dd-MM-yyyy e.g., 22-03-2015
-  - d-M-yyyy e.g., 22-3-2015
-  - MM-dd-yyyy e.g., 03-22-2015
-  - M-d-yyyy e.g., 3-22-2015
-  - dd/MM/yyyy e.g., 22/03/2015
-  - d/M/yyyy e.g., 22/3/2015
-  - MM/dd/yyyy e.g., 03/22/2015
-  - M/d/yyyy e.g., 3/22/2015
-  - dd.MM.yyyy e.g., 22.03.2015
-  - d.M.yyyy e.g., 22.3.2015
-  - MM.dd.yyyy e.g., 03.22.2015
-  - M.d.yyyy e.g., 3.22.2015
+  - yyyy-MM-dd z.B. 2015-03-22
+  - yyyyMMdd z.B. 20150322
+  - dd-MM-yyyy z.B. 22-03-2015
+  - d-M-yyyy z.B. 22-3-2015
+  - MM-dd-yyyy z.B. 03-22-2015
+  - M-d-yyyy z.B. 3-22-2015
+  - dd/MM/yyyy z.B. 22/03/2015
+  - d/M/yyyy z.B. 22/3/2015
+  - MM/dd/yyyy z.B. 03/22/2015
+  - M/d/yyyy z.B. 3/22/2015
+  - dd.MM.yyyy z.B. 22.03.2015
+  - d.M.yyyy z.B. 22.3.2015
+  - MM.dd.yyyy z.B. 03.22.2015
+  - M.d.yyyy z.B. 3.22.2015
 - Zeitformat
-  - HH:mm:ss.S with one or more trailing S characters indicating the maximum number of fractional seconds e.g., HH:mm:ss.SSS for 15:02:37.143
-  - HH:mm:ss e.g., 15:02:37
-  - HHmmss e.g., 150237
-  - HH:mm e.g., 15:02
-  - HHmm e.g., 1502
+  - HH:mm:ss.S (die Anzahlt der "S" entscheidet über die Anzahl der Nachkommastellen für die Sekundenanzahl z.B. HH:mm:ss.SSS für 15:02:37.143)
+  - HH:mm:ss z.B. 15:02:37
+  - HHmmss z.B. 150237
+  - HH:mm z.B. 15:02
+  - HHmm z.B. 1502
 - Datums- und Zeitformat
-  - yyyy-MM-ddTHH:mm:ss.S with one or more trailing S characters indicating the maximum number of fractional seconds e.g., yyyy-MM-ddTHH:mm:ss.SSS for 2015-03-15T15:02:37.143
-  - yyyy-MM-ddTHH:mm:ss e.g., 2015-03-15T15:02:37
-  - yyyy-MM-ddTHH:mm e.g., 2015-03-15T15:02
-  - any of the date formats above, followed by a single space, followed by any of the time formats above, e.g., M/d/yyyy HH:mm for 3/22/2015 15:02 or dd.MM.yyyy HH:mm:ss for 22.03.2015 15:02:37
+  - yyyy-MM-ddTHH:mm:ss.S (die Anzahl der "S" entscheidet über die Anzahl der Nachkommastellen für die Sekundenanzahl z.B. yyyy-MM-ddTHH:mm:ss.SSS for 2015-03-15T15:02:37.143)
+  - yyyy-MM-ddTHH:mm:ss z.B. 2015-03-15T15:02:37
+  - yyyy-MM-ddTHH:mm z.B. 2015-03-15T15:02
+  - jedes oben angegebene Datumsformat kann, gefolgt von einem Leerzeichen mit einem obengenannten Zeitformat kombiniert werden: z.B. M/d/yyyy HH:mm for 3/22/2015 15:02 or dd.MM.yyyy HH:mm:ss for 22.03.2015 15:02:37
 - Format mit Zeitzone
-  - X e.g., -08, +0530, or Z (minutes are optional)
-  - XX e.g., -0800, +0530, or Z
-  - XXX e.g., -08:00, +05:30, or Z
-  - x e.g., -08 or +0530 (Z is not permitted)
-  - xx e.g., -0800 or +0530 (Z is not permitted)
-  - xxx e.g., -08:00 or +05:30 (Z is not permitted)
-  - yyyy-MM-ddTHH:mm:ssXXX for 2015-03-15T15:02:37Z
+  - X z.B. -08, +0530, oder Z (Minuten sind optional)
+  - XX z.B. -0800, +0530, oder Z
+  - XXX z.B. -08:00, +05:30, oder Z
+  - x z.B. -08 or +0530 (Z ist nicht erlaubt)
+  - xx z.B. -0800 or +0530 (Z ist nicht erlaubt)
+  - xxx z.B. -08:00 or +05:30 (Z ist nicht erlaubt)
+  - yyyy-MM-ddTHH:mm:ssXXX für 2015-03-15T15:02:37Z
   - 2015-03-15T15:02:37-05:00
-  - HH:mm x for 15:02 -05.
+  - HH:mm x für 15:02 -05.
 
 (Beispiele von https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#formats-for-dates-and-times)
 
@@ -228,67 +230,68 @@ im GeoTiff Format weltweit. Durch die Farbgebung wird die Temperatur dargestellt
 - Stellen Funktionen/Methoden zur Analyse und Verarbeitung von Zeitreihen zur Verfügung, zum Beispiel:
 - Generierung und Manipulation von Zeitreihen
 
-# 72 hours starting with midnight Jan 1st, 2011
+  ```
+  #72 hours starting with midnight Jan 1st, 2011
 
-**In [1]:** rng=pd.date\_range(&#39;1/1/2011&#39;,periods=72,freq=&#39;H&#39;)
+  **In [1]:** rng=pd.date\_range(&#39;1/1/2011&#39;,periods=72,freq=&#39;H&#39;)
 
-**In [2]:** rng[:5]
+  **In [2]:** rng[:5]
 
-**Out[2]:**
+  **Out[2]:**
 
-DatetimeIndex([&#39;2011-01-01 00:00:00&#39;, &#39;2011-01-01 01:00:00&#39;,
+  DatetimeIndex([&#39;2011-01-01 00:00:00&#39;, &#39;2011-01-01 01:00:00&#39;,
 
                &#39;2011-01-01 02:00:00&#39;, &#39;2011-01-01 03:00:00&#39;,
 
                &#39;2011-01-01 04:00:00&#39;],
 
               dtype=&#39;datetime64[ns]&#39;, freq=&#39;H&#39;)
-
+  ```
 Pandas – source: [http://pandas.pydata.org/pandas-docs/stable/timeseries.html](http://pandas.pydata.org/pandas-docs/stable/timeseries.html)
 
--
+
   - Arbeiten mit Zeitpunkten und Perioden
+  ```
+  **In [8]:** pd.Timestamp(datetime(2012,5,1))
 
-**In [8]:** pd.Timestamp(datetime(2012,5,1))
+  **Out[8]:** Timestamp(&#39;2012-05-01 00:00:00&#39;)
 
-**Out[8]:** Timestamp(&#39;2012-05-01 00:00:00&#39;)
+  **In [9]:** pd.Period(&#39;2011-01&#39;)
 
-**In [9]:** pd.Period(&#39;2011-01&#39;)
-
-**Out[9]:** Period(&#39;2011-01&#39;, &#39;M&#39;)
-
+  **Out[9]:** Period(&#39;2011-01&#39;, &#39;M&#39;)
+  ```
  Pandas – source: [http://pandas.pydata.org/pandas-docs/stable/timeseries.html](http://pandas.pydata.org/pandas-docs/stable/timeseries.html)
 
--
+
   - Konversion und Anpassung von Daten an bestimmte Frequenzen
   - Statistische Analyse
+  ```
+  **>>>** s=pd.Series([
 
-**>>>** s=pd.Series([
+  **...**   np.datetime64(&quot;2000-01-01&quot;),
 
-**...**   np.datetime64(&quot;2000-01-01&quot;),
+  **...**   np.datetime64(&quot;2010-01-01&quot;),
 
-**...**   np.datetime64(&quot;2010-01-01&quot;),
+  ** ...**   np.datetime64(&quot;2010-01-01&quot;)
 
-**...**   np.datetime64(&quot;2010-01-01&quot;)
+  **...** ])
 
-**...** ])
+  **>>>** s.describe()
 
-**>>>** s.describe()
+  count                       3
 
-count                       3
+  unique                      2
 
-unique                      2
+  top       2010-01-01 00:00:00
 
-top       2010-01-01 00:00:00
+  freq                        2
 
-freq                        2
+  first     2000-01-01 00:00:00
 
-first     2000-01-01 00:00:00
+  last      2010-01-01 00:00:00
 
-last      2010-01-01 00:00:00
-
-dtype: object
-
+  dtype: object
+  ```
 Pandas – source: [https://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.describe.html](https://pandas-docs.github.io/pandas-docs-travis/generated/pandas.DataFrame.describe.html)
 
   - Bestimmung von saisonaler und Trendkomponente sowie Zufallsschwankungen
@@ -301,7 +304,7 @@ data.plot() <br>
 
 Pandas - source: [http://earthpy.org/pandas-basics.html](http://earthpy.org/pandas-basics.html)
 
--
+
   - Sortierung
   - Bedingte Selektion von Daten
 
@@ -309,7 +312,7 @@ Pandas - source: [http://earthpy.org/pandas-basics.html](http://earthpy.org/pand
 - Für verschiedenste Programmiersprachen und Anwendungen
 - Beispiele:
 
--
+
   - Python: [Pandas](http://pandas.pydata.org/)
   - R: [CRAN R – Time Series Analysis](https://cran.r-project.org/web/views/TimeSeries.html)
   - C#: [Cronos](https://archive.codeplex.com/?p=cronos)
