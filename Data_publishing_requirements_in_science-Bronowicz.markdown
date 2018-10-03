@@ -117,7 +117,6 @@ https://doi.org/10.1371/journal.pbio.0020449 mit weiterer Spezifikation:
 
 https://doi.org/10.1371/journal.pbio.0020449.g001 -> in diesem Beispiel wird die Abbildung durch die Endung .g001 identifiziert
 
-
 **Vorteile von DOI's:**
 Bücher und Zeitschriftenartikel haben lange Zeit von einer Infrastruktur profitiert, die sie leicht zu zitieren macht, deshalb soll dies auf für andere Quellen möglich sein. DataCite DOIs helfen bei der weiteren Erforschung und Gewährleistung eines zuverlässigen, vorhersehbaren und eindeutigen Zugriffs auf Forschungsdaten.
 - größere Auffindbarkeit
@@ -144,7 +143,7 @@ Bei Förderungen soll die Gesamtförderdauer nicht länger als sechs Jahre dauer
 - Alle Forschungsprojekte/Anträge sollen einen Datenmanagementplan aufweisen.
 - Haben "Leitlinien zum Umgang mit Forschungsdaten" verfasst (siehe unten Abschnitt "Publizieren von Forschungsdaten an der WWU")
 - Es müssen "Die Regeln guter wissenschaftlicher Praxis" befolgt werden
-(http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf)
+(siehe http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf)
 
 **National Institute of Health (NIH)**
 - vergibt Fördergelder
@@ -167,7 +166,6 @@ Publizierung, Datenmanagementplan erstellen
 a) Exzellenz
 b) Wirkung bzw. Auswirkungen
 c) Qualität und Effizienz der Durchführun
-
 
 ## Publizieren von Forschungsdaten an der WWU 
 Orientiert sich an den Regeln der Deutschen Forschungsgemeinschaft guter wissenschaftlicher Praxis 
@@ -192,39 +190,46 @@ Orientiert sich an den Regeln der Deutschen Forschungsgemeinschaft guter wissens
 - Regel 9. Belohne Kollegen, die deine Daten richtig teilen
 - Regel 10. Sei ein Booster für Data Science
 
-# Verweise
-(2002). Retrieved from Regeln guter wissenschaftlicher Praxis der Westfälischen Wilhelms-Universität: https://www.uni-muenster.de/imperia/md/content/wwu/senat/pdf/kodex.pdf
+# Quellen
+Regeln guter wissenschaftlicher Praxis der Westfälischen Wilhelms-Universität: https://www.uni muenster.de/imperia/md/content/wwu/senat/pdf/kodex.pdf
 
-(2017). Retrieved from https://www.uni-muenster.de/imperia/md/content/forschungsdaten/2017-08-01_wwu_fdm_policy.pdf: https://www.uni-muenster.de/imperia/md/content/forschungsdaten/2017-08-01_wwu_fdm_policy.pdf
+Grundsätze zum Umgang mit Forschungsdaten an der Westfälischen Wilhelms-Univerität Münster: https://www.uni-muenster.de/imperia/md/content/forschungsdaten/2017-08-01_wwu_fdm_policy.pdf
 
-(2018). Retrieved from Forschungsdaten-management an der WWU: https://www.uni-muenster.de/Forschungsdaten/information/richtlinien/
+Forschungsdaten-management an der WWU/Richtlinien: https://www.uni-muenster.de/Forschungsdaten/information/richtlinien/
 
-(2018). Retrieved from https://www.uni-muenster.de/Forschungsdaten/organisieren/managen/index.html
+Forschungsdaten-management an der WWU/Daten managen: https://www.uni-muenster.de/Forschungsdaten/organisieren/managen/index.html
 
-Forschungsdaten-management an der WWU. (2018). Retrieved from https://www.uni-muenster.de/Forschungsdaten/organisieren/managen/index.html
+Forschungsdaten-management an der WWU/Publizieren: https://www.uni-muenster.de/Forschungsdaten/publizieren/index.html
 
-Forschungsdaten-management an der WWU. (2018). Retrieved from https://www.uni-muenster.de/Forschungsdaten/publizieren/index.html
+FAIR Principles: http://www.go-fair.org/fair-principles/
 
-http://www.go-fair.org/fair-principles/. (2018, 09. 14). Retrieved from Fair Data Principles.
+PANGEA.: https://doi.pangaea.de/10.1594/PANGAEA.891154
 
-https://doi.pangaea.de/10.1594/PANGAEA.891154. (2018, 09. 14). Retrieved from PANGEA.
+Publishing and data requirements - University of South Australia: https://guides.library.unisa.edu.au/c.php?g=169979&p=3863391
 
-https://guides.library.unisa.edu.au/c.php?g=169979&p=3863391. (2018, September 11).
+Forschungsdaten: Was muss bei der Veröffentlichung beachtet werden? - Publisso: https://www.publisso.de/open-access-beraten/faqs/forschungsdaten/. 
 
-https://www.publisso.de/open-access-beraten/faqs/forschungsdaten/. (2018, 09. 15). Retrieved from Foschungsdaten.
+Merkblatt - Informationsinfrastrukturen für Forschungsdaten: http://www.dfg.de/formulare/12_14/12_14_de.pdf
 
-Merkblatt - Informationsinfrastrukturen für Forschungsdaten. (2016, September). Retrieved from http://www.dfg.de/formulare/12_14/12_14_de.pdf
+Philip E. Bourne, Ten Simple Rules for the Care and Feeding of Scientific Data: https://doi.org/10.1371/journal.pcbi.1003542
 
-Philip E. Bourne, U. o. (2015, April 24). Ten Simple Rules for the Care and Feeding of Scientific Data. Retrieved from https://doi.org/10.1371/journal.pcbi.1003542
+Data publishing - Wikipedia: https://en.wikipedia.org/wiki/Data_publishing
 
-Wikipedia - Data publishing. (n.d.). Retrieved from https://en.wikipedia.org/wiki/Data_publishing
+How should one get a data download URL from a DOI? - GitHub https://github.com/ropenscilabs/doidata/issues/1 
 
-GitHub How should one get a data download URL from a DOI?"(2018, 02. 28) Retrieved from https://github.com/ropenscilabs/doidata/issues/1 
+Kratz J and Strasser C. Data publication consensus and controversies - F1000Research 2014, (doi: 10.12688/f1000research.3979.3)
+https://f1000research.com/articles/3-94/v3
 
-Kratz J and Strasser C. Data publication consensus and controversies [version 3; referees: 3 approved]. F1000Research 2014, 3:94 (doi: 10.12688/f1000research.3979.3)
+Grants Policy Statement - NIH: https://grants.nih.gov/grants/policy/nihgps_2013/nihgps_ch8.htm#_Toc271264951
 
-NIH (2013) Grants Policy Statement. Retrived from https://grants.nih.gov/grants/policy/nihgps_2013/nihgps_ch8.htm#_Toc271264951
+Sicherung guter wissenschaftlicher Praxis - Deutsche Forschungsgemeinschaft http://www.dfg.de/download/pdf/dfg_im_profil/reden_stellungnahmen/download/empfehlung_wiss_praxis_1310.pdf
 
-Deutsche Forschungsgemeinschaft (2013) Sicherung guter wissenschaftlicher Praxis. Retrived from http://www.dfg.de/download/pdf/dfg_im_profil/reden_stellungnahmen/download/empfehlung_wiss_praxis_1310.pdf
+Why is it so important to cite data? - DataCite: https://www.datacite.org/cite-your-data.html
 
-F1000Research. Data publication consensus and controversies. Retrieved from: (https://f1000research.com/articles/3-94/v3
+The end - jord: https://jordproject.wordpress.com/2014/06/02/the-end/
+
+Journal requirements - Wageningen Univerity & Research: https://www.wur.nl/en/Value-Creation-Cooperation/WDCC/Data-Management-WDCC/Finishing/Journal-requirements.htm
+
+Academic Journals Data Sharing Requirements - John Hopkins Libraries: http://dms.data.jhu.edu/data-management-resources/plan-research/funders-data-sharing-requirement/academic-journals-and-data-sharing-requirements/
+
+Horizon2020 im Blick - Bundesministerium für Foschung und Bildung: https://www.bmbf.de/pub/Horizont_2020_im_Blick.pdf
