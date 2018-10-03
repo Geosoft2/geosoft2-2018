@@ -35,10 +35,10 @@ Tabellarische Daten werden häufig im CSV-Format gespeichert.
 - Beispiel:
 
 ```
-Buchst., Stadt, Kand, Fluss, <br>
-R, Rheine, Ruanda, Rhein,<br>
-E, Emden,,2018-09-25T12:20,<br>
-H, Hamburg, Haiti, Hase<br> 
+Buchst., Stadt, Kand, Fluss,
+R, Rheine, Ruanda, Rhein,
+E, Emden,,2018-09-25T12:20,
+H, Hamburg, Haiti, Hase 
 ```
 
 ->
@@ -206,22 +206,11 @@ Die Features der Tabellen oder auch die Metadatentabellen können Zeitstempel ha
   - In UTF-8 oder UTF-16 codiert
   - Wird als SQLite TEXT gespeichert
 
-## GeoTIFF
-
-Bild in dem im Gegensatz zu anderen Bildformaten, wichtige Informationen in den Metadaten der Bilddatei selbst und nicht in einer zusätzlichen Datei gespeichert werden.
-Da es ein GeoTIFF ist, werden im Gegensatz zum TIFF einige weitere
-Unteranderem kann der Aufnahme-/Erstellzeitpunkt gespeichert werden.
-Werden mehrere GeoTIFF Dateien, zu verschiedenen Zeitpunkten erstellt, entstehen Daten die sich über den Parameter Zeit verändern können.
-
 ## Beispiele für die Nutzung von Datums- und/oder Zeitformaten
 
 [Windenergiegewinnung](https://zenodo.org/record/1435091#.W61Gi_ZCQ2w) in Deutschland zwischen 2000 und 2015. Daten wurden in CSV-Dateien gespeichert. Zuerst wurde dazu der aktuelle Zeitstempel für jede Zeile (an erster Stelle) hinzugefügt (im ISO/ xmlschema) Beispiel: 01.01.2001 01:00. Die Aufzeichnung fand stündlich statt.
 
 [Automotive Sensor Data](https://zenodo.org/record/820576#.W6oLr_ZCQ2w): Datensammlung zur Analyse von Fahrdaten (GPS, Lenkbewegung, Beschleunigung) -> CSV Dateien mit Zeitstempel (an letzter Stelle der Zeile) hinzugefügt. Beispiel: 2017-01-19 16:19:03.048928&quot; Die Aufzeichnung fand alle paar Millisekunden statt.
-
-[MODIS LST data](https://zenodo.org/record/1135230#.W6vbjfZCSNs) Rekonstruierte Oberflächentemperatur für den Zeitraum zwischen 2003 und 2016
-im GeoTiff Format weltweit. Durch die Farbgebung wird die Temperatur dargestellt. Sie geht vom Wert -3693 bis zu 3202 (jeweiliger Grad Celsius \*100).
-
 
 
 ## Libraries:
@@ -317,6 +306,18 @@ Pandas - source: [http://earthpy.org/pandas-basics.html](http://earthpy.org/pand
   - R: [CRAN R – Time Series Analysis](https://cran.r-project.org/web/views/TimeSeries.html)
   - C#: [Cronos](https://archive.codeplex.com/?p=cronos)
   - Java: [Morpheus](https://github.com/zavtech/morpheus-core/blob/master/README.md)
+
+## Praktische Erfahrungen:
+SIL: Beim Fahren mit einem Fahrsimulator werden zu jeder Millisekunde die Fahrdaten in eine csv-Datei getrackt und mit einem timestamp im Format yyyy-mm-ddThh:mm:ss.SS versehen. Mit diesen können anschließend statische Analysen in R durchgeführt werden.
+
+SII: Assignment No. 5: Rest Services für Time series und queries -> Abfragen von Daten eines Rest Services in einem bestimmten Zeitraum
+
+Geostatistik I und II: Verarbeitung und Analyse von Zeitreihen und -daten in R
+
+Reference Systems: Temporal Data and Temporal Reference Systems (Sumrada, 2003) im Learnwebkurs verfügbar
+
+
+
 
 ## Quellen:
 
