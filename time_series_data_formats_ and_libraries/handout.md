@@ -97,41 +97,42 @@ Standard: Datum und Zeit werden im Format xml-schema11-2 dargestellt, um dann ta
 Zur Tabellarischen Darstellung im CSV-Format werden die folgenden Datums- und Zeitformate unterstützt:
 
 - Datumsformat
-  - yyyy-MM-dd z.B. 2015-03-22
-  - yyyyMMdd z.B. 20150322
-  - dd-MM-yyyy z.B. 22-03-2015
-  - d-M-yyyy z.B. 22-3-2015
-  - MM-dd-yyyy z.B. 03-22-2015
-  - M-d-yyyy z.B. 3-22-2015
-  - dd/MM/yyyy z.B. 22/03/2015
-  - d/M/yyyy z.B. 22/3/2015
-  - MM/dd/yyyy z.B. 03/22/2015
-  - M/d/yyyy z.B. 3/22/2015
-  - dd.MM.yyyy z.B. 22.03.2015
-  - d.M.yyyy z.B. 22.3.2015
-  - MM.dd.yyyy z.B. 03.22.2015
-  - M.d.yyyy z.B. 3.22.2015
+  - `yyyy-MM-dd` z.B. `2015-03-22`
+  - `yyyyMMdd` z.B. `20150322`
+  - `dd-MM-yyyy` z.B. `22-03-2015`
+  - `d-M-yyyy` z.B. `22-3-2015`
+  - `MM-dd-yyyy` z.B. `03-22-2015`
+  - `M-d-yyyy` z.B. `3-22-2015`
+  - `dd/MM/yyyy` z.B. `22/03/2015`
+  - `d/M/yyyy` z.B. `22/3/2015`
+  - `MM/dd/yyyy` z.B. `03/22/2015`
+  - `M/d/yyyy` z.B. `3/22/2015`
+  - `dd.MM.yyyy` z.B. `22.03.2015`
+  - `d.M.yyyy` z.B. `22.3.2015`
+  - `MM.dd.yyyy` z.B. `03.22.2015`
+  - `M.d.yyyy` z.B. `3.22.2015`
+ 
 - Zeitformat
-  - HH:mm:ss.S (die Anzahlt der "S" entscheidet über die Anzahl der Nachkommastellen für die Sekundenanzahl z.B. HH:mm:ss.SSS für 15:02:37.143)
-  - HH:mm:ss z.B. 15:02:37
-  - HHmmss z.B. 150237
-  - HH:mm z.B. 15:02
-  - HHmm z.B. 1502
+  - `HH:mm:ss.S` (die Anzahlt der "S" entscheidet über die Anzahl der Nachkommastellen für die Sekundenanzahl z.B. `HH:mm:ss.SSS` für `15:02:37.143`)
+  - `HH:mm:ss` z.B. `15:02:37`
+  - `HHmmss` z.B. `150237`
+  - `HH:mm` z.B. `15:02`
+  - `HHmm` z.B. `1502`
 - Datums- und Zeitformat
-  - yyyy-MM-ddTHH:mm:ss.S (die Anzahl der "S" entscheidet über die Anzahl der Nachkommastellen für die Sekundenanzahl z.B. yyyy-MM-ddTHH:mm:ss.SSS for 2015-03-15T15:02:37.143)
-  - yyyy-MM-ddTHH:mm:ss z.B. 2015-03-15T15:02:37
-  - yyyy-MM-ddTHH:mm z.B. 2015-03-15T15:02
-  - jedes oben angegebene Datumsformat kann, gefolgt von einem Leerzeichen mit einem obengenannten Zeitformat kombiniert werden: z.B. M/d/yyyy HH:mm for 3/22/2015 15:02 or dd.MM.yyyy HH:mm:ss for 22.03.2015 15:02:37
+  - `yyyy-MM-ddTHH:mm:ss.S` (die Anzahl der "S" entscheidet über die Anzahl der Nachkommastellen für die Sekundenanzahl z.B. `yyyy-MM-ddTHH:mm:ss.SSS` für `2015-03-15T15:02:37.143`)
+  - `yyyy-MM-ddTHH:mm:ss` z.B. `2015-03-15T15:02:37`
+  - `yyyy-MM-ddTHH:mm` z.B. `2015-03-15T15:02`
+  - jedes oben angegebene Datumsformat kann, gefolgt von einem Leerzeichen mit einem obengenannten Zeitformat kombiniert werden: z.B. `M/d/yyyy HH:mm` für `3/22/2015 15:02` oder `dd.MM.yyyy HH:mm:ss` für `22.03.2015 15:02:37`
 - Format mit Zeitzone
-  - X z.B. -08, +0530, oder Z (Minuten sind optional)
-  - XX z.B. -0800, +0530, oder Z
-  - XXX z.B. -08:00, +05:30, oder Z
-  - x z.B. -08 or +0530 (Z ist nicht erlaubt)
-  - xx z.B. -0800 or +0530 (Z ist nicht erlaubt)
-  - xxx z.B. -08:00 or +05:30 (Z ist nicht erlaubt)
-  - yyyy-MM-ddTHH:mm:ssXXX für 2015-03-15T15:02:37Z
-  - 2015-03-15T15:02:37-05:00
-  - HH:mm x für 15:02 -05.
+  - `X` z.B. `-08`, `+0530`, oder `Z` (Minuten sind optional)
+  - `XX` z.B. `-0800`, `+0530`, oder `Z`
+  - `XXX` z.B. `-08:00`, `+05:30`, oder `Z`
+  - `x` z.B. `-08` oder `+0530` (Z ist nicht erlaubt)
+  - `xx` z.B. `-0800` oder `+0530` (Z ist nicht erlaubt)
+  - `xxx` z.B. `-08:00` oder `+05:30` (Z ist nicht erlaubt)
+  - `yyyy-MM-ddTHH:mm:ssXXX` für `2015-03-15T15:02:37Z`
+  - `2015-03-15T15:02:37-05:00`
+  - `HH:mm x` für `15:02 -05.`
 
 (Beispiele von https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#formats-for-dates-and-times)
 
@@ -308,7 +309,8 @@ Pandas - source: [http://earthpy.org/pandas-basics.html](http://earthpy.org/pand
   - Java: [Morpheus](https://github.com/zavtech/morpheus-core/blob/master/README.md)
 
 ## Praktische Erfahrungen:
-SIL: Beim Fahren mit einem Fahrsimulator werden zu jeder Millisekunde die Fahrdaten in eine csv-Datei getrackt und mit einem timestamp im Format yyyy-mm-ddThh:mm:ss.SS versehen. Mit diesen können anschließend statische Analysen in R durchgeführt werden.
+
+SIL: Beim Fahren mit einem Fahrsimulator werden zu jeder Millisekunde Daten in eine csv-Datei getrackt und mit einem timestamp versehen. Mit diesen können anschließend statische Analysen in R durchgeführt werden.
 
 SII: Assignment No. 5: Rest Services für Time series und queries -> Abfragen von Daten eines Rest Services in einem bestimmten Zeitraum
 
@@ -321,18 +323,34 @@ Reference Systems: Temporal Data and Temporal Reference Systems (Sumrada, 2003) 
 
 ## Quellen:
 
+W3C Recommendations - Formats for Dates and Times: 
+
 [https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#formats-for-dates-and-times](https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#formats-for-dates-and-times)
+
+W3C - XML Schema Definition Language (XSD) - Datatypes: 
 
 [https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#bib-xmlschema11-2](https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#bib-xmlschema11-2)
 
+Orthogonal multidimensional array representation of time series: 
+
 [http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html#\_orthogonal\_multidimensional\_array\_representation\_of\_time\_series](http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html#_orthogonal_multidimensional_array_representation_of_time_series)
+
+OGC - GeoPackage Encoding Standard: 
 
 [http://www.geopackage.org/spec120/](http://www.geopackage.org/spec120/)
 
+GeoPackage - Getting started with GeoPackage: 
+
 [http://www.geopackage.org/guidance/getting-started.html](http://www.geopackage.org/guidance/getting-started.html)
+
+Wikipedia - GeoTIFF: 
 
 [https://de.wikipedia.org/wiki/GeoTIFF](https://de.wikipedia.org/wiki/GeoTIFF)
 
+NetCDF - Features and Feature Type Conventions: 
+
 [http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#\_features\_and\_feature\_types](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#_features_and_feature_types)
+
+Engineering Statistics Handbook - Moving AVerage and Smoothing Techniques: 
 
 [https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc42.htm](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc42.htm)
