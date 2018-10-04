@@ -24,6 +24,7 @@ class: wwu-bluegreen
 
 - Vorstellung der **Handouts** bzw. Vorrecherchen
 - Vorstellung der ![:highlight_inline](**invitation to bid**)
+- Zeitplan
 - Verschiedenes
 
 ---
@@ -58,6 +59,17 @@ class: wwu-green,center,middle
 ---
 class: wwu-lightgreen
 
+# Zeitplan
+
+- Nächste Woche: 2. Runde Vorbereitungsthemen, Fragen zur bid
+- 3. Woche: Arbeit an Projektplänen
+- 4. Woche (31.10.): Vorstellung Projektpläne (Frist für bid)
+- Projektarbeit, jour-fixe am Mittwoch
+- Abschlusspräsentation: **30.01.2019**
+
+---
+class: wwu-darkblue
+
 # Verschiedenes
 
 - Feedback zum Handout-Prozess
@@ -68,20 +80,7 @@ class: wwu-lightgreen
 
 --
 
-- Zeitplan
-
---
-
 - Fragen
-
-???
-
-allgemeines Feedback Handouts:
-
-- richtige Formatierung nutzen, semantisch (code blocks, `####` für Überschriften nicht für dicke Schrift)
-- Verzeichnis der Verweise unten, meist unkommentiert - ist das das Beste für den Leser?
-- Links, Links, Links - "das Internet"
-- wie habt ihr das Markdown erstellt (Werkzeuge)?
 
 --
 
@@ -89,4 +88,11 @@ allgemeines Feedback Handouts:
 
 ???
 
-Abchlusspräsentationstermin anpeilen: letzer Termin wäre 30.01., können aber wegen Klausuren auch gerne in die Woche darauf ausweichen.
+allgemeines **Feedback Handouts**:
+
+- richtige Formatierung nutzen, semantisch (code blocks, `####` für Überschriften nicht für dicke Schrift)
+- Verzeichnis der Verweise unten, meist unkommentiert - ist das das Beste für den Leser?
+- Links, Links, Links - "das Internet"
+- wie habt ihr das Markdown erstellt (Werkzeuge)?
+
+**Abchlusspräsentationstermin** anpeilen: letzer Termin ist 30.01. - bis nächste Woche Bescheid geben ob es damit Probleme gibt.
