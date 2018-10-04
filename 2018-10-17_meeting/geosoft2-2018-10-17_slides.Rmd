@@ -1,0 +1,101 @@
+---
+title: "Geosoftware II - WiSe 2018/19"
+subtitle: "_Enhancing discovery of geospatial datasets in data repositories_"
+author: "Daniel Nüst, Prof. Edzer Pebesma"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "wwu-theme.css"]
+    nature:
+      countIncrementalSlides: false
+      beforeInit: ["macros.js"]
+      ratio: "16:9"
+# use RStudio Addin "Inifinite Moon Reader" for live preview
+---
+
+```{r live_preview, include=FALSE, eval=FALSE}
+library("xaringan")
+xaringan::infinite_moon_reader()
+```
+
+class: wwu-bluegreen
+
+# Agenda 17.10.2018
+
+- Vorstellung der **Handouts** bzw. Vorrecherchen
+- Fragen zur ![:highlight_inline](invitation to bid)
+- ![:highlight_inline](Gruppeneinteilung)
+- Verschiedenes
+
+---
+class: wwu-green,center,middle
+
+# Präsentation der Themen-Handouts
+
+---
+class: wwu-bluegreen
+
+# Themen
+
+1. publication metadata [Lia Kirsch]
+1. FOSS repositories & preservation [Niklas Aßelmann, Yannick Paulsen]
+1. geodata catalogues & geospatial metadata [Aysel Tandik, Henry Fock]
+1. geospatial data formats & libraries [Anika Graupner, Hilal Karakoc]
+1. spatial similarity calculation [Jannis Fröhlking, Benjamin Dietz]
+1. agile & collaborative software development [Daniel Nüst]
+
+---
+class: wwu-green,center,middle
+
+# Invitation to bid
+
+[Dokument siehe LearnWeb]
+
+???
+
+---
+class: wwu-lightgreen
+
+# Gruppeneinteiltung
+
+--
+
+### Anika, Ayselm, Henry, Lia, Lukas 
+
+--
+
+### Carolin B., Cornelia, Hilal, Jannis, Yannick
+
+--
+
+### Benjamin, Carolin, Ilka, Katharina, Niklas
+
+
+???
+
+- Geschlechterbalance
+- Noten Geosoftware I
+
+Tauschen ungern, aber möglich - nur mit Vorschlag, vorher mit anderem Team abklären
+
+gebt euch gerne einen **Teamnamen** (oder Produktnamen)
+
+---
+class: wwu-darkblue
+
+# Verschiedenes
+
+- Zeitplan
+  - Termin Abschlusspräsentation
+  - Nächste Woche: Arbeit an Projektplänen
+  - 4. Woche: Vorstellung Projektpläne, **Abgabefrist**: 31.10. 14:00 Uhr (LearnWeb)
+
+--
+
+- Fragen
+
+--
+
+**Next**: Prototypen erstellen & bid schreiben, Handout Feedback & Updates bis Ende der Woche
+
+???
