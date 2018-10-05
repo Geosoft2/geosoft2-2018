@@ -1,5 +1,5 @@
 ### Geodata - catalogues & geospatial metadata
-#### Aysel Tandik, Henry Fock
+authors: @HenFo @atlanta11950
 
 * Geodata catalogues & Geospatial metadata
 metadata: - Informationen über Daten
@@ -121,7 +121,24 @@ Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen vo
    -> kann auf Metadaten-Datensätze die in XML-Dateien vorliegen oder auf Datensätze in einer Datenbank zugreifen
   * GeoNetwork [^10]: Metadaten-Informationssystem, geschrieben in Java
    ->Ist eine Katalogapplikation um räumlichreferenzierte Quellen zu verwalten. Es unterstützt leistungsstark die Metadatanbearbeitung und die Suchfunktionen als ein interaktiver Web map viewer.
-
+* Requests [^11]:
+    * _GetCapabilities_: Gibt allgemeine Informationen über den Geodatenkatolog z.B. enthaltende Datentypen und die Größe des Kataloges im XML-Format
+   * _DescribeRecord_: Beschreibt den gesuchten Datensatz
+   * _GetRecordById_: Gibt die Metadaten zum per ID gesuchten Datensatz 
+   * _GetRecords_: Gibt anhand von Filtern die gefundenen Daten zurück
+   * _Harvest_: Indirektes bearbeiten, löschen und hinzufügen von externen Metadaten
+   * _Transaction_: Direktes bearbeiten, löschen und hinzufügen von lokalen Metadaten
+   
+ * Responses: Jede Request gibt eine XML-Datei Response zurück, diese beinhaltet die angefordeteten Rückgaben. Bei den Post-Requests "Harvest" und "Transaction" werden die jeweiligen Änderungen im Katalog aufgelistet. 
+ 
+ * Metadaten - Format [^12]
+   * Die Daten beinhalten Dublin Core, ISO 19139 oder FGDC metadata, enkodiert in UTF-8 Buchstaben
+   * Titel, Format, Typ (z.B. Dataset, DatasetCollection oder Service), BoundingBox (für ein bestimmen Bereich werden Daten eingebunden in Längen- und Breitengrade), referenziertes Koordinatensystem und die Beziehung (ein Link zu anderen Metadaten).
+ 
+ ### Praxix - Beispiel QGIS
+ Nachdem Installieren des Plugins "Metasearch" kann man vordefinierte Katalogdienste oder aber auch eigene Kataloge hinzufügen. Zum hinzufügen von eigenen muss man die URL und einen Namen angeben. Wir haben versucht die OGC WSC Implementierung "pycsw" hinzuzufügen, jedoch scheint sich einiges verändert zu haben weshalb die offizielen Tutorials nicht mehr der Realität entsprechen. Sollte man es aber es schaffen diese einzubinden, kann man die Dienstinformationen abfragen. Nun kann man im Fenster "Suchen" sein Katalog auswählen und nach einem Schlüsselwort (z.B. Imagery) suchen. Man bekommt eine Liste an Datensätzen, die auf diese Suche zutreffen. Die Datensätze können nun als WMS, WMTS oder WFS seiner Karte in QGIS hinzufügen.
+ ![metasearch.png](./images/)
+ 
 ### Quellen
 [^1]: https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
 [^2]: https://www.w3.org/TR/NOTE-rdf-simple-intro
@@ -133,3 +150,5 @@ Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen vo
 [^8]: https://live.osgeo.org/de/overview/pycsw_overview.html
 [^9]: http://www.coastalwiki.org/wiki/In_situ
 [^10]: https://geonetwork-opensource.org
+[^11]: https://geonetwork-opensource.org/manuals/2.10.4/eng/developer/xml_services/csw_services.html
+[^12]: https://en.wikipedia.org/wiki/Catalog_Service_for_the_Web
