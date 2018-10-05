@@ -7,7 +7,7 @@ metadata: - Informationen über Daten
         -  beschreiben Karten, Gis-Dateien, Bilder, ortsbasierte und Datenquellen
 catalogues: - Geodaten, Geodienste, Anwendungen können registriert, erfasst, gesucht, gefunden und ausgewählt werden
 
-* SpatioTemporal Asset Catalog [^1]
+* SpatioTemporal Asset Catalog 
  -Ist eine öffentlich zugängliche Bibliothek zum durchsuchen der verschiedenen Geokataloge. Früher hatten verschiedene Anbieter ihre eigenen Wege um Daten zu beschreiben und verschieden APIs um auf diese Metadaten zuzugreifen. Das führt dazu, dass die Wiederverwendung der Software erschwert worden ist, die Analysearbeit härter und jede Quelle der Daten musste einzelnd ausgewertet werden. Daher wurde die erste STAC-Arbeitsgruppe ins Leben gerufen, um:
 -eine Sammlung von Standards für das Beschreiben von Geospatialdaten zu etablieren
 -eine Flatfile Katalogstruktur zu definieren, die eine Gruppe von Gegenständen (z.B Bilder) in einem Katalog beschreibt
@@ -80,20 +80,20 @@ Beispiel (Koordinaten und Assets ausgelassen):
  defacto Standard basierend auf dem TIFF Format und wird für Satellitenbilder (Rasterdaten) genutzt.
 
 #### Geospatial metadata außerhalb der GIS-Domäne
-* RDF - Resource Description Framework [^2]
+* RDF - Resource Description Framework
  RDF Daten bestehen aus Knoten und den dazugehörigen Attributen/Variablenpaaren. Die Knoten können irgendeine Webquelle sein (wie z.B Seiten, Server, im Allgemeinen alles was man als URI mitgeben kann) oder andere Instanzen von Metadaten. Attribute sind Eigenschaften der Knoten und die Variablen sind atomar (Text Strings, Nummern, usw.) oder andere Quellen. Zusammengefasst erlaubt uns dieser Mechanismus um beschriftete gerichtete Graphen zu bauen. 
   - genutzte Sprache: XML
 
 #### In-situ Messung - Metadaten
-*In-situ Messungen sind Messungen die vor Ort durchgeführt werden* [^6]
-Zu den In-situ Messungen werden Metadaten gespeichert um das "finden" und "filtern" dieser Daten zu vereinfachen. [^9] 
+*In-situ Messungen sind Messungen die vor Ort durchgeführt werden*
+Zu den In-situ Messungen werden Metadaten gespeichert um das "finden" und "filtern" dieser Daten zu vereinfachen. 
 Beispiele:
 1) Messungen werden durch die SDIs von der Regierung der Öffentlichkeit zur Verfügung gestellt 
 2) Die entstprechenden Metadaten werden in Katalogen gespeichert
 
 
 #### Geoaspekte - Geotagging & EXIF Metadaten
-* Geotagging [^3]: Speichern der Koordinaten von Breiten- und Längengrad eines Ortes an dem beispielsweise ein Bild aufgenommen wurde. Dazu gibts es drei verschiedene Methoden um die Ortsinformation zu speichern:
+* Geotagging: Speichern der Koordinaten von Breiten- und Längengrad eines Ortes an dem beispielsweise ein Bild aufgenommen wurde. Dazu gibts es drei verschiedene Methoden um die Ortsinformation zu speichern:
   * Direktes-kamereainternes Geotagging: Die Informationen werden direkt bei der Aufnahme in die Exif-Daten geschrieben. Dies ist möglich wenn ein GPS-Empfänger mit der Kamera verbunden ist. Der Vorteil ist, dass die Metadaten nicht nachträglich überarbeitet oder verändert werden müssen. 
   * Manuelles Geotagging: Mit Hilfe eines Programmes können Fotos aus einer Landkarte heraus einem Ort zugeteilt werden. Um dies zu verwirklichen wird die Hilfe einer kartenmaterialverwendenden Software benötigt (beispielsweise Geosetter).
   ->Vorteil: Ein GPS-Epmfang ist bei der Aufnahme nicht nötig. 
@@ -102,20 +102,20 @@ Beispiele:
 -> Vorteil: Häufig genauer, weil mit GPS-Empfängern gearbeitet wird (präziser als Geotagger)
 ->Nachteil: Nacharbeit mit Computer ist erforderlich
 
-* Exif-Metadaten [^4]
+* Exif-Metadaten
 EXIF = Exchangeable Image File Format
 -> Standardformat um verschiedene Metadaten in digitalen Bildern abzuspeichern
--> Formate: JPEG / TIFF / RIFF WAV [^5]
+-> Formate: JPEG / TIFF / RIFF WAV 
 Metadaten: sind Informationen, die vor dem eigentligen Bild vorhanden sind. Diese wären: Name und Typ der Datei, Erstelldatum und Größe, Bildabmessungen und Bittiefe.
-Hier wäre ein [Beispiel](https://en.wikipedia.org/wiki/Exif#Example) für Exif-data zu finden.
+Beispiel: https://en.wikipedia.org/wiki/Exif#Example 
 
 #### Implementierungen des OGC CSW
-OGC CSW = "Open Geospatial Consortium - Catalog Service for the Web" [^7]
+OGC CSW = "Open Geospatial Consortium - Catalog Service for the Web"
 Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen von Sammlungen von deskriptiver Information (Metadaten) für Daten, Services und zugehörige Objektinforamtionen zu verwirklichen. 
 
 ![CS.jpg](https://www.dropbox.com/s/9n0ly2nsixxzhdz/CS.jpg?dl=0&raw=1)
 * Implementierungen:
-  * Pycsw [^8]: Serverimplementation, geschrieben in Python
+  * Pycsw: Serverimplementation, geschrieben in Python
    -> Kataloge mit Datenbeschreibungen (Metadaten) werden im Web in standardisierten Formate durch Standard basierende Werkzeuge über pycsw veröffentlicht 
    -> pycsw wird über ein Apache Web Service aufgesetzt
    -> kann auf Metadaten-Datensätze die in XML-Dateien vorliegen oder auf Datensätze in einer Datenbank zugreifen
@@ -123,12 +123,11 @@ Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen vo
    ->Ist eine Katalogapplikation um räumlichreferenzierte Quellen zu verwalten. Es unterstützt leistungsstark die Metadatanbearbeitung und die Suchfunktionen als ein interaktiver Web map viewer.
 
 ### Quellen
-[^1]: https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
-[^2]: https://www.w3.org/TR/NOTE-rdf-simple-intro
-[^3]: http://gps-camera.eu/wissen/Was-ist-Geotagging-Welche-Moeglichkeiten-gibt-es
-[^4]: https://www.prophoto-online.de/digitalfotografie/exif-daten-10010057
-[^5]: https://en.wikipedia.org/wiki/Exif
-[^6]: https://de.wikipedia.org/wiki/In_situ
-[^7]: http://www.opengeospatial.org/standards/cat
-[^8]: https://live.osgeo.org/de/overview/pycsw_overview.html
-[^9]: http://www.coastalwiki.org/wiki/In_situ
+https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
+https://www.w3.org/TR/NOTE-rdf-simple-intro
+http://gps-camera.eu/wissen/Was-ist-Geotagging-Welche-Moeglichkeiten-gibt-es
+https://www.prophoto-online.de/digitalfotografie/exif-daten-10010057
+https://en.wikipedia.org/wiki/Exif
+https://de.wikipedia.org/wiki/In_situ
+http://www.opengeospatial.org/standards/cat
+https://live.osgeo.org/de/overview/pycsw_overview.html
