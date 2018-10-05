@@ -137,7 +137,7 @@ Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen vo
  
  ### Praxix - Beispiel QGIS
  Nachdem Installieren des Plugins "Metasearch" kann man vordefinierte Katalogdienste oder aber auch eigene Kataloge hinzufügen. Zum hinzufügen von eigenen muss man die URL und einen Namen angeben. Wir haben versucht die OGC WSC Implementierung "pycsw" hinzuzufügen, jedoch scheint sich einiges verändert zu haben weshalb die offizielen Tutorials nicht mehr der Realität entsprechen. Sollte man es aber es schaffen diese einzubinden, kann man die Dienstinformationen abfragen. Nun kann man im Fenster "Suchen" sein Katalog auswählen und nach einem Schlüsselwort (z.B. Imagery) suchen. Man bekommt eine Liste an Datensätzen, die auf diese Suche zutreffen. Die Datensätze können nun als WMS, WMTS oder WFS seiner Karte in QGIS hinzufügen.
- ![metaSearch.PNG](./images/)
+ ![MetaSearch.PNG](./images/MetaSearch.PNG)
  
 ### Quellen
 [^1]: https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
