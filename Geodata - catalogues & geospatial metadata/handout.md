@@ -139,7 +139,6 @@ Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen vo
  Nachdem Installieren des Plugins "Metasearch" kann man vordefinierte Katalogdienste oder aber auch eigene Kataloge hinzufügen. Zum hinzufügen von eigenen muss man die URL und einen Namen angeben. Wir haben versucht die OGC WSC Implementierung "pycsw" hinzuzufügen, jedoch scheint sich einiges verändert zu haben weshalb die offizielen Tutorials nicht mehr der Realität entsprechen. Sollte man es aber es schaffen diese einzubinden, kann man die Dienstinformationen abfragen. Nun kann man im Fenster "Suchen" sein Katalog auswählen und nach einem Schlüsselwort (z.B. Imagery) suchen. Man bekommt eine Liste an Datensätzen, die auf diese Suche zutreffen. Die Datensätze können nun als WMS, WMTS oder WFS seiner Karte in QGIS hinzufügen.
  ![MetaSearch.PNG](./images/MetaSearch.PNG)
  
-### Quellen
 [^1]: https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
 [^2]: https://www.w3.org/TR/NOTE-rdf-simple-intro
 [^3]: http://gps-camera.eu/wissen/Was-ist-Geotagging-Welche-Moeglichkeiten-gibt-es
@@ -152,3 +151,17 @@ Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen vo
 [^10]: https://geonetwork-opensource.org
 [^11]: https://geonetwork-opensource.org/manuals/2.10.4/eng/developer/xml_services/csw_services.html
 [^12]: https://en.wikipedia.org/wiki/Catalog_Service_for_the_Web
+
+### Quellen
+https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
+https://www.w3.org/TR/NOTE-rdf-simple-intro
+http://gps-camera.eu/wissen/Was-ist-Geotagging-Welche-Moeglichkeiten-gibt-es
+https://www.prophoto-online.de/digitalfotografie/exif-daten-10010057
+https://en.wikipedia.org/wiki/Exif
+https://de.wikipedia.org/wiki/In_situ
+http://www.opengeospatial.org/standards/cat
+https://live.osgeo.org/de/overview/pycsw_overview.html
+http://www.coastalwiki.org/wiki/In_situ
+https://geonetwork-opensource.org
+https://geonetwork-opensource.org/manuals/2.10.4/eng/developer/xml_services/csw_services.html
+https://en.wikipedia.org/wiki/Catalog_Service_for_the_Web
