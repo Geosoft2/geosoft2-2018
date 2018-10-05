@@ -1,5 +1,5 @@
 ### Geodata - catalogues & geospatial metadata
-authors: @HenFo @atlanta11950
+authors: [@Henry Fock](https://github.com/HenFo/), [@Aysel Tandik](https://github.com/atlanta11950)
 
 * Geodata catalogues & Geospatial metadata
 metadata: - Informationen über Daten
@@ -7,8 +7,8 @@ metadata: - Informationen über Daten
         -  beschreiben Karten, Gis-Dateien, Bilder, ortsbasierte und Datenquellen
 catalogues: - Geodaten, Geodienste, Anwendungen können registriert, erfasst, gesucht, gefunden und ausgewählt werden
 
-* SpatioTemporal Asset Catalog [^1]
- -Ist eine öffentlich zugängliche Bibliothek zum durchsuchen der verschiedenen Geokataloge. Früher hatten verschiedene Anbieter ihre eigenen Wege um Daten zu beschreiben und verschieden APIs um auf diese Metadaten zuzugreifen. Das führt dazu, dass die Wiederverwendung der Software erschwert worden ist, die Analysearbeit härter und jede Quelle der Daten musste einzelnd ausgewertet werden. Daher wurde die erste STAC-Arbeitsgruppe ins Leben gerufen, um:
+### SpatioTemporal Asset Catalog [^1]
+ Ist eine öffentlich zugängliche Bibliothek zum durchsuchen der verschiedenen Geokataloge. Früher hatten verschiedene Anbieter ihre eigenen Wege um Daten zu beschreiben und verschieden APIs um auf diese Metadaten zuzugreifen. Das führt dazu, dass die Wiederverwendung der Software erschwert worden ist, die Analysearbeit härter und jede Quelle der Daten musste einzelnd ausgewertet werden. Daher wurde die erste STAC-Arbeitsgruppe ins Leben gerufen, um:
 -eine Sammlung von Standards für das Beschreiben von Geospatialdaten zu etablieren
 -eine Flatfile Katalogstruktur zu definieren, die eine Gruppe von Gegenständen (z.B Bilder) in einem Katalog beschreibt
 -um eine RESTful API zum Abfragen von Geospatialdata
@@ -74,7 +74,8 @@ Beispiel (Koordinaten und Assets ausgelassen):
 ### Software zum schreiben und lesen von Metadaten
 * ExifTool
  Ist eine Plattformunabhängige PERL-Bibliothek zum lesen, schreiben und bearbeiten von Metadaten in einem breiten Spektrum von Dateien. Es unterstützt viele verschieden Arten von Metadaten wie EXIF, GPS, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop IRB, FlashPix, AFCP und ID3, ebenso wie viele Digitalkameras: Canon, Casio, DJI, FLIR, FujiFilm, GE, GoPro, HP, JVC/Victor, Kodak, Leaf, Minolta/Konica-Minolta, Motorola, Nikon, Nintendo, Olympus/Epson, Panasonic/Leica, Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon und Sony.  
- 
+* Erstellung eigener Metadaten
+ Dies ist möglich mit Hilfe einer Reihe von Metadaten-Editoren. Als Beispiel gibt es den [Metadaten-Editor von INSPIRE](inspire-geoportal.ec.europa.eu/editor/). Dieser stellt eine Reihe von Optionen zur Verfügung, um seine eigenen Metadaten nach OGC-Standard zu erstellen.
 * GeoTIFF
  "Georeferenced Tagged Image File Format" ist eine öffentliches Dateiformat und 
  defacto Standard basierend auf dem TIFF Format und wird für Satellitenbilder (Rasterdaten) genutzt.
@@ -133,10 +134,13 @@ Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen vo
  
  * Metadaten - Format [^12]
    * Die Daten beinhalten Dublin Core, ISO 19139 oder FGDC metadata, enkodiert in UTF-8 Buchstaben
-   * Titel, Format, Typ (z.B. Dataset, DatasetCollection oder Service), BoundingBox (für ein bestimmen Bereich werden Daten eingebunden in Längen- und Breitengrade), referenziertes Koordinatensystem und die Beziehung (ein Link zu anderen Metadaten).
+   * Titel, Format, Typ (z.B. Dataset, DatasetCollection oder Service), BoundingBox (für ein bestimmten Bereich werden Daten eingebunden in Längen- und Breitengrade), referenziertes Koordinatensystem und die Beziehung (ein Link zu anderen Metadaten).
  
  ### Praxix - Beispiel QGIS
- Nachdem Installieren des Plugins "Metasearch" kann man vordefinierte Katalogdienste oder aber auch eigene Kataloge hinzufügen. Zum hinzufügen von eigenen muss man die URL und einen Namen angeben. Wir haben versucht die OGC WSC Implementierung "pycsw" hinzuzufügen, jedoch scheint sich einiges verändert zu haben weshalb die offizielen Tutorials nicht mehr der Realität entsprechen. Sollte man es aber es schaffen diese einzubinden, kann man die Dienstinformationen abfragen. Nun kann man im Fenster "Suchen" sein Katalog auswählen und nach einem Schlüsselwort (z.B. Imagery) suchen. Man bekommt eine Liste an Datensätzen, die auf diese Suche zutreffen. Die Datensätze können nun als WMS, WMTS oder WFS seiner Karte in QGIS hinzufügen.
+ * Installation von pycsw: Über Docker Befehl in der Konsole "docker run -p 8000:8000 geopython/pycsw"
+ * Schließen von Python: "Docker ps" -> Kopieren der _ID_ -> "Docker stop _ID_"
+ 
+ Nachdem Installieren des Plugins "Metasearch" kann man vordefinierte Katalogdienste oder aber auch eigene Kataloge hinzufügen. Zum Hinzufügen von eigenen muss man die URL und einen Namen angeben. Wir haben versucht die OGC WSC Implementierung "pycsw" hinzuzufügen, jedoch scheint sich einiges verändert zu haben weshalb die offizielen Tutorials nicht mehr der Realität entsprechen. Sollte man es aber es schaffen diese einzubinden, kann man die Dienstinformationen abfragen. Nun kann man im Fenster "Suchen" sein Katalog auswählen und nach einem Schlüsselwort (z. B. Imagery) suchen. Man bekommt eine Liste an Datensätzen, die auf diese Suche zutreffen. Die Datensätze können nun als WMS, WMTS oder WFS seiner Karte in QGIS hinzufügen. 
  ![MetaSearch.PNG](./images/MetaSearch.PNG)
  
 [^1]: https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
@@ -153,15 +157,15 @@ Der Katalog Service unterstützt die Fähigkeit um das Publizieren und Suchen vo
 [^12]: https://en.wikipedia.org/wiki/Catalog_Service_for_the_Web
 
 ### Quellen
-https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
-https://www.w3.org/TR/NOTE-rdf-simple-intro
-http://gps-camera.eu/wissen/Was-ist-Geotagging-Welche-Moeglichkeiten-gibt-es
-https://www.prophoto-online.de/digitalfotografie/exif-daten-10010057
-https://en.wikipedia.org/wiki/Exif
-https://de.wikipedia.org/wiki/In_situ
-http://www.opengeospatial.org/standards/cat
-https://live.osgeo.org/de/overview/pycsw_overview.html
-http://www.coastalwiki.org/wiki/In_situ
-https://geonetwork-opensource.org
-https://geonetwork-opensource.org/manuals/2.10.4/eng/developer/xml_services/csw_services.html
-https://en.wikipedia.org/wiki/Catalog_Service_for_the_Web
+* https://www.developmentseed.org/blog/2018/07/23/stac-and-sat-api/
+* https://www.w3.org/TR/NOTE-rdf-simple-intro
+* http://gps-camera.eu/wissen/Was-ist-Geotagging-Welche-Moeglichkeiten-gibt-es
+* https://www.prophoto-online.de/digitalfotografie/exif-daten-10010057
+* https://en.wikipedia.org/wiki/Exif
+* https://de.wikipedia.org/wiki/In_situ
+* http://www.opengeospatial.org/standards/cat
+* https://live.osgeo.org/de/overview/pycsw_overview.html
+* http://www.coastalwiki.org/wiki/In_situ
+* https://geonetwork-opensource.org
+* https://geonetwork-opensource.org/manuals/2.10.4/eng/developer/xml_services/csw_services.html
+* https://en.wikipedia.org/wiki/Catalog_Service_for_the_Web
