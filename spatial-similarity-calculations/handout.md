@@ -1,6 +1,6 @@
 # Spatial similarity calculation
 
-_Authors: Benjamin Dietz, Jannis Fröhlking_
+_Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis Fröhlking_ [(@JaFro96)](https://github.com/JaFro96)
 
 - [1 Why spatial similarity calculations](#1-why-spatial-similarity-calculations)
 - [2 Our first idea of spatial similarity calculation](#2-our-first-idea-of-spatial-similarity-calculation)
@@ -26,7 +26,7 @@ _Authors: Benjamin Dietz, Jannis Fröhlking_
 
   - it is evident that the similarity degree between the original map (M0) and the generalized map (M1) decreases when the scale change increases
   - but no achievements have been made on quantitatively describing this relation (similarity degree):
-	⟹map generalization system/ software does not know to what extent an original map (M0) should be generalized and when the algorithm should terminate
+	 - map generalization system/ software does not know to what extent an original map (M0) should be generalized and when the algorithm should terminate
 
 
 
@@ -255,7 +255,11 @@ __Repetition__: _Douglas-Peucker-Algorithmus_
 # 7 Sources:
 
   - Mark, D. M., and Egenhofer, M. J. (1994): Modeling Spatial Relations Between Lines and Regions: Combining Formal Mathematical Models and Human Subjects Testing. Cartography and Geographic Information Systems, October 1994, v. 21, No. 4, pp. 195-212.
+  [See here](https://pdfs.semanticscholar.org/62e2/96f9e81f175751907f3e2c919dffdcaae56b.pdf)
   - Lohoff, L. (2018): Similarity Measurements for Executable Research Compendia. Münster
   - Weifang, Y., Haowen, Y. and Jonathan, L. (2015): Formula for calculating spatial similarity degrees between point clouds on multi-scale maps taking map scale change as the only independent variable. Geodesy and Geodynamics, 6(2), 113-125.
+  [See here](https://ac.els-cdn.com/S1674984715000191/1-s2.0-S1674984715000191-main.pdf?_tid=ace53621-8259-44eb-bd32-e80ecb415137&acdnat=1538735023_3c975278e6a2171fa660b98d014922d8)
   - Yan, H. (2014): Theory of Spatial Similarity Relations and Its Applications in Automated Map Generalization. Waterloo
+ [See here](https://uwspace.uwaterloo.ca/handle/10012/8317)
   - Skiadopoulos S. (2015) Directional Relations. In: Shekhar S., Xiong H., Zhou X. (eds) Encyclopedia of GIS. Springer, Cham
+   [See here](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_1539-1)
