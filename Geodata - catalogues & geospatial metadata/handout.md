@@ -18,7 +18,7 @@ catalogues: - Geodaten, Geodienste, Anwendungen können registriert, erfasst, ge
   das erste Ergebnis zurück. 
  
 Beispiel (Koordinaten und Assets ausgelassen): 
-```json
+```json5
 {
   "type": "FeatureCollection",
   "properties": {
