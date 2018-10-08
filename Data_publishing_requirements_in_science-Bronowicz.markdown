@@ -130,6 +130,7 @@ Bücher und Zeitschriftenartikel haben lange Zeit von einer Infrastruktur profit
 
 **Nachteil von DOI's**
 - Verweisen nur auf "landing pages" für Menschen, nicht auf die eigentlichen Daten-Dateien
+(Definition: Bezeichnung für die Webseite, auf der ein Besucher „landet“, wenn er einen Link angeklickt hat)
 
 Erklärvideo zu DOI's:  https://www.youtube.com/watch?v=PgqtiY7oZ6k
 
@@ -165,7 +166,7 @@ Publizierung, Datenmanagementplan erstellen
 - Gutachterinnen und Gutachter bewerten jeden Projektvorschlag hinsichtlich dreier Kriterien
 a) Exzellenz
 b) Wirkung bzw. Auswirkungen
-c) Qualität und Effizienz der Durchführun
+c) Qualität und Effizienz der Durchführung
 
 ## Publizieren von Forschungsdaten an der WWU 
 Orientiert sich an den Regeln der Deutschen Forschungsgemeinschaft guter wissenschaftlicher Praxis 
@@ -186,7 +187,7 @@ Orientiert sich an den Regeln der Deutschen Forschungsgemeinschaft guter wissens
 - Regel 5. Verknüpfe die Daten so oft wie möglich mit deiner Publikation
 - Regel 6. Veröffentliche deinen Code (auch Bruchstücke)
 - Regel 7. Geben an, wie du eine Gutschrift erhalten möchtest
-- Regel 8. Fördere und verwende Datenrepositorys
+- Regel 8. Fördere und verwende Datenrepositorien
 - Regel 9. Belohne Kollegen, die deine Daten richtig teilen
 - Regel 10. Sei ein Booster für Data Science
 
