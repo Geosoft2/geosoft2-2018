@@ -86,6 +86,8 @@ ___
     - collaboration between researchers from all over the world
 - But most publications (especially theses) are still printed on paper
     - Additionally, published on the web
+- So called Preprints are Versions of work not controlled yet
+  - mostly digital
 ![2bild](present.png)
 
 #### Crowdsourcing
@@ -110,7 +112,7 @@ Books and Articles | Blogs | Wikis | Stack Exchange
 most academic papers are (also) published printed | only the author is responsible for his/hers work |starter wikipedia.com | work through comment threads
 researches and results are closed, complete and correct | usually only written by one person |can be edited from a huge mass of people at the same time (without any qualification) | c.t. are question, comments, opinions
 production process mostly only open to the authors and lectors  | academic blogs usually contain reviews, summaries, researches ongoing | grew a lot since the invention | questions and answers get evaluated by other users
-- | also guesses and unproven results are published  | open, free of charge | examples: Stack-Overflow
+... | also guesses and unproven results are published  | open, free of charge | examples: Stack-Overflow
 #### Dynamic Publication Formats
 Dynamic | Openness | Authorship
 ------------ | ------------- | -------------
@@ -146,13 +148,20 @@ ___
 ___
 #### Sources:
 1.	Literature:
-- Towards Another Scientific Revolution, Sönke Bartling & Sascha Friesike
-- Scholarly Publishing: A Brief History, Ben Mudrak, PhD
-- Open Innovation and Crowdsourcing in the Sciences, Thomas Schildhauer & Hilger Voss
-- Dynamic Publication Formats and Collaborative Authoring, Lambert Heller, Ronald The & Sönke Bartling
-- Academia Goes Facebook? - The Potential of Social Network Sites in the Scholarly Realm, Michael Nentwich & René König
+- Past:
+  - Scholarly Publishing: A Brief History, Ben Mudrak, PhD
+- Present:
+  - Open Innovation and Crowdsourcing in the Sciences, Thomas Schildhauer & Hilger Voss (http://book.openingscience.org.s3-website-eu-west-1.amazonaws.com/vision/open_innovation_and_crowdsourcing_in_science.html)
+  - Dynamic Publication Formats and Collaborative Authoring, Lambert Heller, Ronald The & Sönke Bartling (http://book.openingscience.org.s3-website-eu-west-1.amazonaws.com/vision/dynamic_publication_formats.html)
+- Future:
+  - Towards Another Scientific Revolution, Sönke Bartling & Sascha Friesike
+  - Academia Goes Facebook? - The Potential of Social Network Sites in the Scholarly Realm, Michael Nentwich & René König (http://book.openingscience.org.s3-website-eu-west-1.amazonaws.com/tools/academia_goes_facebook.html)
 
 2.	Internet:
-- Academic publishing, Wikipedia.com
-- Scholarly peer review, Wikipedia.com
-- cOALition S, https://www.scienceeurope.org/coalition-s/
+- Present
+  - Academic publishing, Wikipedia.com, https://en.wikipedia.org/wiki/Academic_publishing
+  - Scholarly peer review, Wikipedia.com, https://en.wikipedia.org/wiki/Scholarly_peer_review
+  - cOALition S, https://www.scienceeurope.org/coalition-s/
+  - https://www.aje.com/en/arc/scholarly-publishing-brief-history/
+  - https://de.wikipedia.org/wiki/Preprint
+
