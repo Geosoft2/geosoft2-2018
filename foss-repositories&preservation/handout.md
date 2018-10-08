@@ -1,22 +1,21 @@
 # FOSS Repositories & Preservation
-> Niklas Aßelmann & Yannick Paulsen
+**Autors**: Niklas Aßelmann [@NiklasAsselmann](https://github.com/NiklasAsselmann) & Yannick Paulsen [@yhallowiegeht](https://github.com/yhallowiegeht)
+> 
 
 ## Table of Content
 
 - [1 Introduction](#1-introduction)
 - [2 FOSS Repositories](#2-foss-repositories)
   * [2.1 Prerequesite Knowledge](#21-prerequesite-knowledge)
-    + [2.1.1 Repository Definition](#211-repository-definition)
+    + [2.1.1 Data Repository Definition](#211-data-repository-definition)
     + [2.1.2 Basic Terminology](#212-basic-terminology)
-      - [2.1.2.1 Trunk](#2121-trunk)
-      - [2.1.2.2 Branch](#2122-branch)
-      - [2.1.2.3 Commit](#2123-commit)
-      - [2.1.2.4 Push/Pull](#2124-push-pull)
-      - [2.1.2.5 Merge](#2125-merge)
-      - [2.1.2.6 Fork](#2126-fork)
-      - [2.1.2.7 Tag](#2127-tag)
-      - [2.1.2.8 Version Control](#2128-version-control)
-      - [2.1.2.9 Working Tree](#2129-working-tree)
+      - [2.1.2.1 Version Control](#2121-version-control)
+      - [2.1.2.2 Working Tree](#2122-working-tree)
+      - [2.1.2.3 Embargo](#2123-embargo)
+      - [2.1.2.4 Metadata Harvesting](#2124-metadata-harvesting)
+      - [2.1.2.5 Digital Object Identifier](#2125-doi)
+      - [2.1.2.6 Representational state transfer](#2126-rest)
+      - [2.1.2.7 Open Researcher and Contributor ID](#2127-orcid)
     + [2.1.3 Repository vs. Archive](#213-repository-vs-archive)
   * [2.2 Overview of the repository-software](#22-overview-of-the-repository-software)
     + [2.2.1 Zenodo](#221-zenodo)
@@ -62,7 +61,7 @@
       - [3.2.4.7 Metadata attachment](#3247-metadata-attachment)
     + [3.2.5 Software Preservation Network (SPN)](#325-software-preservation-network--spn-)
     + [3.2.6 The OAIS Reference Model](#326-the-oais-reference-model)
-- [Source Disclosures](#source-disclosures)
+- [Sources](#sources)
 
 <!-- toc -->
 
@@ -70,37 +69,34 @@
 - Our topic "FOSS Repositories and Preservation is dealing with Free/Libre Open Source Software to store any kind of data. In a world where more and more data is produzed every day, these repositories provide software that can store and preserve reseach data we are gonne need for our projects. In the following we are gonna introduce you some of these softwares and the basic principles of preservation.
 ## 2 FOSS Repositories
 ### 2.1 Prerequesite Knowledge
-#### 2.1.1 Repository Definition
-- A repository is a central file storage location and provides a structured way for programmers to store development files
+#### 2.1.1 Data Repository Definition
+- A data repository is a digital archive and provides a structured way for users to store, preserve and make available research data and their metadata 
+- Permalinks are a common and comfortable mean for linking and citing datasets
 - It is used by version control systems to store multiple versions of files 
 - While a repository can be configured on a local machine for a single user, 
-it is often stored on a server, which can be accessed by multiple users 
-- Repositories can be helpful for any type of software development, but it is especially important for large development projects
+it is often stored on a server, which can be accessed by multiple users
 #### 2.1.2 Basic Terminology
-##### 2.1.2.1 Trunk
-- The trunk contains the current version of a software project 
-- This may include multiple source code files, as well as other resources used by the program
-##### 2.1.2.2 Branch
-- Branches are used to store new versions of the program and represent an independent line of development 
-- A developer may create a new branch whenever he makes substantial revisions to the program 
-- If a branch contains unwanted changes, it can be discontinued
-##### 2.1.2.3 Commit
-- By committing changes to a repository, developers can quickly revert to a previous version of a program if a recent update causes bugs or other problems
-##### 2.1.2.4 Push/Pull
-- Push requests upload all local branch commits to the repository
-- Pull requests download the bookmark history and incorporates changes
-##### 2.1.2.5 Merge
-- Combines the specified branch’s history into the current branch  
-##### 2.1.2.6 Fork
-- Instead of using a single server-side repository to act as the “central” codebase, forking gives every developer a server-side repository 
-- This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one
-##### 2.1.2.7 Tag
-- Tags are used to save versions of a project, but are not meant for active development 
-- For example, a developer may create a "release tag" each time a new version of the software is released
-##### 2.1.2.8 Version Control
+##### 2.1.2.1 Version Control
 - A system that records changes to a file or set of files over time so that you can recall specific versions later
-##### 2.1.2.9 Working Tree
+##### 2.1.2.2 Working Tree
 - The tree of actual checked out files, normally containing the contents of the HEAD commit's tree and any local changes you've made but haven't yet committed
+##### 2.1.2.3 Embargo
+- When publishing a dataset, a user may choose to defer the date at which the data becomes available (for example, so that it is available at the same time as an associated article).
+- This means that the description and files of that dataset are not publicly available until the embargo date is reached.
+- Meanwhile, some other information about the dataset - such as the contributors, title, citation and associated articles become available immediately, prior to the embargo.
+##### 2.1.2.4 Metadata Harvesting
+- the Protocol for Metadata Harvesting (OAI-PMH) is developed to harvest(collect) descriptions of records so that services can be using metadata from many different archives.
+- typically used by CERN-based networks (f.e. Zenodo)
+##### 2.1.2.5 DOI
+- a Digital Object Identifier (DOI) is a persistent identifier used to uniquely identify objects
+- are mainly in use to identify academic, professional, and government information, such as journal articles, research reports and data sets, and official publications
+##### 2.1.2.6 REST
+- Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services
+- RESTful web services provide interoperability between computer systems
+- using a stateless protocol and standard operations, REST systems aim for fast performance, reliability, and the ability to grow, by re-using components that can be managed and updated without affecting the system as a whole
+##### 2.1.2.7 ORCID
+- ORCID iD (Open Researcher and Contributor ID) is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors
+- addresses the problem that a particular author's contributions to the scientific literature or publications in the humanities can be hard to recognize as most personal names are not unique or can change during a lifespan
 #### 2.1.3 Repository vs. Archive 
 - Archive and repository are often referred synonymous
 - Archives are storage rooms for files kept for historical interest
@@ -143,20 +139,45 @@ it is often stored on a server, which can be accessed by multiple users
 - web- and standards-based, open-source application which allows your institution to preserve long-term access to digital content
 - Stable version: 1.7.2 (11.09.18)
 ### 2.3 Comparison 
+The comparison is focused on the most accessible data repositories of this list. 
+This means the 3 out of 6 which seemed the most work-in-progress, 
+most well-documented and for our studies best to apply.
 #### 2.3.1 Comparison
-:warning: to be done
 
-![Alt-Text](images/dSpaceFedora1.PNG)
-![Alt-Text](images/dSpaceFedora2.PNG)
-![Alt-Text](images/dSpaceFedora3.PNG)
-![Alt-Text](images/dSpaceFedora4.PNG)
-![Alt-Text](images/dSpaceFedora5.PNG)
-![Alt-Text](images/dSpaceFedora6.PNG)
-![Alt-Text](images/dSpaceFedora7.PNG)
-![Alt-Text](images/dSpaceFedora8.PNG)
-![Alt-Text](images/dSpaceFedora9.PNG)
-![Alt-Text](images/dSpaceFedora10.PNG)
-
+| Name             |                                                 | DSpace                                                                                               | Fedora                                                                     | Zenodo                                                                                                                            |
+|------------------|-------------------------------------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Vision/Idea      |                                                 | produce a choice for repository software providing  means for open available and easy to manage data | advancement of open source software and content as collaborative community | open dependable deposit for science, enabling researchers  to share and preserve research outputs. Small layer on top of Invenio. |
+| Infrastructure   | development language                            | Java                                                                                                 | Java                                                                       | Python                                                                                                                            |
+|                  | support community                               | Yes, thousands of institutions                                                                       | Yes, 130 institutions                                                      | Yes, ~2300 registered communities                                                                                                 |
+| Interface        | front-end integration                           | Yes, JSPUI(Java) or Manakin(XML)                                                                     | Yes, Islandora or Hydra                                                    | Yes, via Zenodo REST API possible                                                                                                 |
+|                  | customizable                                    | Yes                                                                                                  | Yes                                                                        | Yes                                                                                                                               |
+| Metadata         | exporting shema filetype                        | OAI-PMH, XML and METs                                                                                | OAI-PMH, DC, MODS, XML;  others through conversion possible                | OAI-PMH, XML                                                                                                                      |
+|                  | required/customizable                           | Yes/Yes                                                                                              | Yes/Yes                                                                    | Yes/Yes                                                                                                                           |
+|                  | versioning                                      | Yes                                                                                                  | Yes                                                                        | Yes                                                                                                                               |
+| Security/Privacy | embargos                                        | Yes                                                                                                  | Yes with modules possible                                                  | Yes                                                                                                                               |
+|                  | private/public data                             | Yes                                                                                                  | Yes                                                                        | Yes                                                                                                                               |
+|                  | access control/authentication                   | Yes(groups)/Yes(passwords, LDAP, IP..)                                                               | Yes/Yes(LDAP, CAS..)                                                       | Yes(communities)/Yes(OAuth, access token)                                                                                         |
+| Submission       | data types                                      | All types                                                                                            | All types                                                                  | All types                                                                                                                         |
+|                  | size limit                                      | 1GB(can be increased up to 4GB)                                                                      | 1TB via RestAPI                                                            | 50GB(per dataset)                                                                                                                 |
+|                  | data deposit APIs                               | SWORD                                                                                                | SWORD                                                                      | Zenodo REST API                                                                                                                   |
+| Access/Sharing   | licensing                                       | Yes                                                                                                  | Yes                                                                        | Yes                                                                                                                               |
+|                  | integration of other institutional repositories | Yes, via metada-harvesting(OAI-PMH)                                                                  | Yes, via metada-harvesting(OAI-PMH)                                        | Yes, via metada-harvesting(OAI-PMH)                                                                                               |
+| Analysis         | visualization                                   | No                                                                                                   | Yes, but development required(Blacklight)                                  | Yes, with development possible                                                                                                    |
+|                  | graphing of tables                              | No                                                                                                   | Yes, requires solution packs                                               | Yes, with development                                                                                                             |
+|                  | geographic data                                 | Yes, requires development                                                                            | Yes, requires solution packs                                               | Yes, requires development                                                                                                         |
+| Archiving        | author ID                                       | ORCID                                                                                                | ORCID                                                                      | creator string in metadata                                                                                                        |
+|                  | version control                                 | Yes                                                                                                  | Yes                                                                        | Yes                                                                                                                               |
+|                  | citation & references                           | No                                                                                                   | Yes, scholar modules                                                       | Yes                                                                                                                               |
+| Preservation     | redundancy                                      | No                                                                                                   | No                                                                         |                                                                                                                                   |
+|                  | DOI capability                                  | Yes(interoperability with EZID/DataCite API)                                                         | Yes(DataCite community/collection level DOI)                               | Yes(DataCite community/collection level DOI)                                                                                      |
+|                  | back-up options                                 | Yes(but issues with versioning)                                                                      | Yes                                                                        | ?                                                                                                                                 |
+| Admin            | tracking                                        | SOLR                                                                                                 | SOLR                                                                       | Code of practice for research data usage                                                                                          |
+|                  | usage/download reports                          | SOLR, elastic search(Manakin)                                                                        | SOLR                                                                       | Code of practice for research data usage                                                                                          |
+| Publishing       | search API/optimization                         | Lucence(Java)                                                                                        | GSearch                                                                    | Zenodo REST API                                                                                                                   |
+|                  | publishing workflow                             | JSPUI & XMLUI                                                                                        | Yes                                                                        | ?                                                                                                                                 |
+|                  | RSS/social media integration                    | Yes/Yes(development required)                                                                        | Yes/?                                                                      | ?/?                                                                                                                               |
+|                  | community/curators                              | Yes                                                                                                  | Yes(requires development)                                                  | Yes                                                                                                                               |
+|                  | deletions possible                              | Yes                                                                                                  | Yes(CRUD)                                                                  | Yes                                                                                                                               |
 #### 2.3.2 Resume
 :warning: to be done
 
@@ -269,7 +290,7 @@ it is often stored on a server, which can be accessed by multiple users
 
 ![ALT-Text](images/OAIS2.png)
 
-## Source Disclosures
+## Sources
 - https://www.gesis.org/en/services/archiving-and-registering/data-archiving/long-term-preservation/
 - http://www.softwarepreservationnetwork.org/
 - https://earthdata.nasa.gov/user-resources/standards-and-references/preservation-content-spec
