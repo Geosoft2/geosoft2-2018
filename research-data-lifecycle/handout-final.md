@@ -1,30 +1,30 @@
 # Datenlebenszyklus und best practice
 
-Von Cornelia Zygar
+Von Cornelia Zygar [@corneliazy](https://github.com/corneliazy/)
 
-Inhalt
+# Inhalt
 
-Forschungsdatenmanagement
+[Forschungsdatenmanagement](#Forschungsdatenmanagement)
 
-Der Datenlebenszyklus (research data lifecycle)
+[Der Datenlebenszyklus (research data lifecycle)](#Datenlebenszyklus)
 
-Aufgaben während des gesamten Datenlebenszyklus
+[Aufgaben während des gesamten Datenlebenszyklus](#Aufgaben-waehrend-Datenlebenszyklus)
 
-Schritt 1: Datenerstellung
+[Schritt 1: Datenerstellung](#Schritt1)
 
-Schritt 2: Datenverarbeitung
+[Schritt 2: Datenverarbeitung](#Schritt2)
 
-Schritt 3: Datenanalyse
+[Schritt 3: Datenanalyse](#Schritt3)
 
-Schritt 4: Datenarchivierung
+[Schritt 4: Datenarchivierung](#Schritt4)
 
-Schritt 5: Datenzugang
+[Schritt 5: Datenzugang](#Schritt5)
 
-Schritt 6: Datennachnutzung
+[Schritt 6: Datennachnutzung](#Schritt6)
 
-Wer ist für welchen Schritt im Datenlebenszyklus verantwortlich/ Welche Akteure sind beteiligt?
+[Wer ist für welchen Schritt im Datenlebenszyklus verantwortlich/ Welche Akteure sind beteiligt?](#Akteure)
 
-Quellenverzeichnis
+[Quellenverzeichnis](#Quellen)
 
 
 
@@ -34,7 +34,8 @@ _Forschungsdaten müssen über die Dauer des Forschungsprojektes hinaus gespeich
 
 _Um diese zu gewährleisten ist es ebenfalls notwendig, dass die Forschungsdaten auffindbar sind, in einem lesbaren Format vorliegen und gut dokumentiert sind, damit sie für Nachnutzer verständlich und somit brauchbar sind._
 
-# Forschungsdatenmanagement
+Die Problematik eines fehlenden Forschungsdatenmanagements wird in diesem YouTube-Video der NYU Health Sciences Library gut deutlich: [https://www.youtube.com/attribution?v=N2zK3sAtr-4](https://www.youtube.com/attribution?v=N2zK3sAtr-4)
+# <a id="Forschungsdatenmanagement"></a>Forschungsdatenmanagement
 
 _Beschreibt alle Maßnahmen und Methoden, die genutzt werden, um Forschungsdaten über einen langen Zeitraum zu sichern und zugänglich, nachnutzbar und interpretierbar zu machen._
 
@@ -57,84 +58,86 @@ _Beschreibt alle Maßnahmen und Methoden, die genutzt werden, um Forschungsdaten
 
 _Voraussetzung für den richtigen Umgang mit Forschungsdaten ist deren professionelle Handhabung anhand der Stationen des Datenlebenszyklus._
 
-# Der Datenlebenszyklus (research data lifecycle)
+Quelle: [https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/Schulungsunterlagen/Schulungsunterlagen_FDM_Einfuehrung_Folien.pdf](https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/Schulungsunterlagen/Schulungsunterlagen_FDM_Einfuehrung_Folien.pdf)
+
+# <a id="Datenlebenszyklus"></a>Der Datenlebenszyklus (research data lifecycle)
 
 _Es gibt verschiedene Versionen des Datenlebenszyklus. Generell sind sich alle Versionen sehr ähnlich, nur die Aufteilung der Schritte unterscheidet sich._
 
 Exemplarisch zwei Beispiele:
 
-1. a.Version von DataONE:
+## Version von DataONE:
 
-1. Plan
-  - Beschreibung der Daten die erhoben werden sollen, wie die Daten verwaltet werden und wie sie zugänglich gemacht werden sollen
-2. Collect
-  - Beobachtungen werden entweder per Hand gemacht, mit Sensoren oder mit anderen Instrumenten und die Daten werden digital gespeichert
-3. Assure
+**1. Plan**
+ - Beschreibung der Daten die erhoben werden sollen, wie die Daten verwaltet werden und wie sie zugänglich gemacht werden sollen
+ 
+**2. Collect**
+- Beobachtungen werden entweder per Hand gemacht, mit Sensoren oder mit anderen Instrumenten und die Daten werden digital gespeichert
+
+**3. Assure**
   - Die Qualität der Daten wird durch Prüfungen gewährleistet
-4. Describe
+
+**4. Describe**
   - Daten werden dokumentiert und beschrieben
-5. Preserve
+
+**5. Preserve**
   - Daten werden in ein geeignetes Langzeitarchiv eingereicht
-6. Discover
+  
+**6. Discover**
   - Nützliche Daten werden zusammen mit relevanten Informationen über die Daten gespeichert
-7. Integrate
+  
+**7. Integrate**
   - Daten aus unterschiedlichen Quellen werden zu einem homogenen Datensatz zusammengefasst, der leicht analysiert werden kann
-8. Analyze
+  
+**8. Analyze**
   - Daten werden analysiert
 
 Weitere Informationen über den Datenlebenszyklus von DataONE: [https://www.dataone.org/sites/all/documents/DataONE\_BP\_Primer\_020212.pdf](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf)
 
-1. b.Version des UK Data Achives:
+## Version des UK Data Achives:
 
-1. Datenerstellung
+**1. Datenerstellung**
   - Untersuchungsdesign erstellen
   - Datenmanagementplan erstellen
   - Bereits vorhandene Daten sichten
   - Generieren neuer Daten durch Messungen, Experimente usw.
-2. Datenverarbeitung
-
-1.
+  
+**2. Datenverarbeitung**
   - Daten eingeben, digitalisieren, usw.
   - Daten prüfen und bereinigen
   - Daten falls nötig anonymisieren
   - Beschreiben der Daten
   - Verwalten und Sichern der Daten
 
-1. Datenanalyse
-
-1.
+**3. Datenanalyse**
   - Daten herleiten und interpretieren
   - Forschungsergebnisse ausgeben
   - Publikationsprozess unter Nutzung der Daten
 
-1. Datenarchivierung
-
-1.
+**4. Datenarchivierung**
   - Daten in geeignete Formate und auf geeignete Medien migrieren
   - Backups erstellen und Daten sichern
   - Metadaten erstellen und dokumentieren
   - Daten archivieren
 
-1. Datenzugang
-
-1.
+**5. Datenzugang**
   - Teilen der Daten
   - Datenlizenzen wählen
   - Urheberrechte festlegen
   - Daten bekannt machen
 
-1. Datennachnutzung
-
-1.
+**6. Datennachnutzung**
   - Mit Daten weiter forschen
   - Bisherige Forschungen rezensieren
   - Daten für die Lehre nutzen
 
+Quelle: [https://www.ukdataservice.ac.uk/media/187718/dmplanningdm24apr2013.pdf](https://www.ukdataservice.ac.uk/media/187718/dmplanningdm24apr2013.pdf)
+
 _Einige Phasen lassen sich nicht klar voneinander trennen und überschneiden sich. In einigen Projekten werden nur Teile des Datenlebenszyklus durchlaufen._
 
-**Im Folgenden werden die einzelnen Phasen des Datenlebenszyklus des UK Data Archives kurz genannt und wichtige Aspekte des Forschungsdatenmanagements erläutert, die in dem entsprechenden Abschnitt relevant sind.**
+**_Im Folgenden werden die einzelnen Phasen des Datenlebenszyklus des UK Data Archives kurz genannt und wichtige Aspekte des Forschungsdatenmanagements erläutert, die in dem entsprechenden Abschnitt relevant sind._**
 
-# Aufgaben während des gesamten Datenlebenszyklus
+# <a id="Aufgaben-waehrend-Datenlebenszyklus"></a>Aufgaben während des gesamten Datenlebenszyklus
 
 ## Dokumentation
 
@@ -160,6 +163,8 @@ Besteht meist aus drei Elementen:
 - Beschreibung des Datensatzes und Informationen über dessen Lebenszyklus
 - Angaben über alle Maßnahmen zu Management, Organisation oder Veränderung des Datensatzes
 - Informationen zu allen ungelösten Problemen in Bezug auf den Umgang mit den Daten
+
+Quelle: [https://www.forschungsdaten.info/themen/aufbereiten-und-veroeffentlichen/datendokumentation/](https://www.forschungsdaten.info/themen/aufbereiten-und-veroeffentlichen/datendokumentation/)
 
 ## Sicherung der Daten vor Verlust
 
@@ -188,7 +193,9 @@ _Backups sollten regelmäßig und von Beginn der Forschungsarbeiten an erstellt 
 - Sichere Passwörter (mindestens 20 Stellen)
 - Wichtige Daten verschlüsseln
 
-# Schritt 1: Datenerstellung
+Quelle: [https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/Schulungsunterlagen/Schulungsunterlagen_FDM_Einfuehrung_Folien.pdf](https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/Schulungsunterlagen/Schulungsunterlagen_FDM_Einfuehrung_Folien.pdf)
+
+# <a id="Schritt1"></a>Schritt 1: Datenerstellung
 
 ## Erstellen eines Datenmanagementplans
 
@@ -221,6 +228,16 @@ _Der allgemeine Aufbau von Datenmanagementplänen ist immer ähnlich, die WWU ha
 9. Kosten und Ressourcen
   - Kosten und Personalaufwand für die Einhaltung des Datenmanagement Plans, sowie Kosten für die Erstellung von Metadaten usw.
 
+Quellen:
+
+Empfehlungen der WWU
+
+[https://www.uni-muenster.de/Forschungsdaten/publizieren/lizenzen/](https://www.uni-muenster.de/Forschungsdaten/publizieren/lizenzen/)
+
+Erläuterungen der Schritte
+
+[https://data.uni-bielefeld.de/de/data-management-plan](https://data.uni-bielefeld.de/de/data-management-plan)
+
 ### Wieso wird ein DMP benötigt?
 
 - Um Herausforderungen ggf. schon vor Beginn des Projektes zu erkennen und Lösungen zu finden
@@ -237,7 +254,10 @@ _Die FAIR Prinzipien sind ein Anforderungsprofil für den Umgang mit Forschungsd
   - Interoperable (kompatibel zu anderen Systemen)
   - Re- usable (nachnutzbar)
 
-Genauere Erläuterungen zu den FAIR-Prinzipien sind in dem Handout zum Thema „data publishing requirements in science&quot; zu finden.
+Quelle:
+[https://www.uni-muenster.de/Forschungsdaten/organisieren/datenmanagementplan/](https://www.uni-muenster.de/Forschungsdaten/organisieren/datenmanagementplan/)
+
+Genauere Erläuterungen zu den FAIR-Prinzipien sind in dem Handout zum Thema „data publishing requirements in science&quot; und in dem [Flyer des H2020 Programms](http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf) zu finden.
 
 ## Datenerhebung
 
@@ -261,6 +281,8 @@ Genauere Erläuterungen zu den FAIR-Prinzipien sind in dem Handout zum Thema „
 - Führen einer Versionstabelle
 - Eventuell Nutzen einer Versionsverwaltungs-Software
 
+Quelle: [https://www.forschungsdaten.info/themen/organisieren-und-arbeiten/datenorganisation/](https://www.forschungsdaten.info/themen/organisieren-und-arbeiten/datenorganisation/)
+
 ## Erfassen und Erstellen von Metadaten
 
 ### Was sind Metadaten?
@@ -271,7 +293,6 @@ Genauere Erläuterungen zu den FAIR-Prinzipien sind in dem Handout zum Thema „
 ### Woraus bestehen Metadaten?
 
 - Bezeichnung oder Titel
-
 - Informationen zum Kontext der Daten
 - Name und Adresse der Personen/ Institutionen die an der Datenerhebung beteiligt sind
 - Beschreibung der Inhalte
@@ -300,7 +321,9 @@ Hierfür gibt es zwei Möglichkeiten
 1. In einem eigenen Versionsdokument
 2. Nutzen von Metadatenstandards (ISO 19115/ISO 19139 beginnt sich durchzusetzen)
 
-# Schritt 2: Datenverarbeitung
+Quelle: [http://gfzpublic.gfz-potsdam.de/pubman/item/escidoc:749901:8/component/escidoc:749904/EWIG-Brosch%C3%BCre.pdf](http://gfzpublic.gfz-potsdam.de/pubman/item/escidoc:749901:8/component/escidoc:749904/EWIG-Brosch%C3%BCre.pdf)
+
+# <a id="Schritt2"></a>Schritt 2: Datenverarbeitung
 
 ## Sicherung der Datenqualität
 
@@ -309,33 +332,32 @@ Hierfür gibt es zwei Möglichkeiten
 - Metadaten zusätzlich zur schriftlichen Publikation
 - Forschungsdaten selbst müssen ebenfalls eine gute Qualität haben (Plausible Messwerte und Interpolation bei Messfehlern)
 
-# Schritt 3: Datenanalyse
+# <a id="Schritt3"></a>Schritt 3: Datenanalyse
 
 ## Datenvisualisierung
 
 - Überwiegend werden einfache Grafiken genutzt (Diagramme, Tabellen, Organigramme)
 - Möglich sind auch Karten oder Bilder
 
-Zwei Services für die Visualisierung von Text in Kombination mit Geodaten sind:
+Ein Service für die Visualisierung von Text in Kombination mit Geodaten ist:
+[http://www.informatik.uni-leipzig.de:8080/geotemco/index.html](http://www.informatik.uni-leipzig.de:8080/geotemco/index.html) für die Visualisierung raum-zeitlicher Daten.
 
-[https://peerj.com/preprints/3192/](https://peerj.com/preprints/3192/)
 
-[http://www.informatik.uni-leipzig.de:8080/geotemco/index.html](http://www.informatik.uni-leipzig.de:8080/geotemco/index.html)
+Eine weitere interessante Internetseite, die sich unabhängig von den Geowissenschaften mit der Visualisierung von Information beschäftigt ist die Internetseite [https://informationisbeautiful.net/](https://informationisbeautiful.net/).
 
-# Schritt 4: Datenarchivierung
+# <a id="Schritt4"></a>Schritt 4: Datenarchivierung
 
 - Die Deutsche Forschungsgemeinschaft (DFG) verlangt eine sichere Archivierung der Forschungsdaten für mindestens 10 Jahre
 - Archivierung von Forschungsdaten sollte dokumentiert, registriert und zugänglich sein um eine Nachnutzung zu erleichtern
+
+Die Leitlinien der DFG zum Umgang mit Forschungsdaten sind [hier](http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf) zu finden.
 
 ## Welche Daten sollten archiviert werden?
 
 - ALLE Daten zu speichern, die in einem Forschungsprojekt entstehen, ist technisch und ökonomisch nicht möglich
 - Entscheidung welche Forschungsdaten wie archiviert werden
 - Nach Abschluss eines Projektes muss eine Datenbewertung vorgenommen werden (diese ist Grundlage für die Entscheidung, welche Daten aufbewahrt werden)
-  - Folgende Kriterien:
-
--
-  -
+  - Folgende Kriterien sind bei dieser Entscheidung zu berücksichtigen:
     - Bedarf
     - Verifizierbarkeit
     - Dokumentation
@@ -344,6 +366,8 @@ Zwei Services für die Visualisierung von Text in Kombination mit Geodaten sind:
     - Technische Erhaltung
     - Kosten
     - Rechte
+
+Quelle: [https://www.forschungsdaten.info/themen/organisieren-und-arbeiten/auswaehlen-und-bewerten/](https://www.forschungsdaten.info/themen/organisieren-und-arbeiten/auswaehlen-und-bewerten/)
 
 ## Datenformate
 
@@ -362,21 +386,25 @@ Am besten geeignete Dateiformate für Langzeitarchive (auf Basis einer Studie de
 - Waveform Audio File Format (WAV) für Audiodateien
 - Extensible Markup Language (XML) für Dokumente
 
+Weitere Informationen, auch über die Speicherdauer in den unterschiedlichen Formaten ist [hier](https://www.forschungsdaten.info/themen/bewahren-und-nachnutzen/formate-erhalten/) zu finden.
+
 ## Langzeitarchivierung (LZA)
 
 _Problem: digitale Datenträger, Formate, Software und Ablageorte sind kurzlebig und werden vergleichsweise schnell unbenutzbar_
 
 - Zwei wesentliche Aspekte der LZA
   1. Substanzerhaltung
-    - Bewahrung der Dateninhalte
-    - Müssen auf andere Systeme/ Datenträger übertragbar sein, falls alte Datenträger unbenutzbar zu werden drohen
-    - Deshalb: keinen Kopierschutz, Verschlüsselung oder Migrationsbarrieren wenn LZA gewünscht ist
+    	- Bewahrung der Dateninhalte
+    	- Müssen auf andere Systeme/ Datenträger übertragbar sein, falls alte Datenträger unbenutzbar zu werden drohen
+    	- Deshalb: keinen Kopierschutz, Verschlüsselung oder Migrationsbarrieren wenn LZA gewünscht ist
   2. Erhaltung der Benutzbarkeit
-    - Jedem Datensatz liegt eine technische Nutzungsumgebung zu Grunde
-    - Problem: systemabhängige Programme oft nur wenige Jahre verfügbar
-    - Deshalb: besser Open-Source-Software verwenden
-
+   	 - Jedem Datensatz liegt eine technische Nutzungsumgebung zu Grunde
+     - Problem: systemabhängige Programme oft nur wenige Jahre verfügbar
+   	 - Deshalb: besser Open-Source-Software verwenden
+	
 _Datensätze sollten in einem Archiv abgelegt werden, das für den Fachbereich geeignet ist. Dem Datensatz muss dort einen digital object identifier (DOI) zugordnet werden._
+
+Quelle: [https://www.forschungsdaten.info/themen/bewahren-und-nachnutzen/langzeitarchivierung/](https://www.forschungsdaten.info/themen/bewahren-und-nachnutzen/langzeitarchivierung/)
 
 ## Was ist ein Digital Object Identifier (DOI)?
 
@@ -391,7 +419,7 @@ Genauere Informationen zu den Digital Object Identifiers sind in dem Handout zum
 - Online Archiv für wissenschaftliche Datensätze
 - Finanziert von der Europäischen Kommission
 
-# Schritt 5: Datenzugang
+# <a id="Schritt5"></a>Schritt 5: Datenzugang
 
 ## Repositorien
 
@@ -422,48 +450,45 @@ Für die WWU gibt es das &quot;Münstersche Informations- und Archivsystem multi
   - Open Data Commons (ODC) /spezialisiert für Datensammlungen [https://opendatacommons.org/licenses/by/1-0/](https://opendatacommons.org/licenses/by/1-0/)
 - Können Rechte erweitern aber auch stärker einschränken
 - Urheber behalten ihr Recht und gleichzeitig dürfen andere die Daten kopieren, verbreiten und anderweitig nutzen
-
-1.
-  -
     - „so offen wie möglich, so geschlossen wie nötig&quot;
     - Prinzip der „Intelligent Openness&quot;
     - im Sinne der FAIR-Prinzipien ist die CC-BY Lizenz am besten
 
-Creative Commons Lizenzen (sechs Kernlizenzen)
+### Creative Commons Lizenzen (sechs Kernlizenzen)
 
-- CC BY (Namensnennung)
+**CC BY (Namensnennung)**
 
 &quot;Diese Lizenz erlaubt anderen, Ihr Werk zu verbreiten, zu remixen, zu verbessern und darauf aufzubauen, auch kommerziell, solange Sie als Urheber des Originals genannt werden. Dies ist die freieste Lizenz, die wir anbieten, empfohlen für maximale Verbreitung und Nutzung des lizenzierten Werkes.&quot;
 
-- CC BY-SA (Namensnennung – Weitergabe unter gleichen Bedingungen)
+**CC BY-SA (Namensnennung – Weitergabe unter gleichen Bedingungen)**
 
 „Diese Lizenz erlaubt es anderen, Ihr Werk zu verbreiten, zu remixen, zu verbessern und darauf aufzubauen, auch kommerziell, solange Sie als Urheber des Originals genannt werden und die auf Ihrem Werk basierenden neuen Werke unter denselben Bedingungen veröffentlicht werden. Diese Lizenz wird oft mit „Copyleft&quot;-Lizenzen im Bereich freier und Open Source Software verglichen. Alle neuen Werke, die auf Ihrem aufbauen, werden unter derselben Lizenz stehen, also auch kommerziell nutzbar sein. Dies ist die Lizenz, die auch von der Wikipedia eingesetzt wird, empfohlen für Werke, für die eine Einbindung von Wikipedia-Material oder anderen so lizenzierten Werken sinnvoll sein kann.&quot;
 
-- CC BY-ND (Namensnennung – Keine Bearbeitung)
+**CC BY-ND (Namensnennung – Keine Bearbeitung)**
 
 „Diese Lizenz erlaubt anderen die Weiterverbreitung Ihres Werkes, kommerziell wie nicht-kommerziell, solange dies ohne Veränderungen und vollständig geschieht und Sie als Urheber genannt werden.&quot;
 
-- CC BY-NC (Namensnennung – Nicht kommerziell)
+**CC BY-NC (Namensnennung – Nicht kommerziell)**
 
 „Diese Lizenz erlaubt es anderen, Ihr Werk zu verbreiten, zu remixen, zu verbessern und darauf aufzubauen, allerdings nur nicht-kommerziell. Und obwohl auch bei den auf Ihrem Werk basierenden neuen Werken Ihr Namen mit genannt werden muss und sie nur nicht-kommerziell verwendet werden dürfen, müssen diese neuen Werke nicht unter denselben Bedingungen lizenziert werden&quot;
 
-- CC BY-NC-SA (Namensnennung – Nicht-kommerziell – Weitergabe unter gleichen Bedingungen)
+**CC BY-NC-SA (Namensnennung – Nicht-kommerziell – Weitergabe unter gleichen Bedingungen)**
 
 „Diese Lizenz erlaubt es anderen, Ihr Werk zu verbreiten, zu remixen, zu verbessern und darauf aufzubauen, allerdings nur nicht-kommerziell und solange Sie als Urheber des Originals genannt werden und die auf Ihrem Werk basierenden neuen Werke unter denselben Bedingungen veröffentlicht werden.&quot;
 
-- CC BY-NC-ND (Namensnennung – Nicht-kommerziell – Keine Bearbeitung)
+**CC BY-NC-ND (Namensnennung – Nicht-kommerziell – Keine Bearbeitung)**
 
 „Dies ist die restriktivste unserer sechs Kernlizenzen. Sie erlaubt lediglich Download und Weiterverteilung des Werkes unter Nennung Ihres Namens, jedoch keinerlei Bearbeitung oder kommerzielle Nutzung.&quot;
 
-Weitere Informationen: [https://creativecommons.org/licenses/?lang=de](https://creativecommons.org/licenses/?lang=de)
+Quelle (und weitere Informationen): [https://creativecommons.org/licenses/?lang=de](https://creativecommons.org/licenses/?lang=de)
 
-# Schritt 6: Datennachnutzung
+# <a id="Schritt6"></a>Schritt 6: Datennachnutzung
 
 Auch bei der Nachnutzung von Daten müssen Metadaten ergänzt werden:
 
 - Bereits vorhandene Metadaten ergänzen um: Zugangsquelle und Abrufdatum
 
-# Wer ist für welchen Schritt im Datenlebenszyklus verantwortlich/ Welche Akteure sind beteiligt?
+# <a id="Akteure"></a>Wer ist für welchen Schritt im Datenlebenszyklus verantwortlich/ Welche Akteure sind beteiligt?
 
 _Verantwortungsbereiche lassen sich in Domänen aufteilen:_
 
@@ -480,30 +505,14 @@ _Verantwortungsbereiche lassen sich in Domänen aufteilen:_
   - Öffentliche Nachnutzung
 - Theoretisch fließende Übergänge zwischen den Domänen, praktisch oft nicht
 
-# Quellenverzeichnis
 
-[https://www.youtube.com/attribution?v=N2zK3sAtr-4](https://www.youtube.com/attribution?v=N2zK3sAtr-4)
+Quelle: [http://gfzpublic.gfz-potsdam.de/pubman/item/escidoc:749901:8/component/escidoc:749904/EWIG-Brosch%C3%BCre.pdf](http://gfzpublic.gfz-potsdam.de/pubman/item/escidoc:749901:8/component/escidoc:749904/EWIG-Brosch%C3%BCre.pdf)
 
-[https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/FDMInfoFlyer.pdf](https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/FDMInfoFlyer.pdf)
+# <a id="Quellen"></a>Weiterführende Links
 
-[https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/Schulungsunterlagen/Schulungsunterlagen\_FDM\_Einfuehrung\_Folien.pdf](https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/Schulungsunterlagen/Schulungsunterlagen_FDM_Einfuehrung_Folien.pdf)
 
-[https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542)
+Einen guten, allgemeinen Überblick über das Thema Forschungsdatenmanagement beiten diese [Folien](https://www.fdm.uni-hannover.de/fileadmin/fdm/Dokumente/Schulungsunterlagen/Schulungsunterlagen\_FDM\_Einfuehrung\_Folien.pdf) der Uni Hannover.
 
-[https://www.uni-muenster.de/imperia/md/content/forschungsdaten/2017-08-01\_wwu\_fdm\_policy.pdf](https://www.uni-muenster.de/imperia/md/content/forschungsdaten/2017-08-01_wwu_fdm_policy.pdf)
+Umfassende und detailreiche Informationen über den Umgang mit Forschungsdaten finden sich auf der Internetseite [https://www.forschungsdaten.info/](https://www.forschungsdaten.info/) der Universität Konstanz.
 
-[https://www.uni-muenster.de/Forschungsdaten/organisieren/datenmanagementplan/](https://www.uni-muenster.de/Forschungsdaten/organisieren/datenmanagementplan/)
-
-[https://data.uni-bielefeld.de/de/data-management-plan](https://data.uni-bielefeld.de/de/data-management-plan)
-
-[https://www.uni-muenster.de/Forschungsdaten/publizieren/lizenzen/](https://www.uni-muenster.de/Forschungsdaten/publizieren/lizenzen/)
-
-[https://creativecommons.org/licenses/?lang=de](https://creativecommons.org/licenses/?lang=de)
-
-[https://www.doi.org/](https://www.doi.org/)
-
-[https://www.dataone.org/sites/all/documents/DataONE\_BP\_Primer\_020212.pdf](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf)
-
-[https://www.forschungsdaten.info/](https://www.forschungsdaten.info/)
-
-(Alle Seiten abgerufen am 29.9.2018)
+Alle in dieser Datei verlinkten Seiten wurden am 29.9.2018 abgerufen.
