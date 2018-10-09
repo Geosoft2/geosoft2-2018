@@ -126,17 +126,22 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
 
     ![alt
     text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Geohash_Representation.PNG?raw=true "")
-  Geohash representation of a set of points
+Geohash representation of a set of points
 
 ## **3.4 Attribute (not in our focus):**  
 
+Attribute can be any non-spatial property of the object. An example is the property &quot;arability&quot;.
+This attribute describes whether the land can be used for agriculture or construction. E.g. a white object (B)
+may stand for an arable object and a black object (A) may stand for a non-arable object.
 
 ![alt
 text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Attribute_Relation.PNG?raw=true "")
 
 # 4 Automated map generalization
 
-  - automated map generalization can create a multi-scale map by only building one map database using the maps at the largest scale
+ **=> introduces spatial similarity calculations of the same objects at a different scale**
+
+  -  can create a multi-scale map by only building one map database using the maps at the largest scale
   - map generalization can have different generalization criteria which are usually one or more thresholds in the algorithm
   - the determination of the thresholds takes into account: the original map scale, the resulting map scales and the purpose of the resulting map
   - it is (hence) necessary to find methods for automatically obtaining such threshold values
@@ -252,14 +257,11 @@ __Repetition__: _Douglas-Peucker-Algorithmus_
 - spatial similarity is based on human cognition
 -> very complex to find a reliable model
 
-# 7 Sources:
+# 7 Sources and further readings:
 
-  - Mark, D. M., and Egenhofer, M. J. (1994): Modeling Spatial Relations Between Lines and Regions: Combining Formal Mathematical Models and Human Subjects Testing. Cartography and Geographic Information Systems, October 1994, v. 21, No. 4, pp. 195-212.
-  [See here](https://pdfs.semanticscholar.org/62e2/96f9e81f175751907f3e2c919dffdcaae56b.pdf)
-  - Lohoff, L. (2018): Similarity Measurements for Executable Research Compendia. Münster
-  - Weifang, Y., Haowen, Y. and Jonathan, L. (2015): Formula for calculating spatial similarity degrees between point clouds on multi-scale maps taking map scale change as the only independent variable. Geodesy and Geodynamics, 6(2), 113-125.
-  [See here](https://ac.els-cdn.com/S1674984715000191/1-s2.0-S1674984715000191-main.pdf?_tid=ace53621-8259-44eb-bd32-e80ecb415137&acdnat=1538735023_3c975278e6a2171fa660b98d014922d8)
-  - Yan, H. (2014): Theory of Spatial Similarity Relations and Its Applications in Automated Map Generalization. Waterloo
- [See here](https://uwspace.uwaterloo.ca/handle/10012/8317)
-  - Skiadopoulos S. (2015) Directional Relations. In: Shekhar S., Xiong H., Zhou X. (eds) Encyclopedia of GIS. Springer, Cham
-   [See here](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_1539-1)
+  - **[Spatial relations between lines and regions](https://pdfs.semanticscholar.org/62e2/96f9e81f175751907f3e2c919dffdcaae56b.pdf)** (1994: Mark, Egenhofer)
+  - **[Relation between spatial similarity and map scale change in mulit-scale maps](https://ac.els-cdn.com/S1674984715000191/1-s2.0-S1674984715000191-main.pdf?_tid=ace53621-8259-44eb-bd32-e80ecb415137&acdnat=1538735023_3c975278e6a2171fa660b98d014922d8)** (2015: Weifang)
+  - **[Spatial Similarity Relations in automated map generalization](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2014: Yan)
+  - **[Directional relations](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2015: Skiadopoulos)
+  -  **[Distance Metrics ](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_307-2)** (2016: Kang)
+- Similarity Measurements for Executable Research Compendia (2018: Lohoff)
