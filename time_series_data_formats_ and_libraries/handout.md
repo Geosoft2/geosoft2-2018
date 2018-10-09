@@ -1,8 +1,6 @@
-
-
 # Time Series Data Formats &amp; Libraries
 
-Katharina Hovestadt @KathHv und Carolin Wortmann @carojw 
+Katharina Hovestadt @KathHv und Carolin Wortmann @carojw
 
 ## [Time Series](http://itfeature.com/time-series-analysis-and-forecasting/time-series-analysis-forecasting)
 
@@ -31,23 +29,25 @@ Tabellarische Daten werden häufig im CSV-Format gespeichert.
 - Dateiendung .csv
 - Die erste Zeile beschreibt den Tabellenkopf (Überschriften der einzelnen Spalten) -\&gt; als ID der Spalte genutzt
 - Datapackage.json Datei, um CSV-Datei zu beschreiben
-- Jedes Feld wird mit einem Komma von den Nachbarzellen getrennt
+- Jedes Feld wird mit einem Komma (Trennzeichen) von den Nachbarzellen getrennt
 - Beispiel:
 
 ```
-Buchst., Stadt, Kand, Fluss,
-R, Rheine, Ruanda, Rhein,
-E, Emden,,2018-09-25T12:20,
-H, Hamburg, Haiti, Hase 
+Datum, Ort, Temperatur in Grad Celsius,
+2018-09-25T12:00, Rheine, 2.5,
+2018-09-25T12:00, Emden, ,
+2018-09-27T12:00, Rheine, 3.5,
+2018-09-27T12:00, Emden, 5.0
 ```
 
 ->
 
-| Buchst. | Stadt | Land | Fluss |
-| --- | --- | --- | --- |
-| R | Rheine | Ruanda | Rhein |
-| E | Emden |   | 25.09.2018 12:20 |
-| H | Hamburg | Haiti | Hase |
+| Datum | Ort | Temperatur in Grad Celsius |
+| ---| --- | --- |
+| 2018-09-25T12:00 | Rheine | 2.5 |
+| 2018-09-25T12:00 | Emden |  |
+| 2018-09-27T12:00 | Rheine | 3.5 |
+| 2018-09-27T12:00 | Emden | 5.0 |
 
 
 Standard: Datum und Zeit werden im Format xml-schema11-2 dargestellt, um dann tabellarisch gespeichert zu werden (z.B. im CSV-Format).
@@ -87,7 +87,7 @@ Standard: Datum und Zeit werden im Format xml-schema11-2 dargestellt, um dann ta
   - (-)PYYYYMM
   - P2018-10-25
 - [dayTimeDuration](https://www.w3.org/TR/xmlschema11-2/#dayTimeDuration)
-  - (-)PHH:MM:SS
+  - (-)PHH:MM:SSZTimezone
   - P12:02:05
 - [dateTimeStamp](https://www.w3.org/TR/xmlschema11-2/#dateTimeStamp)
   - YYYY-MM-DDTHH:MM:SSZTimezone
@@ -111,7 +111,7 @@ Zur Tabellarischen Darstellung im CSV-Format werden die folgenden Datums- und Ze
   - `d.M.yyyy` z.B. `22.3.2015`
   - `MM.dd.yyyy` z.B. `03.22.2015`
   - `M.d.yyyy` z.B. `3.22.2015`
- 
+
 - Zeitformat
   - `HH:mm:ss.S` (die Anzahlt der "S" entscheidet über die Anzahl der Nachkommastellen für die Sekundenanzahl z.B. `HH:mm:ss.SSS` für `15:02:37.143`)
   - `HH:mm:ss` z.B. `15:02:37`
@@ -145,9 +145,12 @@ Perioden werden im CSV Format immer nach xmlschema11-2 im ISO8601 Format dargest
   - P1Y1D ->; 1 Jahr und 1 Tag
   - PT2H30M -> 2 Stunden 30 Minuten
 
-### Orthogonale mehrdimensionale Arrays zur Darstellung von Zeitformaten (NetCDF CF time series)
+## Orthogonale mehrdimensionale Arrays zur Darstellung von Zeitformaten (NetCDF CF time series)
 
-### NetCDF ist ein binäres Dateiformat. In seinem Header werden die Metadaten beschrieben. Die Daten selbst sind dann in Arrays angelegt.
+ NetCDF steht für Network Common Data Form und ist ein binäres Dateiformat. In seinem Header werden die Metadaten beschrieben. Die Daten selbst sind dann in Arrays angelegt.
+ Um die Datenobjekte abgreifen zu können, wird ein Interface benötigt.
+ Dieses Interface (NetCDF) kann [hier](https://www.unidata.ucar.edu/downloads/netcdf/index.jsp) heruntergeladen werden.
+ NetCDF Dateien sind plattformüvergreifend. Sie werden häufig im atmosphärischen oder ozeanographischen Bereich zum Speichern von Temperatur, Druck, Windgeschwindigkeit und Wellenhöhe verwendet.
 
 Die Zeitkoordinate wird in Sekunden seit dem 8.10.1992 15:15:42.5 -6 verarbeitet. Angegeben werden können die Daten in Strings. Dies wird wie folgt dargestellt: Tage (d), Stunden (hr, h), Minuten (min) und Sekunden (sec, s).
 Die Zeiteinheit Jahr is mit exakt 365.242198781 beziffert. Es gibt daher die verschiedenen Definitionen:
@@ -168,7 +171,7 @@ Wenn nicht zu allen Zeitpunkten Daten verfügbar sind, ist das Array unvollstän
 
 [Weitere Array Typen](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#_contiguous_ragged_array_representation)
 
-Verschieden Arten von Featuren, die für die multidimensionalen Arrays verwendet werden können. Es ist jedoch wichtig, dass jede Achse nur einen Featuretype enthält -> also z.B. an den Orten zu den Zeitpunkten nur Temperaturen gemessen werden, also Punkte entstehen und nicht plötzlich während einer Zeitspanne die Temperatur gemessen wird, was dann eine Trajektorie darstellen würde.
+Verschieden Arten von Featuren, die für die multidimensionalen Arrays verwendet werden können. Es ist jedoch wichtig, dass jede Achse nur einen Featuretype enthält -> z.B. an den Orten zu den Zeitpunkten nur Temperaturen gemessen werden, also Punkte entstehen und nicht plötzlich während einer Zeitspanne die Temperatur gemessen wird.
 
 | _featureType_ | _Description of a single feature with this discrete sampling geometry_ | _Link_ |
 | --- | --- | --- |
@@ -206,6 +209,8 @@ Die Features der Tabellen oder auch die Metadatentabellen können Zeitstempel ha
   - ISO-8601
   - In UTF-8 oder UTF-16 codiert
   - Wird als SQLite TEXT gespeichert
+
+  Um GeoPackage in Verbindung mit [SQLite](https://www.sqlite.org/download.html) zu verwenden, wird  noch ein zusätzliches Paket benötigt, das [hier](https://www.gaia-gis.it/fossil/libspatialite/index) zu finden ist.
 
 ## Beispiele für die Nutzung von Datums- und/oder Zeitformaten
 
@@ -310,47 +315,55 @@ Pandas - source: [http://earthpy.org/pandas-basics.html](http://earthpy.org/pand
 
 ## Praktische Erfahrungen:
 
-SIL: Beim Fahren mit einem Fahrsimulator werden zu jeder Millisekunde Daten in eine csv-Datei getrackt und mit einem timestamp versehen. Mit diesen können anschließend statische Analysen in R durchgeführt werden.
-
 SII: Assignment No. 5: Rest Services für Time series und queries -> Abfragen von Daten eines Rest Services in einem bestimmten Zeitraum
 
 Geostatistik I und II: Verarbeitung und Analyse von Zeitreihen und -daten in R
 
 Reference Systems: Temporal Data and Temporal Reference Systems (Sumrada, 2003) im Learnwebkurs verfügbar
 
+## Empfehlungen/ Vergleich
 
+In den verschiedenen Kursen haben wir schon mit csv-Dateien gearbeitet. Diese sind leicht verständlich und viele Programme können mit diesem Dateiformat umgehen (ArcGIS, Excel, ...).
 
+GeoPackage ist vor allem für Datenbanken-Fans hilfreich. Da SQLite ohne Server auskommt und darauf ausgelegt ist, wenig Ressourcen zu verbrauchen, kann man durch die SQL Anweisungen auf fast jedem Endgerät flexibel Daten selektieren.
+Mit verschiedenen Packages ist es auch möglich Daten aus Excel-Tabellen zu speichern.
+
+NetCDF arbeitet mit Arrays. In ArcGis ist allerdings immer nur ein Ausschnitt der Daten sichtbar.
 
 ## Quellen:
 
-W3C Recommendations - Formats for Dates and Times: 
+W3C Recommendations - Formats for Dates and Times:
 
 [https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#formats-for-dates-and-times](https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#formats-for-dates-and-times)
 
-W3C - XML Schema Definition Language (XSD) - Datatypes: 
+W3C - XML Schema Definition Language (XSD) - Datatypes:
 
 [https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#bib-xmlschema11-2](https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/#bib-xmlschema11-2)
 
-Orthogonal multidimensional array representation of time series: 
+Orthogonal multidimensional array representation of time series:
 
 [http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html#\_orthogonal\_multidimensional\_array\_representation\_of\_time\_series](http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html#_orthogonal_multidimensional_array_representation_of_time_series)
 
-OGC - GeoPackage Encoding Standard: 
+OGC - GeoPackage Encoding Standard:
 
 [http://www.geopackage.org/spec120/](http://www.geopackage.org/spec120/)
 
-GeoPackage - Getting started with GeoPackage: 
+GeoPackage - Getting started with GeoPackage:
 
 [http://www.geopackage.org/guidance/getting-started.html](http://www.geopackage.org/guidance/getting-started.html)
 
-Wikipedia - GeoTIFF: 
+Wikipedia - GeoTIFF:
 
 [https://de.wikipedia.org/wiki/GeoTIFF](https://de.wikipedia.org/wiki/GeoTIFF)
 
-NetCDF - Features and Feature Type Conventions: 
+NetCDF - Features and Feature Type Conventions:
 
 [http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#\_features\_and\_feature\_types](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#_features_and_feature_types)
 
-Engineering Statistics Handbook - Moving AVerage and Smoothing Techniques: 
+ArcGis - Beschreibung von NetCDF Dateien in ArcGIS:
+
+[https://pro.arcgis.com/de/pro-app/help/data/multidimensional/a-quick-tour-of-netcdf-data.htm](https://pro.arcgis.com/de/pro-app/help/data/multidimensional/a-quick-tour-of-netcdf-data.htm)
+
+Engineering Statistics Handbook - Moving AVerage and Smoothing Techniques:
 
 [https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc42.htm](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc42.htm)
