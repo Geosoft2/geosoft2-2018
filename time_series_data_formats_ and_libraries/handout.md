@@ -191,6 +191,11 @@ Verschieden Arten von Featuren, die für die multidimensionalen Arrays verwendet
 
 from [http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#\_features\_and\_feature\_types](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#_features_and_feature_types)
 
+Beispiel: <br>
+![netcdf](NetCDF_Beispiel.PNG)
+<br>
+Quelle: [https://pro.arcgis.com/de/pro-app/help/data/multidimensional/a-quick-tour-of-netcdf-data.htm](https://pro.arcgis.com/de/pro-app/help/data/multidimensional/a-quick-tour-of-netcdf-data.htm)
+
 ## OGC GeoPackage
 
 GeoPackages sind SQLite Datenbanken. Die Dateien tragen die Endung .gpkg. Diese GeoPackages enthalten verschiedene Tabellen. Zum einen mit Metadaten und zum anderen mit benutzerdefinierten Daten. Sie stellen Shapefiles dar.
@@ -215,6 +220,11 @@ Die Features der Tabellen oder auch die Metadatentabellen können Zeitstempel ha
 ## Beispiele für die Nutzung von Datums- und/oder Zeitformaten
 
 [Windenergiegewinnung](https://zenodo.org/record/1435091#.W61Gi_ZCQ2w) in Deutschland zwischen 2000 und 2015. Daten wurden in CSV-Dateien gespeichert. Zuerst wurde dazu der aktuelle Zeitstempel für jede Zeile (an erster Stelle) hinzugefügt (im ISO/ xmlschema) Beispiel: 01.01.2001 01:00. Die Aufzeichnung fand stündlich statt.
+
+Ausschnitt aus der Tabelle:
+<br>
+![](Windtabelle.PNG)
+<br>
 
 [Automotive Sensor Data](https://zenodo.org/record/820576#.W6oLr_ZCQ2w): Datensammlung zur Analyse von Fahrdaten (GPS, Lenkbewegung, Beschleunigung) -> CSV Dateien mit Zeitstempel (an letzter Stelle der Zeile) hinzugefügt. Beispiel: 2017-01-19 16:19:03.048928&quot; Die Aufzeichnung fand alle paar Millisekunden statt.
 
