@@ -152,7 +152,7 @@ Perioden werden im CSV Format immer nach xmlschema11-2 im ISO8601 Format dargest
  Dieses Interface (NetCDF) kann [hier](https://www.unidata.ucar.edu/downloads/netcdf/index.jsp) heruntergeladen werden.
  NetCDF Dateien sind plattformüvergreifend. Sie werden häufig im atmosphärischen oder ozeanographischen Bereich zum Speichern von Temperatur, Druck, Windgeschwindigkeit und Wellenhöhe verwendet.
 
-Die Zeitkoordinate wird in Sekunden seit dem 8.10.1992 15:15:42.5 -6 verarbeitet. Angegeben werden können die Daten in Strings. Dies wird wie folgt dargestellt: Tage (d), Stunden (hr, h), Minuten (min) und Sekunden (sec, s).
+Die Zeitkoordinate wird in Sekunden seit einem bestimmten Zeitpunkt. Angegeben werden können die Daten in Strings. Dies wird wie folgt dargestellt: Tage (d), Stunden (hr, h), Minuten (min) und Sekunden (sec, s).
 Die Zeiteinheit Jahr is mit exakt 365.242198781 beziffert. Es gibt daher die verschiedenen Definitionen:
 
 - Common\_year 365 Tage
@@ -172,6 +172,7 @@ Wenn nicht zu allen Zeitpunkten Daten verfügbar sind, ist das Array unvollstän
 [Weitere Array Typen](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#_contiguous_ragged_array_representation)
 
 Verschieden Arten von Featuren, die für die multidimensionalen Arrays verwendet werden können. Es ist jedoch wichtig, dass jede Achse nur einen Featuretype enthält -> z.B. an den Orten zu den Zeitpunkten nur Temperaturen gemessen werden, also Punkte entstehen und nicht plötzlich während einer Zeitspanne die Temperatur gemessen wird.
+Meistens werden Rasterdaten entlang eines Zeitstrahls gespeichert.
 
 | _featureType_ | _Description of a single feature with this discrete sampling geometry_ | _Link_ |
 | --- | --- | --- |
@@ -338,7 +339,7 @@ In den verschiedenen Kursen haben wir schon mit csv-Dateien gearbeitet. Diese si
 GeoPackage ist vor allem für Datenbanken-Fans hilfreich. Da SQLite ohne Server auskommt und darauf ausgelegt ist, wenig Ressourcen zu verbrauchen, kann man durch die SQL Anweisungen auf fast jedem Endgerät flexibel Daten selektieren.
 Mit verschiedenen Packages ist es auch möglich Daten aus Excel-Tabellen zu speichern.
 
-NetCDF arbeitet mit Arrays. In ArcGis ist allerdings immer nur ein Ausschnitt der Daten sichtbar.
+NetCDF arbeitet mit Arrays. In ArcGis ist allerdings immer nur ein Ausschnitt der Daten sichtbar (Nicht alle Zeitpunkte gleichzeitig).
 
 ## Quellen:
 
