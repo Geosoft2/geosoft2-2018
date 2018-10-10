@@ -8,7 +8,7 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
   * [3.1 Topological](#31-topological)
   * [3.2 Directional](#32-directional)
   * [3.3 Metric distance](#33-metric-distance)  
-  * [3.4 Attribute (not in our focus)](#34-attribute-(not-in-our-focus))
+  * [3.4 Attribute (not in our focus)](#34-attribute-\(not-in-our-focus\))
 - [4 Automated map generalization](#4-automated-map-generalization)
 - [5 Calculation of spatial similarity with respect to properties](#5-calculation-of-spatial-similarity-with-respect-to-properties)
 - [6 Summary](#6-summary)
@@ -104,7 +104,7 @@ describes binary topological relations in terms of the intersections of the inte
 ![alt
 text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Directional_Relation.PNG?raw=true "")
 
-## **3.3 Metric distance:**
+## 3.3 Metric distance:
 
   - direct measure between two points in some spatial space
 
@@ -126,7 +126,7 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
     text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Geohash_Representation.PNG?raw=true "")
 Geohash representation of a set of points
 
-## **3.4 Attribute (not in our focus):**  
+## 3.4 Attribute (not in our focus):  
 
 Attribute can be any non-spatial property of the object. An example is the property &quot;arability&quot;.
 This attribute describes whether the land can be used for agriculture or construction. E.g. a white object (B)
