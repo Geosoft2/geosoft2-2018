@@ -8,7 +8,7 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
   * [3.1 Topological](#31-topological)
   * [3.2 Directional](#32-directional)
   * [3.3 Metric distance](#33-metric-distance)  
-  * [3.4 Attribute (not in our focus)](#34-attribute-\(not-in-our-focus\))
+  * [3.4 Attribute (not in our focus)](#34-attribute-not-in-our-focus)
 - [4 Automated map generalization](#4-automated-map-generalization)
 - [5 Calculation of spatial similarity with respect to properties](#5-calculation-of-spatial-similarity-with-respect-to-properties)
 - [6 Summary](#6-summary)
