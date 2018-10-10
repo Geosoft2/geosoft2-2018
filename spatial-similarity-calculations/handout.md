@@ -50,7 +50,7 @@ The following categories are based on this initial example of two squares:
 
   ![alt text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/OriginalRelations.PNG?raw=true "Original relation")
 
-## **3.1 Topological:**
+## 3.1 Topological:
 
   - provide a notion of the general structure and the interactions of spatial objects
   - avoids geometry
@@ -96,7 +96,7 @@ describes binary topological relations in terms of the intersections of the inte
 - _asymmetric relations_: relations apply between line objects and region objects but not between a region and a line
   	➢  region can be left of directed line that coincident with part of its boundary, but without an external reference frame a line cannot be left-of any region
 
-## **3.2 Directional:**    
+## 3.2 Directional:
 
   - qualitative spatial relation that describe how an object or a region is placed relative to other objects or regions
   - Examples: south, northeast, front, and back-right
