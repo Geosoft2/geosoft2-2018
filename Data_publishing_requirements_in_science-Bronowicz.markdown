@@ -152,6 +152,10 @@ https://doi.org/10.1371/journal.pbio.0020449 mit weiterer Spezifikation:
 
 https://doi.org/10.1371/journal.pbio.0020449.g001 -> in diesem Beispiel wird die Abbildung durch die Endung .g001 identifiziert
 
+[Interessante Übersicht über die Anzahl an DOIs die von verschiedenen Repositorien beantragt wurden][24]
+
+[24]: https://stats.datacite.org/#tab-datacentres
+
 **Vorteile von DOI's:**
 Bücher und Zeitschriftenartikel haben lange Zeit von einer Infrastruktur profitiert, die sie leicht zu zitieren macht, deshalb soll dies auf für andere Quellen möglich sein. DataCite DOIs helfen bei der weiteren Erforschung und Gewährleistung eines zuverlässigen, vorhersehbaren und eindeutigen Zugriffs auf Forschungsdaten.
 - größere Auffindbarkeit
