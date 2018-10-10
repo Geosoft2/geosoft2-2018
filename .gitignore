@@ -10,3 +10,6 @@
 *.html
 
 **/*slides_files/*
+.Rproj.user
+
+\.Rhistory

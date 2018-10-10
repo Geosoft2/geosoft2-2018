@@ -4,6 +4,8 @@
 
 Teachers: [@nuest](https://github.com/nuest/), [@edzer](http://github.com/edzer/)
 
+[Learnweb course](https://xsso.uni-muenster.de/LearnWeb/learnweb2/course/view.php?id=33123)
+
 ## Initial training resources
 
 Handouts for presentations on technical background and concepts required for this year's project task in Geosoftware II at ifgi.
