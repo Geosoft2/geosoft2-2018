@@ -6,15 +6,13 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
 - [2 Our first idea of spatial similarity calculation](#2-our-first-idea-of-spatial-similarity-calculation)
 - [3 Categories to measure spatial similarity](#3-categories-to-measure-spatial-similarity)
   * [3.1 Topological](#31-topological)
-    + [3.1.1 Example: The 9-intersection model](#311-the-9-intersection-model)
   * [3.2 Directional](#32-directional)
   * [3.3 Metric distance](#33-metric-distance)  
-    + [3.3.1 Example: Geohashes](#331-example:-geohashes)
   * [3.4 Attribute (not in our focus)](#34-attribute-(not-in-our-focus))
 - [4 Automated map generalization](#4-automated-map-generalization)
 - [5 Calculation of spatial similarity with respect to properties](#5-calculation-of-spatial-similarity-with-respect-to-properties)
 - [6 Summary](#6-summary)
-- [7 Sources](#7-sources)
+- [7 Sources and further readings](#7-sources-and-further-readings)
 
 # 1 Why spatial similarity calculations?
 
