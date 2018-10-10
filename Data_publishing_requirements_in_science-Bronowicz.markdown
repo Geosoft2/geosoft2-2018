@@ -4,6 +4,9 @@ Carolin Bronowicz
 
 ## Forschungsdaten - Definition?
 Keine festgelegte Definition, denn wie Forschungsdaten letztlich aussehen, hängt von der jeweiligen Disziplin ab. Formate sind auch nicht bestimmt festgelegt. Forschungsdaten können z.B. Mess-, Erhebungs- und Beobachtungsdaten sowie audio-visuelle Materialien, aber auch Softwareentwicklungen sein. Sie entstehen während des Forschungsprozesses und sind die Grundlage für wissenschaftliche Ergebnisse.
+[Quelle][1]
+
+[1]:http://www.forschungsdaten.org/index.php/Forschungsdaten
 
 **Vorteile von einer Publikation von Forschungsdaten?**
 - Glaubwürdigkeit der Studie steigt, die auf diesen Daten basiert.
@@ -11,6 +14,9 @@ Keine festgelegte Definition, denn wie Forschungsdaten letztlich aussehen, häng
 - Vermeidung von redundante Datenerhebungen
 - Nicht replizierbare Daten werden gesichert
 - Höhere Zitationsrate durch freie Verfügbarkeit der Daten.
+[Quelle][2]
+
+[2]: https://www.uni-muenster.de/Forschungsdaten/publizieren/index.html
 
 **Arten der Interoperabilität bei der Veröffentlichung von Forschungsdaten - Beispiele**
 - Verwendung von Ontologien bei der Schlagwortvergabe
@@ -18,15 +24,25 @@ Keine festgelegte Definition, denn wie Forschungsdaten letztlich aussehen, häng
 - Nutzung von persistenten Identifikatoren z.B. URN's, DOI's
 - Lizenzierung über eine Open-Content-Lizenz -> Einräumen von Rechten
 - Veröffentlichung als: Datenjournal, Datenrepository, Datendateien als Zusatzmaterial, Datenpapiere
+[Quelle][8]
+
+[8]: https://www.publisso.de/open-access-beraten/faqs/forschungsdaten/
 
 **Nötige Überlegungen vor der Publizierung:**
 **Verzeichnisstruktur und Dateibenennung**
 Für die Forschungsdaten sollten geeignete Benennungskonventionen erarbeitet werden, die neben sprechenden Namen z.B. Datums-/Zeitstempel oder Versionsstände ausweisen. Für eine dauerhafte Archivierung sollten die Dateien unverschlüsselt und nicht komprimiert ableget werden, sowie offene und standardisierte Dateiformate verwenden. 
+[Quelle][3]
+
+[3]: https://www.uni-muenster.de/Forschungsdaten/organisieren/managen/index.html
 
 **Metadaten - Daten über Daten**
 Metadaten erfüllen den Zweck der Dokumentation nach einem vorgegebenen Schema. Sie erlauben eine interne Strukturierung wie auch später eine einfachere Auffindbarkeit eines Datensatzes. Dieses Schema enthält Pflichtfelder, die z.B. Auskunft über die Autoren und die Lizenzen eines Datensatzes geben.  Metadatenfelder sind z.B. Autor/Koautor(en), Zugehörigkeit, Titel, Art der Ressource, Beschreibung, Publikationsdatum, Publisher, Keywords: Gut gepflegte Metadaten können die Sichtbarkeit der Forschungsergebnisse vergrößern.
+[Quelle][3]
 
 ## Mögliche Arten der Publizierung
+
+[Quelle][22]
+
 **Datendateien als Zusatzmaterial (engl. Data files as supplementary material)**
 - Große Anzahl von Zeitschriften und Verlagen unterstützt ergänzendes Material zu Forschungsartikeln, einschließlich Datensätze.
 - Ergänzendes Material ist für Abonnenten des Journals oder, wenn der Artikel oder das Journal für jedermann zugänglich ist, verfügbar.
@@ -50,9 +66,16 @@ Scientific Data - http://www.nature.com/scientificdata
 
 ![Vergleichstabelle](https://github.com/carobro/geosoft2/blob/master/Datajournale_Requirements.JPG?raw=true)
 
-Ergänzungen siehe: https://www.wur.nl/en/Value-Creation-Cooperation/WDCC/Data-Management-WDCC/Finishing/Journal-requirements.htm
+Ergänzungen [siehe hier][18]
 
-Quelle: http://dms.data.jhu.edu/data-management-resources/plan-research/funders-data-sharing-requirement/academic-journals-and-data-sharing-requirements/
+[18]: https://www.wur.nl/en/Value-Creation-Cooperation/WDCC/Data-Management-WDCC/Finishing/Journal-requirements.htm
+
+[Quelle][19]
+[Quelle][23]
+
+[22]: https://en.wikipedia.org/wiki/Data_publishing
+[23]: https://www.ands.org.au/working-with-data/publishing-and-reusing-data/data-journals
+[19]: http://dms.data.jhu.edu/data-management-resources/plan-research/funders-data-sharing-requirement/academic-journals-and-data-sharing-requirements/
  
 ## Welche Prinzipien zur Publizierung von Forschungsdaten müssen beachtet werden?
 **FAIR data principles**
@@ -80,6 +103,9 @@ Grundsätze, die nachhaltig nachnutzbare Forschungsdaten erfüllen müssen
 - R1.1. (meta)data are released with a clear and accessible data usage license.
 - R1.2. (meta)data are associated with their provenance.
 - R1.3. (meta)data meet domain-relevant community standards.
+[Quelle][5]
+
+[5]: http://www.go-fair.org/fair-principles/
 
 ## Die Regeln guter wissenschaftlicher Praxis 
 Zu den allgemeinen Prinzipien der guten wissenschaftlichen Arbeit gehört es z.B. 
@@ -87,12 +113,18 @@ Zu den allgemeinen Prinzipien der guten wissenschaftlichen Arbeit gehört es z.B
 - Ergebnisse konsequent anzuzweifeln 
 - strikte Ehrlichkeit im Hinblick auf die Beiträge von Partnern, Konkurrenten und Vorgängern zu wahren.
 Wissenschaftliches Fehlverhalten liegt vor, wenn bewusst oder grob fahrlässig Falschangaben gemacht werden, geistiges Eigentum anderer verletzt oder deren Forschungstätigkeit beeinträchtigt wird.
+[Quelle 1][6]
+[Quelle 2][7]
+
+[6]: https://www.uni-muenster.de/imperia/md/content/wwu/senat/pdf/kodex.pdf
+[7]: http://www.dfg.de/formulare/12_14/12_14_de.pdf
 
 ## Rechtliche Aspekte 
 - 2, Abs. 2 UrhG: Das Urheberrecht greift bei Forschungsdaten je nach Beschaffenheit der Daten nicht, weil die geforderte Schaffungshöhe nicht erreicht wird 
 - 87b UrhG: Urheberrechtsschutz besteht für eigens entwickelte Software oder Bild- und Tonmaterialien. Es greift bei Datenbankwerken lediglich für 15 Jahre. Leistungsschutzrecht des Datenbankherstellers greift bei Daten, die in einer Datenbank abgelegt sind.
 - 4 Abs. 1 BDSG: Das Bundes- und/oder Landesdatenschutzgesetz greift bei Studien, in denen personenbezogene Daten erhoben werden. Für die Speicherung und Weiterverwendung personenbezogener Daten ist eine Einverständniserklärung der Betroffenen einzuholen 
 - 3a BDSG Die Daten müssen so anonymisiert werden, dass keine Rückschlüsse auf einzelne Personen möglich sind. 
+[Quelle][8]
 
 # Persistent Identifier
 Beispiele: URN's, DOI's, ARK (Archival Resource Key)
@@ -110,8 +142,11 @@ besteht.
 
 Präfix  Identifikationsnummer (10) und Verlagsnummer (1594) | Suffix Publisher mit ID des Objekts
 ------------ | -------------
-10.1594/ | PANGAEA.886808 
-10.1594/ | PANGAEA.891154 
+10.1594/ | [PANGAEA.886808][20] 
+10.1594/ | [PANGAEA.891154][21]
+
+[20]: https://doi.pangaea.de/10.1594/PANGAEA.886808
+[21]: https://doi.pangaea.de/10.1594/PANGAEA.891154
 
 https://doi.org/10.1371/journal.pbio.0020449 mit weiterer Spezifikation: 
 
@@ -134,6 +169,10 @@ Bücher und Zeitschriftenartikel haben lange Zeit von einer Infrastruktur profit
 
 Erklärvideo zu DOI's:  https://www.youtube.com/watch?v=PgqtiY7oZ6k
 
+[Quelle][9]
+
+[9]: https://guides.library.unisa.edu.au/c.php?g=169979&p=3863391
+
 ## Vorgaben von Mittelgebern? 
 Bei Förderungen soll die Gesamtförderdauer nicht länger als sechs Jahre dauern.
 
@@ -143,20 +182,26 @@ Bei Förderungen soll die Gesamtförderdauer nicht länger als sechs Jahre dauer
 - Daten sollen qualitätsgesichert und ausreichend beschrieben abgelegt werden.
 - Alle Forschungsprojekte/Anträge sollen einen Datenmanagementplan aufweisen.
 - Haben "Leitlinien zum Umgang mit Forschungsdaten" verfasst (siehe unten Abschnitt "Publizieren von Forschungsdaten an der WWU")
-- Es müssen "Die Regeln guter wissenschaftlicher Praxis" befolgt werden
-(siehe http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf)
+- Es müssen ["Die Regeln guter wissenschaftlicher Praxis"][10] befolgt werden
+[Quelle][14]
 
+[14]: http://www.dfg.de/formulare/12_14/12_14_de.pdf
+[10]: http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf
 **National Institute of Health (NIH)**
 - vergibt Fördergelder
 - Bei Beantragung von Forschungsgeldern ist darzulegen, inwieweit die Daten veröffentlicht werden sollen
 - NIH ist der Ansicht, dass der Datenaustausch für die beschleunigte Übersetzung von Forschungsergebnissen in Wissen, Produkte und Verfahren zur Verbesserung der menschlichen Gesundheit unerlässlich ist. 
 - Die Rechte und die Privatsphäre von Personen müssen jederzeit geschützt sein. Daten, die für eine breitere Verwendung bestimmt sind, sollten frei von Identifikatoren sein, die Verknüpfungen mit einzelnen Forschungsteilnehmern und Variablen ermöglichen.
 - Als ein Mittel zum Austausch von Wissen empfiehlt die Veröffentlichung von NIH-gestützter Originalforschung in primären wissenschaftlichen Zeitschriften.
+[Quelle][16]
+
+[16]: https://grants.nih.gov/grants/policy/nihgps_2013/nihgps_ch8.htm#_Toc271264951
 
 **Europäische Kommission**
 - Hat ein Pilotprojekt zur Open-Access-Veröffentlichung von Forschungsdaten gestartet (Open Research Data Pilot) -> Aufforderung zur
 Publizierung, Datenmanagementplan erstellen
 - Sollen Forschungsdaten nicht veröffentlicht werden, muss dies von den Projektnehmern begründet werden, z.B. bei Projekten deren Ergebnisse als geistiges Eigentum geschätzt werden sollen (z.B. bei Patentanmeldung)
+[Quelle][8]
 
 *Forderungen im Horizon2020*
 - Ziel: Erkenntnisse in der Wissenschaft zu ermöglichen und die Zusammenarbeit von Wissenschaft und Wirtschaft weiter zu verbessern.
@@ -168,6 +213,10 @@ a) Exzellenz
 b) Wirkung bzw. Auswirkungen
 c) Qualität und Effizienz der Durchführung
 
+[Quelle][15]
+
+[15]:  https://www.bmbf.de/pub/Horizont_2020_im_Blick.pdf
+
 ## Publizieren von Forschungsdaten an der WWU 
 Orientiert sich an den Regeln der Deutschen Forschungsgemeinschaft guter wissenschaftlicher Praxis 
 - Die forschenden Mitglieder sind aufgefordert, alle Forschungsdaten gemäß anerkannten Standards und Praktiken zu behandeln und zu dokumentieren.
@@ -178,8 +227,14 @@ Orientiert sich an den Regeln der Deutschen Forschungsgemeinschaft guter wissens
 - Forschungsdaten, welche zu Erkenntnissen geführt haben, müssen in einem Forschungsdatenregister der WWU nachgewiesen werden
 (abgeschlossen im Jahre 2017)
 
+[Quelle][11]
+[Quelle][12]
+
+[11]: https://www.uni-muenster.de/imperia/md/content/forschungsdaten/2017-08-01_wwu_fdm_policy.pdf
+[12]: https://www.uni-muenster.de/Forschungsdaten/information/richtlinien/
+
 ## 10 Einfache Regeln für eine gute Publikation der Forschungsdaten
-(Gesamter Text auf Englisch unter: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542)
+Gesamter Text auf Englisch [hier][13]
 - Regel 1. Liebe deine Daten und hilf anderen, sie ebenfalls zu lieben (Richtig Aufbewahren)
 - Regel 2. Teile deine Daten online mit einer permanenten Kennung
 - Regel 3. Habe den Gedanken der Wiederverwendung im Kopf
@@ -191,7 +246,9 @@ Orientiert sich an den Regeln der Deutschen Forschungsgemeinschaft guter wissens
 - Regel 9. Belohne Kollegen, die deine Daten richtig teilen
 - Regel 10. Sei ein Booster für Data Science
 
-# Quellen
+[13]: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542
+
+# Quellenliste
 Regeln guter wissenschaftlicher Praxis der Westfälischen Wilhelms-Universität: https://www.uni muenster.de/imperia/md/content/wwu/senat/pdf/kodex.pdf
 
 Grundsätze zum Umgang mit Forschungsdaten an der Westfälischen Wilhelms-Univerität Münster: https://www.uni-muenster.de/imperia/md/content/forschungsdaten/2017-08-01_wwu_fdm_policy.pdf
