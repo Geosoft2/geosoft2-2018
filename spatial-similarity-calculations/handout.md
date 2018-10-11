@@ -122,10 +122,9 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
   - limitations when used for deciding proximity
     - Edge cases
     - Non-linearity (different distance at the poles and the equator for one geohash area)
-
+  - Geohash representation of a set of points:
     ![alt
     text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Geohash_Representation.PNG?raw=true "")
-Geohash representation of a set of points
 
 ## 3.4 Attribute (not in our focus):  
 
