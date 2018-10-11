@@ -154,11 +154,6 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
   - reason for that approach: the more similar two maps are, the more common information the two maps contain
 
 
-
-
-
-
-
 # 5 Calculation of spatial similarity with respect to properties
 
   - spatial similarity measurement is different from document/ texts similarity assessment (matching keywords) because:
@@ -247,6 +242,32 @@ __Repetition__: _Douglas-Peucker-Algorithmus_
 1. If the Douglas-Peucker algorithm remove enough edges of the object for a sufficiently small epsilon [dependent on the area of the object(s)], operate it on the object(s)!
 2. Count the number of edges of the new object
 3. Now the number of edges get a greater meaning for the similarity of objects (describe the shape of an object more suitable)
+
+# Spatial similarity of raster data
+Links:
+- [How to statistically compare two maps?](https://www.researchgate.net/post/How_to_statistically_compare_two_maps)
+- [Map Comparison Kit](http://mck.riks.nl/)
+
+Assumptions:
+- both maps are spatially on the same place
+- we want to compute the similarity of a specific discrete variable
+
+## [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index)
+- size of the intersection divided by the size of the union (basically our first idea)
+![formula](geosoft2-2018/spatial-similarity-calculations/pictures/Jaccard_Index.PNG "Jaccard Index")
+      
+## [Sørensen–Dice coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)
+- twice the number of elements in the intersection divided by the sum of the number of elements in each set.
+![formula](geosoft2-2018/spatial-similarity-calculations/pictures/Soerensen-Dice_Coefficient.PNG "Soerensen-Dice_Coefficient")
+
+### Relation between these indices
+- J: Jaccard Index, S: Sørensen-Dice coefficient
+__J=S/(2-S)__
+
+## [Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)
+[Definition of Technopedia](https://www.techopedia.com/definition/19723/hamming-distance):
+> A Hamming distance in information technology represents the number of points at which two corresponding pieces of data can be different. 
+> It is often used in various kinds of error correction or evaluation of contrasting strings or pieces of data.
 
 # 6 Summary:
 
