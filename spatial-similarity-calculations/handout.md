@@ -93,9 +93,10 @@ describes binary topological relations in terms of the intersections of the inte
   text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/InfluenceOfGeometry.PNG?raw=true "")
 
 
-### **Note:**
+### Note:
 - _asymmetric relations_: relations apply between line objects and region objects but not between a region and a line
-  	➢  region can be left of directed line that coincident with part of its boundary, but without an external reference frame a line cannot be left-of any region
+
+  ➢  region can be left of directed line that is coincident with part of its boundary, but without an external reference frame a line cannot be left-of any region
 
 ## 3.2 Directional:
 
