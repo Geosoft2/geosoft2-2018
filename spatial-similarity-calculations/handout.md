@@ -18,7 +18,7 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
 - [7 Summary](#7-summary)
 - [8 Sources and further readings](#8-sources-and-further-readings)
 
-# 1 Why spatial similarity calculations?[[?](#8-sources-and-further-readings)]
+# 1 Why spatial similarity calculations?[[3](#8-sources-and-further-readings)]
 
   - discover the most relevant spatial datasets in the ever-growing global spatial data infrastructures (SDIs)
   - finding similar objects to a given one becomes more popular and common in geographic informations systems
@@ -135,7 +135,7 @@ may stand for an arable object and a black object (A) may stand for a non-arable
 
 ![alt text](pictures/Attribute_Relation.PNG?raw=true "")
 
-# 4 Automated map generalization[[?](#8-sources-and-further-readings)]
+# 4 Automated map generalization[[3](#8-sources-and-further-readings)]
 
  **=> introduces spatial similarity calculations of the same objects at a different scale**
 
@@ -153,7 +153,7 @@ may stand for an arable object and a black object (A) may stand for a non-arable
   - reason for that approach: the more similar two maps are, the more common information the two maps contain
 
 
-# 5 Calculation of spatial similarity with respect to properties[[?](#8-sources-and-further-readings)]
+# 5 Calculation of spatial similarity with respect to properties[[3](#8-sources-and-further-readings)]
 
   - spatial similarity measurement is different from document/ texts similarity assessment (matching keywords) because:
   - spatial similarity relations involve various elements, such as spatial relationship, spatial distribution, geometric attributes, thematic attributes and semantic relationship
