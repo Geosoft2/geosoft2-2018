@@ -60,7 +60,7 @@ The following categories are based on this initial example of two squares:
   ![alt text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/TopologicalRelation.PNG?raw=true "Topological relation")
 
 
-# Example: The 9-intersection model
+### Example: The 9-intersection model
 
 describes binary topological relations in terms of the intersections of the interiors, boundaries, and exteriors of the two spatial objects
 
@@ -111,7 +111,7 @@ text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity
 ![alt
 text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/Metric_Relation.PNG?raw=true "")
 
-# Example: Geohashes - &quot;an encoding format for spatial information&quot;
+### Example: Geohashes - &quot;an encoding format for spatial information&quot;
 
   - idea: referencing locations in emails, forums and websites gets more convenient
     → very simple
