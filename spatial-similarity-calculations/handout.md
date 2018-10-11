@@ -167,7 +167,7 @@ The upcoming definitions of spatial similarity relations/ degrees are explained 
 
 ![alt text](pictures/Bildschirmfoto%202018-09-27%20um%2014.59.19.png?raw=true "")
 
-**Example 1** : Object A1 and A2 are two objects in the geographic space and their property sets are P1 and P2, respectively. A property can be anything that describes the object, here the chosen properties are the area, the shape and the arability of each object, so P = {area, shape, arability}. Each object has a value for each property. In the area property the object can be classified into &quot;large&quot; (3), &quot;big&quot; (2) and &quot;small&quot; (1). The shape of the object is described by the number of edges of the polygon. The arability is can be either &quot;yes&quot; (2) or &quot;no&quot; (1). So the property set in this example are: P1 = {2, 6, 1} and P2 = {2, 9, 1}. Since some properties are more important for the similarity of the object than others, the properties get weight which are in this case w = {0.3, 0.6, 0.1} meaning e.g. 30% of the similarity depends on the area of the objects.
+**Example 1** : Object A1 and A2 are two objects in the geographic space and their property sets are P1 and P2, respectively. A property can be anything that describes the object, here the chosen properties are the area, the shape and the arability of each object, so P = {area, shape, arability}. Each object has a value for each property. In the area property the object can be classified into &quot;large&quot; (3), &quot;big&quot; (2) and &quot;small&quot; (1). The shape of the object is described by the number of edges of the polygon. The arability can be either &quot;yes&quot; (2) or &quot;no&quot; (1). So the property set in this example are: P1 = {2, 6, 1} and P2 = {2, 9, 1}. Since some properties are more important for the similarity of the object than others, the properties get weight which are in this case w = {0.3, 0.6, 0.1} meaning e.g. 30% of the similarity depends on the area of the objects.
 
 **Note:**
 
@@ -272,7 +272,7 @@ The Hamming distance of 10**1**1**1**01 and 10**0**1**0**01 is 2.
   - **[[1] Spatial relations between lines and regions](https://pdfs.semanticscholar.org/62e2/96f9e81f175751907f3e2c919dffdcaae56b.pdf)** (1994: Mark, Egenhofer)
   - **[[2] Relation between spatial similarity and map scale change in mulit-scale maps](https://ac.els-cdn.com/S1674984715000191/1-s2.0-S1674984715000191-main.pdf?_tid=ace53621-8259-44eb-bd32-e80ecb415137&acdnat=1538735023_3c975278e6a2171fa660b98d014922d8)** (2015: Weifang)_
   - **[[3] Spatial Similarity Relations in automated map generalization](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2014: Yan)
-  - **[[4] Directional relations](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2015: Skiadopoulos)
+  - **[[4] Directional relations](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_1539-1)** (2015: Skiadopoulos)
   - **[[5] Distance Metrics](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_307-2)** (2016: Kang)
   - **[[6] How to statistically compare two maps?](https://www.researchgate.net/post/How_to_statistically_compare_two_maps)**
   - **[[7] Map Comparison Kit](http://mck.riks.nl/)**
