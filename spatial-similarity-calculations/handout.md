@@ -11,8 +11,12 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
   * [3.4 Attribute (not in our focus)](#34-attribute-not-in-our-focus)
 - [4 Automated map generalization](#4-automated-map-generalization)
 - [5 Calculation of spatial similarity with respect to properties](#5-calculation-of-spatial-similarity-with-respect-to-properties)
-- [6 Summary](#6-summary)
-- [7 Sources and further readings](#7-sources-and-further-readings)
+- [6 Spatial similarity of raster data](#6-spatial-similarity-of-raster-data)
+  * [6.1 Jaccard Index](#61-jaccard-index)
+  * [6.2 Sørensen–Dice coefficient](#62-sørensendice-coefficient)
+  * [6.3 Hamming distance](#63-hamming-distance)
+- [7 Summary](#7-summary)
+- [8 Sources and further readings](#8-sources-and-further-readings)
 
 # 1 Why spatial similarity calculations?
 
@@ -20,7 +24,7 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
   - finding similar objects to a given one becomes more popular and common in geographic informations systems
   - crucial factor in intelligent and automatic spatial data processing such as automated map generalization
 
-    ### **Problem:**
+    ### Problem:
 
   - it is evident that the similarity degree between the original map (M0) and the generalized map (M1) decreases when the scale change increases
   - but no achievements have been made on quantitatively describing this relation (similarity degree):
@@ -35,11 +39,11 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
 
 ![alt text](pictures/OwnIdeaTable.PNG?raw=true "Own idea")
 
-## **Similarity:**
+## Similarity:
   - two pixels remained (green) and four pixels are part of just one of the two objects (red)
   - result: Sim=2/6=⅓
 
-### **Note:**
+### Note:
   - these boolean similarity operations often cannot adequately account for the uncertainty and complexity inherent in spatial information
 
 
@@ -168,7 +172,7 @@ The upcoming definitions of spatial similarity relations/ degrees are explained 
 **Note:**
 
   - selection of properties used in spatial similarity relations is a **subjective** process
-  - the weight values of the properties should be obtained by psychological experiments with sufficient number of evaluating people as well as (different) appropriate objets
+  - the weight values of the properties should be obtained by psychological experiments with sufficient number of evaluating people as well as (different) appropriate objects
   - properties spatial properties (where we focus on) and attribute properties
   - the validity of the definition depends on users&#39; judgments
 
@@ -228,20 +232,17 @@ __Repetition__: _Douglas-Peucker-Algorithmus_
 2. Count the number of edges of the new object
 3. Now the number of edges get a greater meaning for the similarity of objects (describe the shape of an object more suitable)
 
-# Spatial similarity of raster data
-Links:
-- [How to statistically compare two maps?](https://www.researchgate.net/post/How_to_statistically_compare_two_maps)
-- [Map Comparison Kit](http://mck.riks.nl/)
+# 6 Spatial similarity of raster data
 
 Assumptions:
 - both maps are spatially on the same place
 - we want to compute the similarity of a specific discrete variable
 
-## [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index)
+## 6.1 [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index)
 - size of the intersection divided by the size of the union (basically our first idea)
 ![formula](pictures/Jaccard_Index.PNG "Jaccard Index")
       
-## [Sørensen–Dice coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)
+## 6.2 [Sørensen–Dice coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)
 - twice the number of elements in the intersection divided by the sum of the number of elements in each set.
 ![formula](pictures/Soerensen-Dice_Coefficient.PNG "Soerensen-Dice_Coefficient")
 
@@ -249,12 +250,16 @@ Assumptions:
 - J: Jaccard Index, S: Sørensen-Dice coefficient
 __J=S/(2-S)__
 
-## [Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)
+## 6.3 [Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)
 [Definition of Technopedia](https://www.techopedia.com/definition/19723/hamming-distance):
 > A Hamming distance in information technology represents the number of points at which two corresponding pieces of data can be different. 
 > It is often used in various kinds of error correction or evaluation of contrasting strings or pieces of data.
 
-# 6 Summary:
+Further readings:
+- [How to statistically compare two maps?](https://www.researchgate.net/post/How_to_statistically_compare_two_maps)
+- [Map Comparison Kit](http://mck.riks.nl/)
+
+# 7 Summary:
 
 - role of spatial similarity increases with the rise of intelligent and automatic spatial data processing
 - spatial similarity is a mixture of various categories
@@ -262,7 +267,7 @@ __J=S/(2-S)__
 - spatial similarity is based on human cognition
 -> very complex to find a reliable model
 
-# 7 Sources and further readings:
+# 8 Sources and further readings:
 
   - **[Spatial relations between lines and regions](https://pdfs.semanticscholar.org/62e2/96f9e81f175751907f3e2c919dffdcaae56b.pdf)** (1994: Mark, Egenhofer)
   - **[Relation between spatial similarity and map scale change in mulit-scale maps](https://ac.els-cdn.com/S1674984715000191/1-s2.0-S1674984715000191-main.pdf?_tid=ace53621-8259-44eb-bd32-e80ecb415137&acdnat=1538735023_3c975278e6a2171fa660b98d014922d8)** (2015: Weifang)
