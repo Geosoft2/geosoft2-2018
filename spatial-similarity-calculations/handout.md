@@ -18,7 +18,7 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
 - [7 Summary](#7-summary)
 - [8 Sources and further readings](#8-sources-and-further-readings)
 
-# 1 Why spatial similarity calculations?[8](#8-sources-and-further-readings)
+# 1 Why spatial similarity calculations?[[?](#8-sources-and-further-readings)]
 
   - discover the most relevant spatial datasets in the ever-growing global spatial data infrastructures (SDIs)
   - finding similar objects to a given one becomes more popular and common in geographic informations systems
@@ -48,7 +48,7 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
 
 
 
-# 3 Categories to measure spatial similarity
+# 3 Categories to measure spatial similarity[[4,5](#8-sources-and-further-readings)]
 
 The following categories are based on this initial example of two squares:
 
@@ -70,7 +70,7 @@ describes binary topological relations in terms of the intersections of the inte
 
   - six object parts (each of the lines interior, boundary and exterior with each of the regions interior, boundary and exterior)
 
-  ![alt text](pictures/Interior_Boundary_Exterior.PNG?raw=true "")
+  ![alt text](pictures/Interior_Boundary_Exterior.PNG?raw=true "Interior vs boundary vs exterior")
 
   - topological invariants:
      - distinction of content (emptiness or non-emptiness of intersection):
@@ -135,7 +135,7 @@ may stand for an arable object and a black object (A) may stand for a non-arable
 
 ![alt text](pictures/Attribute_Relation.PNG?raw=true "")
 
-# 4 Automated map generalization
+# 4 Automated map generalization[[?](#8-sources-and-further-readings)]
 
  **=> introduces spatial similarity calculations of the same objects at a different scale**
 
@@ -153,7 +153,7 @@ may stand for an arable object and a black object (A) may stand for a non-arable
   - reason for that approach: the more similar two maps are, the more common information the two maps contain
 
 
-# 5 Calculation of spatial similarity with respect to properties
+# 5 Calculation of spatial similarity with respect to properties[[?](#8-sources-and-further-readings)]
 
   - spatial similarity measurement is different from document/ texts similarity assessment (matching keywords) because:
   - spatial similarity relations involve various elements, such as spatial relationship, spatial distribution, geometric attributes, thematic attributes and semantic relationship
@@ -232,7 +232,7 @@ __Repetition__: _Douglas-Peucker-Algorithmus_
 2. Count the number of edges of the new object
 3. Now the number of edges get a greater meaning for the similarity of objects (describe the shape of an object more suitable)
 
-# 6 Spatial similarity of raster data
+# 6 Spatial similarity of raster data[[6,7](#8-sources-and-further-readings)]
 
 Assumptions:
 - both maps are spatially on the same place
@@ -255,11 +255,9 @@ __J=S/(2-S)__
 > A Hamming distance in information technology represents the number of points at which two corresponding pieces of data can be different. 
 > It is often used in various kinds of error correction or evaluation of contrasting strings or pieces of data.
 
-Example: The Hamming distance of 10**1**1**1**01 and 10**0**1**0**01 is 2.
+Example: 
+The Hamming distance of 10**1**1**1**01 and 10**0**1**0**01 is 2.
 
-Further readings:
-- [How to statistically compare two maps?](https://www.researchgate.net/post/How_to_statistically_compare_two_maps)
-- [Map Comparison Kit](http://mck.riks.nl/)
 
 # 7 Summary:
 
@@ -271,9 +269,11 @@ Further readings:
 
 # 8 Sources and further readings:
 
-  - **[Spatial relations between lines and regions](https://pdfs.semanticscholar.org/62e2/96f9e81f175751907f3e2c919dffdcaae56b.pdf)** (1994: Mark, Egenhofer)
-  - **[Relation between spatial similarity and map scale change in mulit-scale maps](https://ac.els-cdn.com/S1674984715000191/1-s2.0-S1674984715000191-main.pdf?_tid=ace53621-8259-44eb-bd32-e80ecb415137&acdnat=1538735023_3c975278e6a2171fa660b98d014922d8)** (2015: Weifang)
-  - **[Spatial Similarity Relations in automated map generalization](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2014: Yan)
-  - **[Directional relations](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2015: Skiadopoulos)
-  - **[Distance Metrics ](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_307-2)** (2016: Kang)
-  - Similarity Measurements for Executable Research Compendia (2018: Lohoff)
+  - **[[1] Spatial relations between lines and regions](https://pdfs.semanticscholar.org/62e2/96f9e81f175751907f3e2c919dffdcaae56b.pdf)** (1994: Mark, Egenhofer)
+  - **[[2] Relation between spatial similarity and map scale change in mulit-scale maps](https://ac.els-cdn.com/S1674984715000191/1-s2.0-S1674984715000191-main.pdf?_tid=ace53621-8259-44eb-bd32-e80ecb415137&acdnat=1538735023_3c975278e6a2171fa660b98d014922d8)** (2015: Weifang)_
+  - **[[3] Spatial Similarity Relations in automated map generalization](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2014: Yan)
+  - **[[4] Directional relations](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2015: Skiadopoulos)
+  - **[[5] Distance Metrics](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_307-2)** (2016: Kang)
+  - **[[6] How to statistically compare two maps?](https://www.researchgate.net/post/How_to_statistically_compare_two_maps)**
+  - **[[7] Map Comparison Kit](http://mck.riks.nl/)**
+  - [8] Similarity Measurements for Executable Research Compendia (2018: Lohoff)
