@@ -1,41 +1,45 @@
 # Geosoftware II - Daniel Nüst und Prof. Dr. Edzer Pebesma
 # Wintersemester 2018 / 2019
 # Handout Geospatial Data Formats and Libraries
-# von Hilal Karakoc und Anika Graupner
+
+**Autoren:** Hilal Karakoc [@hilal98](https://github.com/hilal98), Anika Graupner [@Anika2](https://github.com/Anika2) 
 
 ## Inhaltsverzeichnis
 
-[1. Einleitung](##1.)    
-[2. Geospatial Data Formats](##2.)     
-[2.1 Wichtige Vektordatenformate](###2.1)    
-[2.1.1 DWG (drawing) | .dwg](####2.1.1)     
-[2.1.2 DXF (Drawing Interchange Format) | .dxf](####2.1.2)     
-[2.1.3 GeoJSON | .geojson](####2.1.3)     
-[2.1.4 KML (Keyhole Markup Language) und KMZ | .kml, .kmz](####2.1.4)      
-[2.1.5 GML (Geography Markup Language) | .gml](####2.1.5)    
-[2.1.6 SHP (Shapefile)](####2.1.6)      
-[2.1.7 GPKG  (GeoPackage) | .gpkg](####2.1.7)     
-[2.1.8 GeoJSON-LD ((Geo) JavaScript Object Notation for Linked Data)](####2.1.8)        
-[2.1.9 LAS (LASer) | .las](####2.1.9)       
-[2.2 Wichtige Rasterdatenformate](###2.2)
-[2.2.1 JPEG (Joint Photographic Experts Group) | .jpg](####2.2.1)      
-[2.2.2 GIF (Graphic Interchange Format) | .gif](####2.2.2)       
-[2.2.3 (Geo)TIFF (Tagged Image File Format) | .tiff / .tif und Cloud Optimized GeoTIFF](####2.2.3)      
-[2.2.4 BMP (Windows Bitmap) | .bmp](####2.2.4)     
-[2.2.5 NetCDF (Network Common Data Format)](####2.2.5)  
-[3. Geospatial Libraries](##3.)       
-[3.1 Was ist eine Programmbibliothek](###3.1)     
-[3.2 Programmbibliotheken für Geodaten und -anwendungen](###3.2)      
-[3.2.1 GDAL / OGR (Geospatial Data Abstraction Library / OpenGIS Simple Feature Reference Implementation)](####3.2.1)     
-[3.2.2 GeoTools](####3.2.2)     
-[3.2.3 Proj4](####3.2.3)     
-[3.2.4 libLAS](####3.2.4)       
-[3.2.5 GEOS](####3.2.5)      
-[3.2.6 JTS Topology Suite (JTS)](####3.2.6)      
-[4. Zusammenfassung](##4.)      
-[Quellenangaben](##Quellenangaben)
+- [1. Einleitung <a name="1"></a>](#1-einleitung--a-name--1----a-)
+- [2. Geospatial Data Formats](#2-geospatial-data-formats)
+  * [2.1 Wichtige Vektordatenformate](#21-wichtige-vektordatenformate)
+    + [2.1.1 DWG (drawing) | .dwg](#211-dwg--drawing----dwg)
+    + [2.1.2 DXF (Drawing Interchange Format) | .dxf](#212-dxf--drawing-interchange-format----dxf)
+    + [2.1.3 GeoJSON | .geojson](#213-geojson---geojson)
+    + [2.1.4 KML (Keyhole Markup Language) und KMZ | .kml, .kmz](#214-kml--keyhole-markup-language--und-kmz---kml--kmz)
+    + [2.1.5 GML (Geography Markup Language) | .gml](#215-gml--geography-markup-language----gml)
+    + [2.1.6 SHP (Shapefile)](#216-shp--shapefile-)
+    + [2.1.7 GPKG  (GeoPackage) | .gpkg](#217-gpkg---geopackage----gpkg)
+    + [2.1.8 GeoJSON-LD ((Geo) JavaScript Object Notation for Linked Data)](#218-geojson-ld---geo--javascript-object-notation-for-linked-data-)
+    + [2.1.9 LAS (LASer) | .las](#219-las--laser----las)
+  * [2.2 Wichtige Rasterdatenformate:](#22-wichtige-rasterdatenformate-)
+    + [2.2.1 JPEG (Joint Photographic Experts Group) | .jpg](#221-jpeg--joint-photographic-experts-group----jpg)
+    + [2.2.2 GIF (Graphic Interchange Format) | .gif](#222-gif--graphic-interchange-format----gif)
+    + [2.2.3 (Geo)TIFF (Tagged Image File Format) | .tiff / .tif und Cloud Optimized GeoTIFF](#223--geo-tiff--tagged-image-file-format----tiff---tif-und-cloud-optimized-geotiff)
+    + [2.2.4 BMP (Windows Bitmap) | .bmp](#224-bmp--windows-bitmap----bmp)
+    + [2.2.5 NetCDF (Network Common Data Format)](#225-netcdf--network-common-data-format-)
+- [3. Geospatial Libraries](#3-geospatial-libraries)
+  * [3.1 Was ist eine Programmbibliothek](#31-was-ist-eine-programmbibliothek)
+  * [3.2 Programmbibliotheken für Geodaten und -anwendungen](#32-programmbibliotheken-f-r-geodaten-und--anwendungen)
+    + [3.2.1 GDAL / OGR (Geospatial Data Abstraction Library / OpenGIS Simple Feature Reference Implementation)](#321-gdal---ogr--geospatial-data-abstraction-library---opengis-simple-feature-reference-implementation-)
+    + [3.2.2 GeoTools](#322-geotools)
+    + [3.2.3 Proj4](#323-proj4)
+    + [3.2.4 libLAS](#324-liblas)
+    + [3.2.5 GEOS (Geometry Engine Open Source)](#325-geos--geometry-engine-open-source-)
+    + [3.2.6 JTS Topology Suite (JTS)](#326-jts-topology-suite--jts-)
+- [4. Zusammenfassung](#4-zusammenfassung)
+- [Quellenangaben](#quellenangaben)
 
-## 1. Einleitung
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+ 
+## 1. Einleitung <a name="1"></a>
 Unser Thema “Geospatial Data Formats and Libraries” behandelt unter anderem verschiedene Datenformate zum Austausch und zur Visualisierung von Geodaten, diese sind unterteilt in Vektordatenformate und Rasterdatenformate. Einige der Formate dürften schon bekannt sein aus vergangenen Kursen und Vorlesungen. 
 Aufgrund der Menge der Informationen sind an einigen Stellen Links zu empfehlenswerten Webseiten angegeben zur persönlichen Vertiefung, falls nötig. 
 Weiterhin haben wir in unserem Handout sechs Programmbibliotheken aufgeführt und deren Funktionen erklärt, allerdings unterschiedlich ausführlich. An diesen wird auch deutlich, warum Geodatenformate und Bibliotheken zusammen in einer Präsentation vorgestellt werden.
@@ -51,6 +55,10 @@ Allgemeine Informationen zu Vektordaten:
 *https://www.spektrum.de/lexikon/geographie/vektordaten/8542*
 
 #### 2.1.1 DWG (drawing) | .dwg
+
+*Spezifikation:*   
+https://www.scan2cad.com/dwg/file-spec/
+
 - Konstruktions-Datenformat und Grafik-Technologie von Autodesk bzw. Namensanhang für zwei- und dreidimensionale Zeichnungsdateien
 - enthält z.B. Entwurfsdaten, Geometriedaten, Bilder, Karten (Designdaten und Metadaten)
 - binäres Dateiformat
@@ -59,6 +67,10 @@ Allgemeine Informationen zu Vektordaten:
 - beim Konvertieren von DWG nach DXF gehen Informationen verloren 
 
 #### 2.1.2 DXF (Drawing Interchange Format) | .dxf
+
+*Spezifikation:*   
+https://www.scan2cad.com/dxf/file-specification/
+
 - Austauschformat für CAD-Daten 
 - von Autodesk entwickelt 
 - enthält 2D-Daten wie Linien, Kreise und Splines oder auch 3D-Daten 
@@ -90,16 +102,23 @@ Geometrie:
 
 - Im geometrischen Teil werden Linien, Polygone, Kreise, Kreisbogen, Texte und alle anderen Grundelemente mit verschiedenen Attributen wie Ebenen, Farbe, Strichstärke oder Linientyp gespeichert. Einige Programme importieren nur diesen Abschnitt, wodurch viele Informationen verloren gehen, Probleme jedoch weitgehend vermieden werden. 
 
-![Alt-Text](https://www.scan2cad.com/wp-content/uploads/2016/01/dxf-file-format-group-code-sections-file-structure.jpg)
+![Alt-Text](https://www.scan2cad.com/wp-content/uploads/2016/01/dxf-file-format-group-code-sections-file-structure.jpg)       
+*(Quelle: https://www.scan2cad.com/wp-content/uploads/2016/01/dxf-file-format-group-code-sections-file-structure.jpg)*
 
-![Alt-Text](http://www.ellenfinkelstein.com/autocadtips/images/acadtips_dxf_format_edit_drawings-2.png)
+![Alt-Text](http://www.ellenfinkelstein.com/autocadtips/images/acadtips_dxf_format_edit_drawings-2.png)       
+*(Quelle: http://www.ellenfinkelstein.com/autocadtips/images/acadtips_dxf_format_edit_drawings-2.png)*
 
 #### 2.1.3 GeoJSON | .geojson
+
+*Spezifikation:*    
+https://tools.ietf.org/html/rfc7946
+
 - Geodatenaustauschformat basierend auf “JavaScript Object Notation” (JSON)
 - zum Kodieren geographischer Datenstrukturen 
 
 ##### Aufbau:
-![Alt-Text](images/geojson1.PNG)
+![Alt-Text](images/geojson1.PNG)     
+*(Quelle: https://www.scan2cad.com/dxf/technical-dissection/)*
 
 - die GeoJSON Datenstruktur ist immer ein Objekt
 	- besteht aus einer Sammlung von Name/Wert-Paaren (Members)
@@ -153,22 +172,29 @@ Geometry Collection:
 		- Wert des Members “name” muss eine Zeichenfolge sein, die ein CRS angibt 
 			- urn: ogc: def: crs: OGC: 1.3: CRS84" werden älteren Bezeichnern wie "EPSG: 4326" vorgezogen
 
-![Alt-Text](images/geojson2.PNG)
+![Alt-Text](images/geojson2.PNG)        
+*(Quelle: http://geojson.org/geojson-spec.html)*
 
 oder verlinkt:
 
-![Alt-Text](images/geojson3.PNG)
+![Alt-Text](images/geojson3.PNG)      
+*(Quelle: http://geojson.org/geojson-spec.html)*
  
-![Alt-Text](images/geojson4.PNG)
+![Alt-Text](images/geojson4.PNG)    
+*(Quelle: http://geojson.org/geojson-spec.html)*
 
 ##### Bounding Boxes:
 
 - Informationen zum Koordinatenbereich für Geometrien 
 - Element namens “bbox” mit dem Wert 2*n-Array, wobei n die Anzahl der in den enthaltenen Geometrien dargestellten Dimensionen ist, wobei die niedrigsten Werte für alle Achsen gefolgt von den höchsten Werten angezeigt werden
 
-![Alt-Text](images/geojson5.PNG)
+![Alt-Text](images/geojson5.PNG)    
+*(Quelle: http://geojson.org/geojson-spec.html)*
 
 #### 2.1.4 KML (Keyhole Markup Language) und KMZ | .kml, .kmz
+
+*Spezifikation:*    
+http://www.opengeospatial.org/standards/kml/
 
 - KML ist eine Auszeichnungssprache die geographische Informationen sowohl in Vektorform als auch in Rasterform enthält
 - XML Syntax 
@@ -208,7 +234,9 @@ Linux:
 	- semantische Ebene und syntaktische Ebene
 	- Case Sensitive 
 
-![Alt-Text](images/kml1.PNG)
+![Alt-Text](images/kml1.PNG)     
+*(Quelle: https://www.gislounge.com/look-kml-open-standard-represent-visualize-spatia
+l-information/)*
 
 - beginnt wie alle XML-Dateien mit den XML header Informationen 
 - danach KML root element tag (kml 2.2 namespace specification) 
@@ -226,6 +254,9 @@ https://developers.google.com/kml/documentation/kml_tut#placemarks
 
 #### 2.1.5 GML (Geography Markup Language) | .gml
 
+*Spezifikation:*      
+http://www.opengeospatial.org/standards/gml
+
 - vom OGC definierte 3D-Vektorbeschreibungssprache 
 - offene Schnittstelle zum GIS 
 - Format dient nur zum Datenaustausch und der Datensicherung 
@@ -241,9 +272,13 @@ https://developers.google.com/kml/documentation/kml_tut#placemarks
 
 ##### Aufbau:
 
-![Alt-Text](images/gml1.PNG)
+![Alt-Text](images/gml1.PNG)      
+*(Quelle: https://gdal.org/1.11/ogr/drv_gml.html)*
 
 #### 2.1.6 SHP (Shapefile)
+
+*Spezifikation:*      
+https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf
 
 - verbreitetes Format zur Speicherung räumlicher Daten 
 	- geographische Position
@@ -255,7 +290,9 @@ https://developers.google.com/kml/documentation/kml_tut#placemarks
 	- optionale Dateien 
 - in einem Shapefile können jeweils nur Elemente eines Typs enthalten sein
 
-![Alt-Text](images/shape1.PNG)
+![Alt-Text](images/shape1.PNG)    
+*(Quelle: http://desktop.arcgis.com/de/arcmap/10.3/manage-
+data/shapefiles/what-is-a-shapefile.htm)*
 
 ##### Aufbau:
 
@@ -267,15 +304,21 @@ https://developers.google.com/kml/documentation/kml_tut#placemarks
 	- Zulässige Feldtypen sind Floating Point (13 Zeichen), Ganzzahl / Integer, Datum ohne Zeitspeicherung (8 Zeichen) und Text (254 Zeichen
 	- Fließkommazahlen können Rundungsfehler enthalten, da sie als Text gespeichert werden
 
-![Alt-Text](images/shape2.PNG)
+![Alt-Text](images/shape2.PNG)    
+*(Quelle: http://desktop.arcgis.com/de/arcmap/10.3/manage-
+data/shapefiles/what-is-a-shapefile.htm)*
 
 - Die SHP-Datei mit den Koordinaten. Diese werden im Binärformat gespeichert, können jedoch in einem für den Menschen lesbaren Text angezeigt werden. Die SHP-Datei hat auch eine Kopfzeile für die gesamte Schicht und eine Kopfzeile für jeden Datensatz.
 
-![Alt-Text](images/shape3.PNG)
+![Alt-Text](images/shape3.PNG)     
+*(Quelle: http://desktop.arcgis.com/de/arcmap/10.3/manage-
+data/shapefiles/what-is-a-shapefile.htm)*
 
 - Die DBF-Datei, eine dBase-Datei mit der Datenbanktabelle, die Datensatzattribute enthält. Dies führt implizit zu den SHP- und SHX-Dateien durch die implizite Datensatznummer in der DBF-Datei.
 
-![Alt-Text](images/shape4.PNG)
+![Alt-Text](images/shape4.PNG)     
+*(Quelle: http://desktop.arcgis.com/de/arcmap/10.3/manage-
+data/shapefiles/what-is-a-shapefile.htm)*
 
 - Die SHX Datei, ein Index. Diese werden in Binärformat gespeichert. 
 	- Header, identisch mit dem in der SHP-Datei
@@ -283,6 +326,9 @@ https://developers.google.com/kml/documentation/kml_tut#placemarks
 	- der Offset zum Anfang eines Datensatzes, seine Länge und die Anzahl der Teile und Punkte 
 
 #### 2.1.7 GPKG  (GeoPackage) | .gpkg
+
+*Spezifikation:*      
+http://www.geopackage.org/spec/
 
 - offener, nicht proprietärer, plattformunabhängiger, auf bereits existierenden Standards aufbauender Standard, um Geodaten (Vektor- und Rasterdaten) in einer Datei zu speichern
 - Standard definiert die Art und Weise, in der Geodaten in einer SQLite-Datenbank abgelegt werden
@@ -296,7 +342,8 @@ https://developers.google.com/kml/documentation/kml_tut#placemarks
 	- MBTiles: “file format for storing tilesets. It’s designed so that you can package the potentially thousands of files that make up a tileset and move them around” (https://www.mapbox.com/help/define-mbtiles/”, 08.09.2018)
 - GeoPackage unterstützt nur ein Geometrieattribut je Featureklasse (Tabelle)
 
-![Alt-Text](images/geopackage1.PNG)
+![Alt-Text](images/geopackage1.PNG)     
+*(Quelle: http://www.geopackage.org/spec/)*
 
 Eine Tabelle mit dem Namen gpkg_spatial_ref_sys ist die erste Komponente des Standard-SQL-Schemas für einfache Funktionen. Die darin enthaltenen Koordinatenreferenzsystem-Definitionen werden in den Tabellen GeoPackage gpkg_contents und gpkg_geometry_columns referenziert, um die Vektor- und Raster(Kachel-)daten in Benutzertabellen mit Standorten auf der Erde in Beziehung zu setzen.
 
@@ -305,6 +352,10 @@ Eine Tabelle mit dem Namen gpkg_spatial_ref_sys ist die erste Komponente des Sta
 http://www.geopackage.org/spec/ 
 
 #### 2.1.8 GeoJSON-LD ((Geo) JavaScript Object Notation for Linked Data)
+
+*Spezifikation:*    
+https://json-ld.org/spec/latest/      
+http://geojson.org/geojson-ld/
 
 - basiert auf JSON-LD
 
@@ -389,6 +440,9 @@ Beispiel:
 
 #### 2.1.9 LAS (LASer) | .las
 
+*Spezifikation:*    
+https://www.asprs.org/wp-content/uploads/2010/12/LAS_1_4_r13.pdf    
+
 - Dateiformat zum Austausch von 3D-Punktwolken 
 - primär zum Austausch von Lidar Punktwolkendaten 
 	- Lidar verwendet ultraviolettes, sichtbares oder nahinfrarotes Licht zur Abbildung von Objekten
@@ -396,7 +450,8 @@ Beispiel:
 
 ##### Aufbau:
 
-![Alt-Text](https://4.bp.blogspot.com/-3cQiY5Hzzh0/WYrBXOrchUI/AAAAAAAABJ0/upj1IS_d5E4k_CRIQ6asbxHYyict4cgpgCLcBGAs/s1600/LAS1_3_fileFormat.png)
+![Alt-Text](https://4.bp.blogspot.com/-3cQiY5Hzzh0/WYrBXOrchUI/AAAAAAAABJ0/upj1IS_d5E4k_CRIQ6asbxHYyict4cgpgCLcBGAs/s1600/LAS1_3_fileFormat.png)    
+*(Quelle: http://www.kaudel.de/projekte/GIFundPNG.pdf/)*
 
 Header:
 
@@ -412,12 +467,15 @@ Point Data Records:
 	- haben einen Ort, eine Intensität und optional einen Zeiger auf ein waveform packet
 	- waveform packet: Liste von Intensitäten, die entweder intern im Abschnitt für die erweiterten Variablenlängensätze der LAS-Datei oder in einer externen .WVS-Datei gespeichert werden
 
-### 2.2 Wichtige Rasterdatenformate:
+### 2.2 Wichtige Rasterdatenformate:    
 **Allgemeine Informationen zu Rasterdaten:**
 
 https://www.spektrum.de/lexikon/geographie/rasterdaten/6416
 
-#### 2.2.1 JPEG (Joint Photographic Experts Group) | .jpg
+#### 2.2.1 JPEG (Joint Photographic Experts Group) | .jpg    
+
+*Spezifikation:*      
+https://www.w3.org/Graphics/JPEG/jfif3.pdf
 
 - Standard im Internet für den Austausch von Fotos
 - sehr geringer Speicherplatzbedarf
@@ -441,7 +499,10 @@ Eigentliche Komprimierung:
 - mathematisches Verfahren um die Bilddaten in einer kleine Datenmenge umrechnet und wieder rückgängig macht
 - Verluste bei jeder Komprimierung/Dekomprimierung 
 
-#### GIF (Graphic Interchange Format) | .gif
+#### 2.2.2 GIF (Graphic Interchange Format) | .gif
+
+*Spezifikation:*      
+https://www.w3.org/Graphics/GIF/spec-gif89a.txt
 
 - geeignet für Bitmap-Bilder (.bmp) und Animationen
 - jeder Browser kann Dateien mit der Endung .gif öffnen
@@ -474,7 +535,8 @@ Linux:
 
 ##### Aufbau:
 
-![Alt-Text](images/gif1.PNG)
+![Alt-Text](images/gif1.PNG)     
+*(Quelle: http://files.dnb.de/nestor/kurzartikel/thema_06-TIFF.pdf)*
 
 Header:
 
@@ -505,6 +567,9 @@ Terminator:
 
 #### 2.2.3 (Geo)TIFF (Tagged Image File Format) | .tiff / .tif und Cloud Optimized GeoTIFF
 
+*Spezifikation:*      
+https://cdn.earthdata.nasa.gov/conduit/upload/6852/geotiff-1.8.1-1995-10-31.pdf
+
 - Hauptformat für gerasterte Fotos
 - Standardformat für Druckproduktionen
 - geeignet für Datenaustausch
@@ -514,7 +579,8 @@ Terminator:
 
 ##### Aufbau:
 
-![Alt-Text](images/tif1.PNG)
+![Alt-Text](images/tif1.PNG)     
+*(Quelle: http://files.dnb.de/nestor/kurzartikel/thema_06-TIFF.pdf)*
 
 Header:
 
@@ -546,6 +612,9 @@ Offset (Position in der Datei) auf Image File Directory (IFD):
 - wird auch bei der NASA benutzt
 
 #### 2.2.4 BMP (Windows Bitmap) | .bmp
+
+*Spezifikation:*      
+http://www.dragonwins.com/domains/getteched/bmp/bmpfileformat.htm
 
 - “device independent bitmap” (DIP)
 - geräteunabhängige Grafik
@@ -599,6 +668,9 @@ Linux:
 - Krita
 
 #### 2.2.5 NetCDF (Network Common Data Format)
+
+*Spezifikation:*      
+https://www.unidata.ucar.edu/software/netcdf/docs/file_format_specifications.html
 
 - Dateiformat für mehrdimensionale wissenschaftliche Daten
 	- z.B. Temperatur, Feuchtigkeit, Druck, Windgeschwindigkeit, Windrichtung
@@ -942,6 +1014,10 @@ Die meisten Programmbibliotheken sind in bestimmten Sprachen geschrieben, habe d
 
 ## Quellenangaben 
 
+**Vektordatenformate**
+
+*DXF und DWG:*
+
 https://www.itwissen.info/DWG-drawing-DWG-Dateiformat.html (30.08.2018)
 
 https://www.dateiendung.com/format/dxf (30.08.2018)
@@ -950,63 +1026,108 @@ https://de.wikipedia.org/wiki/Drawing_Interchange_Format (30.08.218)
 
 https://www.scan2cad.com/dwg/file-spec/ (30.08.2018)
 
+*GeoJSON:*
+
 http://geojson.org/geojson-spec.html (30.08.2018)
 
-https://www.dateiendung.com/format/kml (03.09.2018)
+*GeoJSON-LD:*
 
-http://giswiki.org/wiki/Geography_Markup_Language (03.09.2018)
+https://de.ryte.com/wiki/JSON-LD (25.09.2018)
 
-http://desktop.arcgis.com/de/arcmap/10.3/manage-data/shapefiles/what-is-a-shapefile.htm (07.09.2018)
-
-https://de.wikipedia.org/wiki/Shapefile (07.09.2018)
+*Geopackage:*
 
 https://www.geopackage.org/ (07.09.2018)
 
 http://www.geopackage.org/spec/ (08.09.2018)
 
-https://de.wikipedia.org/wiki/Geospatial_Data_Abstraction_Library (08.09.2018)
+*GML:*
 
-https://live.osgeo.org/de/overview/geotools_overview.html (09.09.2018)
+http://giswiki.org/wiki/Geography_Markup_Language (03.09.2018)
 
-https://de.wikipedia.org/wiki/PROJ.4 (09.09.2018)
+*KML:*
 
-http://www.digitalfotografie.de/jpg-format/02-was-ist-jpg-jpeg (19.09.2018)
+https://www.dateiendung.com/format/kml (03.09.2018)
 
-https://live.osgeo.org/en/quickstart/gdal_quickstart.html#id3 (24.09.2018)
+*Shapefile:*
 
-https://de.ryte.com/wiki/JSON-LD (25.09.2018)
+http://desktop.arcgis.com/de/arcmap/10.3/manage-data/shapefiles/what-is-a-shapefile.htm (07.09.2018)
 
-http://www.kaudel.de/projekte/GIFundPNG.pdf (21.09.2018)
+https://de.wikipedia.org/wiki/Shapefile (07.09.2018)
 
-https://www.dateiendung.com/format/gif (21.09.2018)
+**Rasterdatenformate**
 
-https://www.europadruckerei.de/haeufige-fragen/tiff-format (21.09.2018)
-
-http://files.dnb.de/nestor/kurzartikel/thema_06-TIFF.pdf (21.09.2018)
-
-https://www.dateiendung.com/format/gif (21.09.2018)
+*BMP:*
 
 https://www.dateiendung.com/format/bmp (21.09.2018)
 
 https://www.itwissen.info/BMP-bitmap-file-format-Bitmap-Dateiformat.html (21.09.2018)
 
-http://wiki.baw.de/de/index.php/NETCDF.CDF (21.09.2018)
+*GIF:*
 
-https://pro.arcgis.com/de/pro-app/help/data/multidimensional/what-is-netcdf-data.htm (21.09.2018)
+http://www.kaudel.de/projekte/GIFundPNG.pdf (21.09.2018)
 
-https://live.osgeo.org/de/overview/jts_overview.html (21.09.2018)
+https://www.dateiendung.com/format/gif (21.09.2018)
 
-https://www.gdal.org/ (21.09.2018)
+*JPEG*:
 
-https://trac.osgeos.org (25.09.2018)
+http://www.digitalfotografie.de/jpg-format/02-was-ist-jpg-jpeg (19.09.2018)
 
-https://geos.osgeo.org (25.09.2018)
-
-https://liblas.org (25.09.2018)
+*LAS:*
 
 http://miltomiltiadou.blogspot.com/2017/08/the-structure-of-las13-file-format-used.html (28.09.2018)
 
 https://github.com/Jean-Romain/lidR (28.09.2018)
 
+*NetCDF:*
+
+http://wiki.baw.de/de/index.php/NETCDF.CDF (21.09.2018)
+
+https://pro.arcgis.com/de/pro-app/help/data/multidimensional/what-is-netcdf-data.htm (21.09.2018)
+
+*PNG:*
+
+http://www.kaudel.de/projekte/GIFundPNG.pdf (21.09.2018)
+
+*TIFF:*
+
+https://www.europadruckerei.de/haeufige-fragen/tiff-format (21.09.2018)
+
+http://files.dnb.de/nestor/kurzartikel/thema_06-TIFF.pdf (21.09.2018)
+
+**Libraries:**
+
+*GDAL / OGR:*
+
+https://de.wikipedia.org/wiki/Geospatial_Data_Abstraction_Library (08.09.2018)
+
+https://live.osgeo.org/en/quickstart/gdal_quickstart.html#id3 (24.09.2018)
+
+https://www.gdal.org/ (21.09.2018)
+
 https://www.gdal.org/gdal_tutorial.html (28.09.2018)
+
+*GEOS:*
+
+https://trac.osgeos.org (25.09.2018)
+
+https://geos.osgeo.org (25.09.2018)
+
+*Geotools:*
+
+https://live.osgeo.org/de/overview/geotools_overview.html (09.09.2018)
+
+*JTS Topology Suite:*
+
+https://live.osgeo.org/de/overview/jts_overview.html (21.09.2018)
+
+*LibLAS:*
+
+https://liblas.org (25.09.2018)
+
+*Proj4:*
+
+https://de.wikipedia.org/wiki/PROJ.4 (09.09.2018)
+
+
+
 
