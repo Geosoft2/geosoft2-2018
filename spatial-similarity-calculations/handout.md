@@ -78,7 +78,7 @@ describes binary topological relations in terms of the intersections of the inte
   - in fact: 19 combinations are possible:
   - This diagram illustrates these combinations
   - situations are connected in the diagram if they differ for exactly one of the nine &quot;intersections&quot;
-  - the more edges are needed to get from one situation to another, the less similar are the two situations
+  - the __more edges__ are needed to get from one situation to another, the __less similar__ are the two situations
 
  ![alt text](https://github.com/bennidietz/geosoft2-2018/blob/master/spatial-similarity-calculations/pictures/19_Combinations.PNG?raw=true "")
 
