@@ -18,7 +18,7 @@ _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis
 - [7 Summary](#7-summary)
 - [8 Sources and further readings](#8-sources-and-further-readings)
 
-# 1 Why spatial similarity calculations?
+# 1 Why spatial similarity calculations?[8](#8-sources-and-further-readings)
 
   - discover the most relevant spatial datasets in the ever-growing global spatial data infrastructures (SDIs)
   - finding similar objects to a given one becomes more popular and common in geographic informations systems
@@ -255,6 +255,8 @@ __J=S/(2-S)__
 > A Hamming distance in information technology represents the number of points at which two corresponding pieces of data can be different. 
 > It is often used in various kinds of error correction or evaluation of contrasting strings or pieces of data.
 
+Example: The Hamming distance of 10**1**1**1**01 and 10**0**1**0**01 is 2.
+
 Further readings:
 - [How to statistically compare two maps?](https://www.researchgate.net/post/How_to_statistically_compare_two_maps)
 - [Map Comparison Kit](http://mck.riks.nl/)
@@ -273,5 +275,5 @@ Further readings:
   - **[Relation between spatial similarity and map scale change in mulit-scale maps](https://ac.els-cdn.com/S1674984715000191/1-s2.0-S1674984715000191-main.pdf?_tid=ace53621-8259-44eb-bd32-e80ecb415137&acdnat=1538735023_3c975278e6a2171fa660b98d014922d8)** (2015: Weifang)
   - **[Spatial Similarity Relations in automated map generalization](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2014: Yan)
   - **[Directional relations](https://uwspace.uwaterloo.ca/handle/10012/8317)** (2015: Skiadopoulos)
-  -  **[Distance Metrics ](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_307-2)** (2016: Kang)
-- Similarity Measurements for Executable Research Compendia (2018: Lohoff)
+  - **[Distance Metrics ](https://link.springer.com/referenceworkentry/10.1007/978-3-319-23519-6_307-2)** (2016: Kang)
+  - Similarity Measurements for Executable Research Compendia (2018: Lohoff)
