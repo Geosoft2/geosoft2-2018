@@ -183,7 +183,8 @@ most well-documented and for our studies best to apply.
 :warning: to be done
 
 ## 3 Preservation
-### 3.1 Data Preservation
+### 3.1 Data Preservation 
+- [_Wikipedia Link_](https://en.wikipedia.org/wiki/Data_preservation) 
 #### 3.1.1 Generall Meaning
 - act of conserving and maintaining both the safety and integrity of data
 #### 3.1.2 Goal
@@ -208,8 +209,10 @@ most well-documented and for our studies best to apply.
 ##### 3.1.4 Data Pyramid
 
 ![Alt-Text](images/DataPyramid.png)
+<br>[_Source: Francine Berman, Got data?: a guide to data preservation in the information age (2008)_](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwi7jYrPmYPeAhWCFywKHQjJBBQQFjAAegQIAxAC&url=http%3A%2F%2Fwww.itpb.ucla.edu%2Fdocuments%2F2009%2Fp50-berman.pdf&usg=AOvVaw111q-vKcfasHBz12FnAg8K)
 
 ### 3.2 Digital Preservation
+- [_Wikipedia Link_](https://en.wikipedia.org/wiki/Digital_preservation) 
 #### 3.2.1 Purpose
 - Digital Revolution make it easy to create, copy and transmit data all over the world
     - -->increasingly vast amounts of digital research data
@@ -218,6 +221,8 @@ most well-documented and for our studies best to apply.
 - good practice for institutions and researchers to manage and retain their research data
 - A data preservation programme suited to the individual institution must be used to safeguard this huge investment of time and resources
 - “Digital Heritage” has cultural, historical, aesthetic, archaeological, scientific, ethnological or anthropological value and is increasing
+- [_DCC: Why preserve Digital_](http://www.dcc.ac.uk/digital-curation/why-preserve-digital-data)
+- [_UNESCO Digital Heritage_](http://www.unesco.org/new/en/communication-and-information/access-to-knowledge/preservation-of-documentary-heritage/digital-heritage/concept-of-digital-heritage/)
 #### 3.2.2 Problems
 - Technological advances even more rapidly, reducing the time before a technology becomes obsolete
 - Data is recorded on a transient medium, in a specific file format and needs a transient coding scheme to interpret them
@@ -227,7 +232,7 @@ most well-documented and for our studies best to apply.
 ##### 3.2.3.1 Appraisal
 - Process of identifying records and other materials to be preserved by determining their permanent value. It is a difficult and critical process because the remaining selected records will shape researchers’ understanding of that body of records, or fonds. Archival appraisal may be performed once or at the various stages of acquisition and processing
 ##### 3.2.3.1 Identification
-- Identification through assigned identifiers and accurate descriptive metadata.An identifier is a unique label that is used to reference an object or record, usually manifested as a number or string of numbers and letters. As a crucial element of metadata to be included in a database record or inventory, it is used in tandem with other descriptive metadata to differentiate objects and their various instantiations
+- Identification through assigned identifiers and accurate descriptive metadata. An identifier is a unique label that is used to reference an object or record, usually manifested as a number or string of numbers and letters. As a crucial element of metadata to be included in a database record or inventory, it is used in tandem with other descriptive metadata to differentiate objects and their various instantiations
 ##### 3.2.3.1 Integrity
 - Assurance that the data is "complete and unaltered in all essential respects". Is the Cornerstone of Preservation. Unintentional changes to data are to be avoided, and responsible strategies put in place to detect unintentional changes and react as appropriately determined
 ##### 3.2.3.1 Fixity
@@ -284,24 +289,19 @@ most well-documented and for our studies best to apply.
         - “True transparency is culturally ingrained in the DNA of the organization. It encourages constructive questioning and honest probing focused on mission and guided by core beliefs.”
     - Advocacy
         - People or groups advocate to influence decisions within political, economic and social systems. “[advocacy] is integral to all aspects of archival work.”
+- [_SPN Website Link_](http://www.softwarepreservationnetwork.org/)
 #### 3.2.6 The OAIS Reference Model
 - The functional model gives a detailed break-down of digital preservation and dissemination workflows – in short, it explains how an (idealized) archive works. It therefore is a good starting point for anyone who seeks to obtain a systematic overview of these workflows or wants to analyze and understand workflows in an existing archive.
 
 ![Alt-Text](images/OAIS1.png)
 
 ![ALT-Text](images/OAIS2.png)
+<br>[_Source: OAIS Reference Model_](http://cessda.net/content/download/496/4465/file/CESSDA%20User%20Guide%20for%20digital%20preservation_2_OAIS.pdf)
 
-## Sources
-- https://www.gesis.org/en/services/archiving-and-registering/data-archiving/long-term-preservation/
-- http://www.softwarepreservationnetwork.org/
-- https://earthdata.nasa.gov/user-resources/standards-and-references/preservation-content-spec
-- https://www.sciencedirect.com/science/article/pii/S0920379612003225
-- https://en.wikipedia.org/wiki/Data_preservation
-- https://en.wikipedia.org/wiki/Digital_preservation
-- http://www.dcc.ac.uk/digital-curation/why-preserve-digital-data
-- http://www.unesco.org/new/en/communication-and-information/access-to-knowledge/preservation-of-documentary-heritage/digital-heritage/concept-of-digital-heritage/
-https://wikidiff.com/archive/repository
-- http://www.dpworkshop.org/dpm-eng/terminology/repository.html
-- User Guide for digital preservation OASI
+#### 3.2.8 Further Reading
+- Marilyn Deegan & Simon Tanner, Digital Preservation (2006)
 - Francine Berman, Got data?: a guide to data preservation in the information age (2008)
-- Marilyn Deegan & Simon Tanner, Digital Preservation 
+- [_Long term preservation of scientific data: Lessons from jet and other domains_](https://www.sciencedirect.com/science/article/pii/S0920379612003225)
+- [_GESIS Long Term Preservation_](https://www.gesis.org/en/services/archiving-and-registering/data-archiving/long-term-preservation/)
+- [_NASA Earth Science Data Preservation Content Specification_](https://earthdata.nasa.gov/user-resources/standards-and-references/preservation-content-spec)
+
