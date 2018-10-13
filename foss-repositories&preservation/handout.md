@@ -1,6 +1,7 @@
 # FOSS Repositories & Preservation
 **Autors**: Niklas Aßelmann [@NiklasAsselmann](https://github.com/NiklasAsselmann) & Yannick Paulsen [@yhallowiegeht](https://github.com/yhallowiegeht)
-> 
+
+---
 
 ## Table of Content
 
@@ -25,7 +26,7 @@
     + [2.2.5 Fedora](#225-fedora)
     + [2.2.6 Archivematica](#226-archivematica)
   * [2.3 Comparison](#23-comparison)
-    + [2.3.1 Comparison](#231-comparison)
+    + [2.3.1 Comparison Table DSpace, Fedora & Zenodo](#231-comparison-table-dspace,-fedora-&-zenodo)
     + [2.3.2 Resume](#232-resume)
 - [3 Preservation](#3-preservation)
   * [3.1 Data Preservation](#31-data-preservation)
@@ -63,17 +64,21 @@
     + [3.2.6 The OAIS Reference Model](#326-the-oais-reference-model)
 - [Sources](#sources)
 
-<!-- toc -->
+---
 
 ## 1 Introduction
-- Our topic "FOSS Repositories and Preservation is dealing with Free/Libre Open Source Software to store any kind of data. In a world where more and more data is produzed every day, these repositories provide software that can store and preserve reseach data we are gonne need for our projects. In the following we are gonna introduce you some of these softwares and the basic principles of preservation.
+Our topic "FOSS Repositories and Preservation is dealing with Free/Libre Open Source Software to store any kind of research data. In a world where more and more data is produzed every day, these repositories provide software that can store and preserve reseach data used by many scientiest anywhere at any time. In the following we are introducing you to some of these softwares and the basic principles of preservation.
+
+---
+
 ## 2 FOSS Repositories
 ### 2.1 Prerequesite Knowledge
 #### 2.1.1 Data Repository Definition
-- A data repository is a digital archive and provides a structured way for users to store, preserve and make available research data and their metadata 
+- A data repository is a digital archive and provides a structured way for users to store, preserve and make available 
+research data and their metadata 
 - Permalinks are a common and comfortable mean for linking and citing datasets
-- It is used by version control systems to store multiple versions of files 
-- While a repository can be configured on a local machine for a single user, 
+- It is mostly used with version control systems to store multiple versions of files 
+- While a repository _can_ be configured on a local machine for a single user, 
 it is often stored on a server, which can be accessed by multiple users
 #### 2.1.2 Basic Terminology
 ##### 2.1.2.1 Version Control
@@ -85,24 +90,23 @@ it is often stored on a server, which can be accessed by multiple users
 - This means that the description and files of that dataset are not publicly available until the embargo date is reached
 - Meanwhile, some other information about the dataset - such as the contributors, title, citation and associated articles become available immediately, prior to the embargo
 ##### 2.1.2.4 Metadata Harvesting
-- the Protocol for Metadata Harvesting (OAI-PMH) is developed to harvest(collect) descriptions of records so that services can be using metadata from many different archives
-- typically used by CERN-based networks (Invenio)
+- the Protocol for Metadata Harvesting ([OAI-PMH](https://en.wikipedia.org/wiki/Open_Archives_Initiative_Protocol_for_Metadata_Harvesting)) is developed to harvest(collect) descriptions of records so that services can be using metadata from many different archives
+- typically used by CERN-based networks ([Invenio](https://github.com/inveniosoftware/invenio))
 ##### 2.1.2.5 DOI
-- a Digital Object Identifier (DOI) is a persistent identifier used to uniquely identify objects
+- a Digital Object Identifier ([DOI](https://en.wikipedia.org/wiki/Digital_object_identifier)) is a persistent identifier used to uniquely identify objects
 - are mainly in use to identify academic, professional, and government information, such as journal articles, research reports and data sets, and official publications
 ##### 2.1.2.6 REST
-- Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services
+- Representational State Transfer ([REST](https://en.wikipedia.org/wiki/Representational_state_transfer)) is an architectural style that defines a set of constraints to be used for creating web services
 - RESTful web services provide interoperability between computer systems
 - using a stateless protocol and standard operations, REST systems aim for fast performance, reliability, and the ability to grow, by re-using components that can be managed and updated without affecting the system as a whole
 ##### 2.1.2.7 ORCID
-- ORCID iD (Open Researcher and Contributor ID) is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors
+- ORCID iD ([Open Researcher and Contributor ID](https://en.wikipedia.org/wiki/ORCID)) is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors
 - addresses the problem that a particular author's contributions to the scientific literature or publications in the humanities can be hard to recognize as most personal names are not unique or can change during a lifespan
-#### 2.1.3 Repository vs. Archive 
+#### 2.1.3 [Repository vs. Archive](https://wikidiff.com/archive/repository)
 - Archive and repository are often referred synonymous
 - Archives are storage rooms for files kept for historical interest
 - Whereas in repositories the main interest is preservation and safety of the data
 ### 2.2 Overview of the repository-software
-- image leads to repository
 #### 2.2.0 Invenio
 [![Alt-Text](images/1157480.png)](https://github.com/inveniosoftware/invenio)
 - open source software framework for large-scale digital repositories that provides the tools for management of digital assets in an institutional repository and research data management systems
@@ -110,40 +114,40 @@ it is often stored on a server, which can be accessed by multiple users
 - Stable version: 3.0.0 (07.07.18) 
 #### 2.2.1 Zenodo 
 [![Alt-Text](images/zenodo-gradient-2500.png)](https://github.com/zenodo/zenodo)
-- Research data repository
+- Research data repository based on Invenio
 - Created by OpenAIRE and CERN to provide a place for researchers to deposit datasets
 - Launched in 2013, allowing researchers in any subject area to upload files up to 50 GB
-- General-purpose open access repository based on Invenio
+- General-purpose open access repository
 #### 2.2.2 b2share 
 [![Alt-Text](images/logo-b2share.png)](https://github.com/EUDAT-B2SHARE/b2share)
-- Research data repository
+- Research data repository based on Invenio 
 - Created by EUDAT CDI services
-- Launched in 2014, based on Invenio 
+- Launched in 2014
 #### 2.2.3 Inspire 
 [![Alt-Text](images/inspire_logo_hep.png)](https://github.com/inspirehep/inspire)
-- Open access digital library for the field of high energy physics
+- Open access digital library for the field of high energy physics based on Invenio
 - Successor of the Stanford Physics Information Retrieval System (SPIRES) database
-- Launched in 2012, based on Invenio
+- Launched in 2012
 #### 2.2.4 DSpace 
 [![Alt-Text](images/DSpace_transparent_logo.png)](https://github.com/DSpace/DSpace)
 - Open source repository software package typically used for creating open access repositories for scholarly and/or published digital content
-- Shares some feature overlap with content management systems and document management systems, the DSpace repository software serves a specific need as a digital archives system, focused on the long-term storage, access and preservation of digital content
+- Shares some feature overlap with content management systems and document management systems, the software serves as a digital archives system, focused on the long-term storage, access and preservation of digital content
 - initial release in 2002 developed from MIT and HP Labs
-- Stable release: 6.2 (08.09.17)
+- Stable version: 6.2 (08.09.17)
 #### 2.2.5 Fedora 
 [![Alt-Text](images/fedora_logo_10in.png)](https://github.com/fcrepo4/fcrepo4)
 - Modular open source repository system for the management and dissemination of digital content
-- It is especially suited for digital libraries and archives, both for access and preservation of very large and complex digital collections of historic and cultural materials as well as scientific data
+- It is suited for digital libraries and archives, both for access and preservation of large and complex digital collections of historic and cultural materials as well as scientific data
 - Stable version: Fedora 4.7.5 (12.02.18)
 #### 2.2.6 Archivematica 
 [![Alt-Text](images/ArchivematicaTranslucent.png)](https://github.com/artefactual/archivematica)
-- web- and standards-based, open-source application which allows your institution to preserve long-term access to digital content
+- web- and standards-based, open-source application which allows to preserve long-term access to digital content
 - Stable version: 1.7.2 (11.09.18)
 ### 2.3 Comparison 
 The comparison is focused on the most accessible data repositories of this list. 
 This means the 3 out of 6 which seemed the most work-in-progress, 
 most well-documented and for our studies best to apply.
-#### 2.3.1 Comparison
+#### 2.3.1 Comparison Table DSpace, Fedora & Zenodo
 
 | Name             |                                                 | DSpace                                                                                               | Fedora                                                                     | Zenodo                                                                                                                            |
 |------------------|-------------------------------------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -181,6 +185,8 @@ most well-documented and for our studies best to apply.
 |                  | deletions possible                              | Yes                                                                                                  | Yes([CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete))                                                                  | Yes                                                                                                                               |
 #### 2.3.2 Resume
 :warning: to be done
+
+---
 
 ## 3 Preservation
 ### 3.1 Data Preservation 
