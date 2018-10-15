@@ -2,7 +2,7 @@
 
 _Authors: Benjamin Dietz [(@bennidietz)](https://github.com/bennidietz) , Jannis Fröhlking_ [(@JaFro96)](https://github.com/JaFro96)
 
-- [1 Why spatial similarity calculations](#1-why-spatial-similarity-calculations)
+- [1 Why spatial similarity calculations](#1-why-spatial-similarity-calculations3)
 - [2 Our first idea of spatial similarity calculation](#2-our-first-idea-of-spatial-similarity-calculation)
 - [3 Categories to measure spatial similarity](#3-categories-to-measure-spatial-similarity)
   * [3.1 Topological](#31-topological)
