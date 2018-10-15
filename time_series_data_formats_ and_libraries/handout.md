@@ -1,6 +1,6 @@
 # Time Series Data Formats &amp; Libraries
 
-Katharina Hovestadt @KathHv und Carolin Wortmann @carojw
+Katharina Hovestadt [@KathHv](https://github.com/KathHv) und Carolin Wortmann [@carojw](https://github.com/carojw)
 
 ## [Time Series](http://itfeature.com/time-series-analysis-and-forecasting/time-series-analysis-forecasting)
 
