@@ -62,7 +62,7 @@
       - [3.2.4.7 Metadata attachment](#3247-metadata-attachment)
     + [3.2.5 Software Preservation Network (SPN)](#325-software-preservation-network--spn-)
     + [3.2.6 The OAIS Reference Model](#326-the-oais-reference-model)
-- [Sources](#sources)
+- [4 Further Reading](#4-further-reading)
 
 ---
 
@@ -152,7 +152,8 @@ most well-documented and for our studies best to apply.
 | Name             |                                                 | DSpace                                                                                               | Fedora                                                                     | Zenodo                                                                                                                            |
 |------------------|-------------------------------------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Vision/Idea      |                                                 | produce a choice for repository software providing  means for open available and easy to manage data | advancement of open source software and content as collaborative community | open dependable deposit for science, enabling researchers  to share and preserve research outputs. Small layer on top of Invenio. |
-| Infrastructure   | development language                            | [Java](https://docs.oracle.com/javase/7/docs/api/)                                                                                                 | Java                                                                       | [Python](https://www.python.org/)                                                                                                                            |
+| Infrastructure   | development language                            | [Java](https://docs.oracle.com/javase/7/docs/api/)                                                                                                 | Java                                                                       | [Python](https://www.python.org/) & JavaScript                                                                                                                           |
+|                  | installation prerequesites                               | Java JDK 8, Apache Maven 3.x, Apache Ant 1.8x, PostgreSQL, Apache Tomcat 7 [↘](https://wiki.duraspace.org/display/DSDOC6x/Installing+DSpace#InstallingDSpace-HardwareRecommendations)                                                                     | Java 8, Tomcat 7 or Jetty 9.x [↘](https://wiki.duraspace.org/display/FEDORA4x/Deploying+Fedora+4+Complete+Guide#DeployingFedora4CompleteGuide-Downloads)                                                      | Docker, PostgreSQL, Elasticsearch 2.x, Redis and RabbitMQ [↘](https://github.com/zenodo/zenodo/blob/master/docker-compose.yml/)
 |                  | support community                               | Yes, thousands of institutions                                                                       | Yes, 130 institutions                                                      | Yes, ~2300 registered communities                                                                                                 |
 | Interface        | front-end integration                           | Yes, [JSPUI](https://wiki.duraspace.org/display/DSDOC5x/JSPUI+Configuration+and+Customization)(Java) or [Manakin](https://wiki.duraspace.org/display/DSPACE/Manakin+theme+tutorial)(XML)                                                                     | Yes, [Islandora](https://github.com/islandora) or [Samvera](https://github.com/samvera/hydra-pcdm)                                                    | Yes, via [Zenodo REST API](http://developers.zenodo.org/) possible                                                                                                 |
 |                  | customizable                                    | Yes                                                                                                  | Yes                                                                        | Yes                                                                                                                               |
@@ -304,7 +305,7 @@ most well-documented and for our studies best to apply.
 ![ALT-Text](images/OAIS2.png)
 <br>[_Source: OAIS Reference Model_](http://cessda.net/content/download/496/4465/file/CESSDA%20User%20Guide%20for%20digital%20preservation_2_OAIS.pdf)
 
-#### 3.2.8 Further Reading
+#### 4 Further Reading
 - Marilyn Deegan & Simon Tanner, Digital Preservation (2006)
 - Francine Berman, Got data?: a guide to data preservation in the information age (2008)
 - [_Long term preservation of scientific data: Lessons from jet and other domains_](https://www.sciencedirect.com/science/article/pii/S0920379612003225)
