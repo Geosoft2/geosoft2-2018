@@ -244,7 +244,7 @@ Assumptions:
       
 ## 6.2 [Sørensen–Dice coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)
 - twice the number of elements in the intersection divided by the sum of the number of elements in each set.
-![formula](pictures/Soerensen_Dice.jpeg "Soerensen-Dice_Coefficient")
+![formula](pictures/Soerensen-Dice_Coefficient.PNG "Soerensen-Dice_Coefficient")
 
 ### Relation between these indices
 - J: Jaccard Index, S: Sørensen-Dice coefficient
