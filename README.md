@@ -16,7 +16,7 @@ The handout should be prepared in a manner so that fellow students can use it as
 
 1. Fork this project
 1. Do your research
-1. Create a folder for your topic (`topic-title-no-capitals-with-hypens-not-underscores`)
+1. Create a folder for your topic (`topic-title-no-capitals-with-hyphens-not-underscores`)
 1. Add a file `handout.md` file in your folder
     * Take a look at the [markdown syntax](https://guides.github.com/features/mastering-markdown/)
     * Split up your work into logical sections and use informative names for each of these

@@ -1,9 +1,9 @@
+# Scholarly Publishing - History and Future
+
 Westfälische Wilhelms-Universität Münster
 Gesoftware 2
-Ilka Pleiser, 443394
 
-___
-# Scholarly Publishing - History and Future
+Ilka Pleiser, [@ipleis](https://github.com/ipleis)
 
 ___
 
