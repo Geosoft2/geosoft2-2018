@@ -1,0 +1,226 @@
+/* Colors based on WWU Münster CI, see https://sso.uni-muenster.de/imperia/md/content/wwu/cd/download/print_all/171130_wwu_cd_manual_2017_web.pdf */
+/* Approach inspired by https://www.johnlittle.info/dukeslides/ */
+
+/*
+MtNoIt__.ttf: MetaNormal\-Italic:style=Regular
+MtNoLFIt.ttf: MetaNormalLF\-Italic:style=Regular
+MtBdRo__.ttf: MetaBold\-Roman:style=Regular
+MtNoRo__.ttf: MetaNormal\-Roman:style=Regular
+MtBdLFRo.ttf: MetaBoldLF\-Roman:style=Regular
+MtNoLFRo.ttf: MetaNormalLF\-Roman:style=Regular
+
+LF = lining figures = Versalziffern
+*/
+
+body {
+  font-family: "MetaNormalLF\-Roman", "METAOFFCPRO\-NORM", 'Droid Serif', 'Palatino Linotype', Palatino, serif;
+  color: #3E3E3B;
+}
+
+.remark-slide-content {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 1em 2em;
+}
+
+.remark-slide-content {
+  background-image: url("WWUMuenster_Logo_2017_rgb.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+a, a > code {
+  color: #af0078;
+  font-family: "MetaBoldLF\-Roman", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'MetaBoldLF\-Roman', sans-serif;
+  font-weight: normal;
+  line-height: 1.1em;
+}
+
+.remark-code, .remark-inline-code { 
+  font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
+}
+
+.remark-slide-number {
+  font-family: "MetaNormalLF\-Roman", sans-serif;
+  font-size: 18px;
+}
+
+.wwu-cassis {
+	background-color: #af0078;
+  background-image: url("WWUMuenster_Logo_2017_rgb_negativ.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.wwu-cassis a, .wwu-cassis a > code {
+	color: #B1C800;
+	text-decoration: none;
+}
+.wwu-cassis h1, .wwu-cassis h2, .wwu-cassis h3 {
+	color: #B1C800;
+}
+
+.wwu-darkblue {
+	background-color: #00578a;
+	color: #ffffff;
+  background-image: url("WWUMuenster_Logo_2017_rgb_negativ.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.wwu-darkblue a, .wwu-darkblue a > code {
+	color: #B1C800;
+	text-decoration: none;
+}
+.wwu-darkblue h1, .wwu-darkblue h2, .wwu-darkblue h3 {
+	color: #B1C800;
+  line-height: 0.8em;
+}
+
+.wwu-lightblue {
+	background-color: #009DD1;
+	color: #ffffff;
+  background-image: url("WWUMuenster_Logo_2017_rgb_negativ.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.wwu-lightblue a, .wwu-lightblue a > code {
+	color: #B1C800;
+	text-decoration: none;
+}
+.wwu-lightblue h1, .wwu-lightblue h2, .wwu-lightblue h3 {
+	color: #B1C800;
+  line-height: 0.8em;
+}
+
+.wwu-bluegreen {
+	background-color: #006E89;
+	color: #ffffff;
+  background-image: url("WWUMuenster_Logo_2017_rgb_negativ.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.wwu-bluegreen a, .wwu-bluegreen a > code {
+	color: #B1C800;
+	text-decoration: none;
+}
+.wwu-bluegreen h1, .wwu-bluegreen h2, .wwu-bluegreen h3 {
+	color: #ffffff;
+  line-height: 0.8em;
+}
+
+.wwu-greenblue {
+	background-color: #008E96;
+  background-image: url("WWUMuenster_Logo_2017_rgb_negativ.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.wwu-greenblue a, .wwu-greenblue a > code {
+	color: #ffffff;
+	text-decoration: none;
+}
+.wwu-greenblue h1, .wwu-greenblue h2, .wwu-greenblue h3 {
+	color: #ffffff;
+  line-height: 0.8em;
+}
+
+.wwu-green {
+	background-color: #7AB51D;
+  background-image: url("WWUMuenster_Logo_2017_rgb_negativ.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.wwu-green a, .wwu-green a > code {
+	color: #ffffff;
+	text-decoration: none;
+}
+.wwu-green h1, .wwu-green h2, .wwu-green h3 {
+	color: #ffffff;
+  line-height: 0.8em;
+}
+
+.wwu-lightgreen {
+	background-color: #B1C800;
+  background-image: url("WWUMuenster_Logo_2017_rgb_negativ.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.wwu-lightgreen a, .wwu-lightgreen a > code {
+	color: #00578a;
+	text-decoration: none;
+}
+.wwu-lightgreen h1, .wwu-lightgreen h2, .wwu-lightgreen h3 {
+	color: #00578a;
+  line-height: 0.8em;
+}
+
+
+.inverse {
+  background-color: #3E3E3B;
+  color: rgb(62,62,59);
+  background-image: url("WWUMuenster_Logo_2017_rgb_negativ.svg");
+  background-position: 1% 1%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #ffffff;
+}
+
+.imageTop {
+  vertical-align: top;
+}
+
+.inline_highlight {
+  color: #B1C800;
+  font-family: "MetaBoldLF\-Roman", sans-serif;
+}
+
+small {
+  font-size: 16px;
+}
+
+.footnote {
+  font-size: 16px;
+}
+
+.alot {
+  font-size: 14px;
+}
+
+.remark-notes {
+  line-height: 150%;
+}
+
+.remark-notes-preview {
+  line-height: 110%;
+}
+
+.rotate_cc_right {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+  position: absolute;
+  left: 75%;
+  top: 10%;
+  font-size: 60%;
+  width:100vh;
+}
