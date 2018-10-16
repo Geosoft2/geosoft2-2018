@@ -197,15 +197,7 @@ Definition:|The spatial or temporal topic of the resource, the spatial applicabi
 Comment:  | Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.
 References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 
-<head profile="http://dublincore.org/documents/dcq-html/"> <title>Dublin Core</title> <link rel="schema.DC" 
-href="http://purl.org/dc/elements/1.1/" /> <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /> <meta 
-name="DC.format" scheme="DCTERMS.IMT" content="text/html" /> <meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" /> 
-name="DC.format" scheme="DCTERMS.IMT" content="text/html" /> <meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" /> 
-<meta name="DC.publisher" content="Jimmy Wales" /> <meta name="DC.subject" content="Dublin Core Metadaten-Elemente,
-Anwendungen" /> <meta name="DC.creator" content="Björn G. Kulms" /> <meta name="DCTERMS.license" scheme="DCTERMS.URI"
-content="http://www.gnu.org/copyleft/fdl.html" /> <meta name="DCTERMS.rightsHolder" content="Wikimedia Foundation Inc." /> 
-<meta name="DCTERMS.modified" scheme="DCTERMS.W3CDTF" content="2006-03-08" /> </head>
-
+( https://de.wikipedia.org/wiki/Dublin_Core )
 
 ## British Library als Akteur*in, die Standarts setzt
 *	**Zur Aufbewahrung von digitalem Material**
