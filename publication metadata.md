@@ -38,7 +38,7 @@
 * **Forschung, e-commerce**
 * Öffentliche Verwaltung
 *	**Semantisches Web**
-*	**Erzeugung von Dateien, die für neue Anwendungen besser geeignet sind **
+*	**Erzeugung von Dateien, die für neue Anwendungen besser geeignet sind**
    *	Datum,Version,URL,Verlinkung zu anderen Ressourcen,Herkunft, Geschichte,Beziehung zu anderen Ressourcen,Urheberrecht...
    *	Im headbereich von HTML-dateien oder in gesonderten Dateien
 
@@ -197,6 +197,9 @@ Definition:|The spatial or temporal topic of the resource, the spatial applicabi
 Comment:  | Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.
 References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 
+<head profile="http://dublincore.org/documents/dcq-html/"> <title>Dublin Core</title> <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /> <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" /> <meta name="DC.format" scheme="DCTERMS.IMT" content="text/html" /> <meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" /> <meta name="DC.publisher" content="Jimmy Wales" /> <meta name="DC.subject" content="Dublin Core Metadaten-Elemente, Anwendungen" /> <meta name="DC.creator" content="Björn G. Kulms" /> <meta name="DCTERMS.license" scheme="DCTERMS.URI" content="http://www.gnu.org/copyleft/fdl.html" /> <meta name="DCTERMS.rightsHolder" content="Wikimedia Foundation Inc." /> <meta name="DCTERMS.modified" scheme="DCTERMS.W3CDTF" content="2006-03-08" /> </head>
+
+
 ## British Library als Akteur*in, die Standarts setzt
 *	**Zur Aufbewahrung von digitalem Material**
 *	Aufnahmesystem
@@ -261,6 +264,8 @@ References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 *	Jedes CodeMeta-Dokumenr muss sich auf die codemeta.jsonld beziehen
 *	Alle begriffe sollen im Kontext von CodeMEta interpretiert werden
 *	Kontextdatei kann geändert und aktualisiert werden ( Bei Änderung der JSON-Eigenschaften)
+*      Beispiel einer CodeMeta-Datei ( https://github.com/codemeta/codemeta/blob/master/examples/codemeta.json )
+
 
 
 # DataCite
@@ -374,12 +379,15 @@ References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 *	So wird sichergestellt, dass ein **Datensatz dauerhaft auffindbar, abrufbar und zitierbar** bleibt
 
 # Quellen
+Allgemeines über Metadaten
 *	(https://www.forschungsdaten.info/themen/aufbereiten-und-veroeffentlichen/metadaten-und-metadatenstandards/)
 *	(http://www2.bui.haw-hamburg.de/pers/ulrike.spree/sose2005/worg1/le-metadaten.html)
-*	(http://dublincore.org/)
 *	(https://de.wikipedia.org/wiki/Metadaten )
 *	(https://www.mysciencework.com/omniscience/metadata-in-scientific-publication)
 *	(http://wwwis.win.tue.nl/infwet03/proceedings/8/ )
+Informationen zum Dublin Core
+*	(http://dublincore.org/)
+Informationen über METS,MOTS und PREMIS
 *	(https://www.loc.gov/standards/mods/presentations/habing-ala07/ )
 *	(http://www.dlib.org/dlib/september08/dappert/09dappert.html)
 
