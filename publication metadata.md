@@ -264,6 +264,7 @@ References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 *	Alle begriffe sollen im Kontext von CodeMEta interpretiert werden
 *	Kontextdatei kann geändert und aktualisiert werden ( Bei Änderung der JSON-Eigenschaften)
 *      Beispiel einer CodeMeta-Datei ( https://github.com/codemeta/codemeta/blob/master/examples/codemeta.json )
+* @cboettig
 
 
 
