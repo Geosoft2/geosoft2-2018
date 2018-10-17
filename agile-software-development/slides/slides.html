@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agile und kollaborative Softwareentwicklung</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel Nüst (ifgi, o2r)" />
+    <meta name="date" content="2018-10-17" />
+    <link href="slides_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="wwu-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Agile und kollaborative Softwareentwicklung
+## Effektive &amp; effiziente Zusammenarbeit und Projektmanagement in Geosoftware II, WS 18/19
+### Daniel Nüst (ifgi, o2r)
+### 2018-10-17
+
+---
+
+
+
+
+class: middle, center
+background-color: #000000
+
+&lt;center&gt;
+&lt;blockquote class="twitter-tweet" data-lang="de"&gt;&lt;p lang="en" dir="ltr"&gt;&amp;quot;In carpentry, you measure twice and cut once. In software development, you never measure and make cuts until you run out of time.&amp;quot; - Adam Morse&lt;/p&gt;&amp;mdash; Programming Wisdom (@CodeWisdom) &lt;a href="https://twitter.com/CodeWisdom/status/989483498707832832?ref_src=twsrc%5Etfw"&gt;26. April 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
+
+[https://twitter.com/CodeWisdom/status/989483498707832832](https://twitter.com/CodeWisdom/status/989483498707832832)
+
+???
+
+Motivation - ein Tweet von CodeWisdom heraus gegriffen
+
+Softwareentwicklung ist komplex
+Zusammenarbeit ist kompliziert
+
+Es gibt viele Erfahrungen von anderen Entwicklern/Projektleitern, die gemündest sind in **Werkzeuge und Methoden** - nutzen!
+
+---
+class: wwu-lightgreen
+
+# Agenda
+
+--
+
+## Definition
+
+--
+
+## Werte &amp; Prinzipien
+
+--
+
+## Methoden &amp; Prozesse
+
+--
+
+## Scrum
+
+--
+
+## **Quiz**
+
+---
+class: wwu-lightgreen
+
+# Definition
+
+&gt; _Agile Softwareentwicklung bezeichnet Ansätze im Softwareentwicklungsprozess, die die Transparenz und Flexibilität erhöhen und zu einem schnelleren Einsatz der entwickelten Systeme führen sollen, um so Risiken im Entwicklungsprozess zu minimieren._
+&gt; _Agile Softwareentwicklung zeichnet sich durch selbstorganisierende Teams, sowie eine iterative und inkrementelle Vorgehensweise aus._
+&gt; _Es wird versucht, mit geringem bürokratischem Aufwand und Regeln auszukommen und sich schnell an Veränderungen anzupassen, ohne dabei das Risiko für Fehler zu erhöhen._ [[Wikipedia](https://de.wikipedia.org/wiki/Agile_Softwareentwicklung)]
+
+
+???
+
+Im folgenden werden zunächst Prinzipien, Begriffe und Methoden aus dem Bereich agile Softwareentwicklung wiedergegeben und entsprechende Webseiten für weitergehende Informationen aufgelistet.
+Hierbei geht es darum, die grundlegenden Konzepte und Ziele agiler Softwareentwicklung kennen zu lernen, sowie Begriffe für den gemeinsamen Sprachgebrauch zu etablieren.
+Im Anschluss wird **Scrum** auf die Anwendung in einer studentischen Projektarbeit im Rahmen des Seminars Geosoftware II im Detail betrachtet und adaptiert.
+Diese konkrete Empfehlung wird erweitert um einen Vorschlag für **Werkzeuge** zur kollaborativen Zusammenarbeit.
+
+---
+class: wwu-greenblue, center, middle
+
+# Werte &amp; Prinzipien
+
+---
+# Manifesto for Agile Software Development
+
+&gt; _"Wir erschließen bessere Wege, Software zu entwickeln, indem wir es selbst tun und anderen dabei helfen. Durch diese Tätigkeit haben wir diese Werte zu schätzen gelernt:_
+
+--
+
+&gt; - _Individuen und Interaktionen stehen über Prozessen und Werkzeugen_
+&gt; - _Funktionierende Software steht über einer umfassenden Dokumentation_
+&gt; - _Zusammenarbeit mit dem Kunden steht über der Vertragsverhandlung_
+&gt; - _Reagieren auf Veränderung steht über dem Befolgen eines Plans_
+
+--
+
+&gt; _Das heißt, obwohl wir die Werte auf der rechten Seite wichtig finden, schätzen wir die Werte auf der linken Seite höher ein._ 
+
+http://agilemanifesto.org/iso/de/manifesto.html
+
+---
+# Prinzipien (ausgewählt)
+
+&gt; _Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufrieden zu stellen._
+
+--
+
+&gt; _Die effizienteste und effektivste Methode Informationen an und innerhalb eines Entwicklungsteams zu übermitteln, ist im Gespräch von Angesicht zu Angesicht._
+
+--
+
+&gt; _In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann und passt sein Verhalten entsprechend an._
+
+http://agilemanifesto.org/iso/de/principles.html
+
+???
+
+**ein persönliches Ziel**: Der Kurs sollte also ein Umfeld des Vertrauens und Reflektierens schaffen, das einem selbstorganisierten motivierten Team erlaubt die beste, einfache, und funktionierende Software früh und regelmäßig zu liefern.
+
+---
+class: wwu-bluegreen, center, middle
+
+# Methoden &amp; Prozesse
+
+---
+# Beispiele
+
+--
+
+.pull-left[ 
+## Methoden
+
+- Paarprogrammierung
+
+- Testgetriebene Entwicklung
+
+- Refaktorierung
+
+- User stories &amp; Story-Cards
+]
+
+--
+
+.pull-right[
+## Prozesse
+
+- Extreme Programming
+
+- Behavior Driven Development
+
+- **Scrum**
+]
+
+???
+
+**Agile Methoden** halten den Aufwand flach und führen zu dem was man braucht, nicht zu dem was geplant wurde.
+
+**Agile Prozesse** reduzieren organisatorischen Aufwand (Overhead, Planung) und richten den Fokus der Softwareentwicklung auf menschliche Aspekte, Flexibilität, und frühe Auslieferung + Feedback (_Iterationen_).
+
+Die genaue Unterscheidung zwischen "Methoden", "Prinzipien", "Prozessen", und "Werten" sind für den Alltag bzw. für den Kurs Geosoftware 2 weniger wichtig, als ein gemeinsames Verständnis und eine positive _Einstellung_:
+wir arbeiten transparent und offen miteinander und mit dem "Kunden" um nachhaltig, fokussiert, und lehrreich das Ziel zu erreichen.
+
+---
+class: inverse, center, middle
+
+# Scrum
+
+---
+class: inverse
+
+&lt;img title="scrum rugby" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/ST_vs_Gloucester_-_Match_-_23.JPG" /&gt;
+
+.footnote[https://commons.wikimedia.org/wiki/File:ST_vs_Gloucester_-_Match_-_23.JPG]
+
+---
+
+&lt;img title="scrum framework" width="100%" src="https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/ScrumFramework_2000x1000.png" /&gt;
+
+.footnote[https://www.scrum.org/resources/what-is-scrum]
+
+???
+
+Im Scrum werden Produktfeatures in Form von User Stories in einem langfristigen Plan, dem Produkt-Backlog, gesammelt.
+Die wichtigsten Stories werden zuerst umgesetzt, und zwar in abgeschlossenen zeitlichen Abschnitten, den Sprints.
+Sprints haben eine feste Dauer, werden gemeinsam vom Team geplant und ausgewertet.
+Am Ende jedes Sprints steht ein funktionierendes Produkt.
+Der Fortschritt oder Probleme (nicht abgeschlossene User Story) sind sichtbar.
+Das iterative bzw. inkrementelle Vorgehen erlaubt eine kontinuierliche Anpassung an die (ggf. unvorhergesehen) Anforderungen bzw. strukturierte Zerlegung einer komplexen Aufgabe.
+Entwickler sprechen jeden Tag miteinander ("gestern, Probleme, heute").
+Der Kunde wird von ersten Prototyp an aktiv in die Entwicklung mit einbezogen.
+
+Wie bei allen guten Werkzeugen denkt man sich meistens "na ist ja klar, das ist eine gute Idee", jedoch ist der Wert eine gewissen _Disziplin im Ablauf_ und vor allem eine _gemeinsame Sprache_ gar nicht hoch genug einzuschätzen.
+
+**Rollen**
+
+- Teammitglied
+- Product Owner
+- Scrum Master
+- Stakeholer (Kunde, Management, ) 
+
+---
+class: wwu-cassis, center, middle
+
+# Scrum @ Geosoft 2
+
+---
+# Variante von Scrum
+
+--
+
+.pull-left[
+**Sprints**
+- 2 Wochen Dauer
+- Standup 2 x je Woche
+- Routine 👍
+]
+
+--
+
+.pull-right[
+**Rollen**
+- Teilen &amp; abwechseln
+- Dozenten = alle Stakeholder
+- Lernerfahrung 💯
+]
+
+???
+
+**Wichtig**: Auf Basis dieser Infos könnt ihr nun ein _eigenes agiles Vorgehen passend für euer Team_ entwickeln - nur bitte nicht die Erfahrungen und Weisheit der Entwickler und Projektleiter vor euch ignorieren, und auch diese Tipps ernst nehmen!
+
+Als **Variante von Scrum** für den Einsatz in diesem Kurs empfiehlt es sich, wegzulassen was nicht effektiv umgesetzt werden kann.
+Ein "echtes" Scrum Team braucht nicht nur Jahre bis eine verlässliche Schätzung der leistbaren Arbeit pro Sprint möglich ist, sondern auch eine gewissen Personenanzahl um alle Rollen zu besetzen.
+Auch sind die beteiligten Entwickler (Studenten) nicht im gleichen Maße verfügbar, es müssen Belastungsspitzen durch Klausuren oder andere Kurse abgefangen werden.
+
+Daniel steht gerne als beratende Scrum Master zur Verfügung.
+
+---
+class: wwu-lightblue, center, middle
+
+![:scale 45%](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png)
+
+???
+
+- nutzt `git`
+- macht fork and pull
+- GitHub.com hat project boards
+- GitLab.com und zivgitlabl haben issue boards
+
+**Alle Entwicklung sollte komplett öffentlich erfolgen.**
+
+---
+class: wwu-lightblue, center, middle
+
+![:scale 60%](https://mattermost.com/wp-content/uploads/2018/06/logoHorizontal.png)
+
+???
+
+**Einladungslink kommt über LearnWeb**
+
+---
+class: center, middle
+
+# Danke!
+
+## Was sind Eure Fragen?
+
+.footnote[
+Die Folien basieren auf dem R Paket [`xaringan`](https://github.com/yihui/xaringan).
+]
+
+---
+class: wwu-cassis, center, middle
+
+# Quiz!
+
+---
+class: center, middle
+
+# Anti-Patterns
+
+---
+class: center, middle
+
+# burn chart
+
+---
+class: center, middle
+
+# CoPR
+
+???
+
+MR?
+
+---
+class: center, middle
+
+# llective ownership
+
+---
+class: center, middle
+
+# Continuous integration (CI)
+
+---
+class: center, middle
+
+# DRY
+
+---
+class: center, middle
+
+# fail fast
+
+---
+class: center, middle
+
+# joSS-Prinzip
+
+---
+class: center, middle
+
+# mejour fixe
+
+---
+class: center, middle
+
+# rge request
+
+---
+class: center, middle
+
+#  Pair programming
+
+---
+class: center, middle
+
+# Unix philosophy
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
