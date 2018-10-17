@@ -4,6 +4,8 @@
 
 Teachers: [@nuest](https://github.com/nuest/), [@edzer](http://github.com/edzer/)
 
+[Learnweb course](https://xsso.uni-muenster.de/LearnWeb/learnweb2/course/view.php?id=33123)
+
 ## Initial training resources
 
 Handouts for presentations on technical background and concepts required for this year's project task in Geosoftware II at ifgi.
@@ -14,7 +16,7 @@ The handout should be prepared in a manner so that fellow students can use it as
 
 1. Fork this project
 1. Do your research
-1. Create a folder for your topic (topic-title-no-capitals-with-hypens)
+1. Create a folder for your topic (`topic-title-no-capitals-with-hyphens-not-underscores`)
 1. Add a file `handout.md` file in your folder
     * Take a look at the [markdown syntax](https://guides.github.com/features/mastering-markdown/)
     * Split up your work into logical sections and use informative names for each of these
@@ -25,8 +27,8 @@ The handout should be prepared in a manner so that fellow students can use it as
     * Give the pull request a useful name and description, and @-mention all contributors in the pull request description
     * Implement the feedback by the lecturers
     * Update the pull request by pushing the changes to your repository
-1. Create a presentation based on your handout (optinal: add it to your folder)
-1. Present at the seminar (approx. 10 minuntes + 5 minutes questions and discussion, prepare to fill the 5 minutes with additional content if no questions are asked)
+1. Create a presentation based on your handout (optional: add it to your folder)
+1. Present at the seminar (approx. 10 minutes + 5 minutes questions and discussion, prepare to fill the 5 minutes with additional content if no questions are asked)
 1. Incorporate feedback from the presentation into the handout and update the pull request (don't forget to [sync your fork/merge `upstream master` beforehand](https://help.github.com/articles/syncing-a-fork/))
 1. If you see an error in or want to add information to a colleague's handout ...
     1. Make a comment to the open PR if it is still open
