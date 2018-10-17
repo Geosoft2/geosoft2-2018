@@ -118,6 +118,16 @@ it is often stored on a server, which can be accessed by multiple users
 - Created by OpenAIRE and CERN to provide a place for researchers to deposit datasets
 - Launched in 2013, allowing researchers in any subject area to upload files up to 50 GB
 - General-purpose open access repository
+
+:warning: Installation-disclaimer
+while installing Zenodo with docker, add in *docker-services.yml* 
+>       - "INVENIO_CELERY_BROKER_URL=amqp://guest:guest@mq:5672//"
+
+between those two lines
+
+>       - "INVENIO_BROKER_URL=amqp://guest:guest@mq:15711//"
+>       - "INVENIO_CACHE_REDIS_URL=redis://cache:6379/0"
+
 #### 2.2.2 b2share 
 [![Alt-Text](images/logo-b2share.png)](https://github.com/EUDAT-B2SHARE/b2share)
 - Research data repository based on Invenio 
@@ -154,7 +164,6 @@ most well-documented and for our studies best to apply.
 | Vision/Idea      |                                                 | produce a choice for repository software providing  means for open available and easy to manage data | advancement of open source software and content as collaborative community | open dependable deposit for science, enabling researchers  to share and preserve research outputs. Small layer on top of Invenio. |
 | Infrastructure   | development language                            | [Java](https://docs.oracle.com/javase/7/docs/api/)                                                                                                 | Java                                                                       | [Python](https://www.python.org/) & JavaScript                                                                                                                           |
 |                  | installation prerequesites                               | Java JDK 8, Apache Maven 3.x, Apache Ant 1.8x, PostgreSQL, Apache Tomcat 7 [↘](https://wiki.duraspace.org/display/DSDOC6x/Installing+DSpace#InstallingDSpace-HardwareRecommendations)                                                                     | Java 8, Tomcat 7 or Jetty 9.x [↘](https://wiki.duraspace.org/display/FEDORA4x/Deploying+Fedora+4+Complete+Guide#DeployingFedora4CompleteGuide-Downloads)                                                      | Docker, PostgreSQL, Elasticsearch 2.x, Redis and RabbitMQ [↘](https://github.com/zenodo/zenodo/blob/master/docker-compose.yml/)
-|                  | support community                               | Yes, thousands of institutions                                                                       | Yes, 130 institutions                                                      | Yes, ~2300 registered communities                                                                                                 |
 | Interface        | front-end integration                           | Yes, [JSPUI](https://wiki.duraspace.org/display/DSDOC5x/JSPUI+Configuration+and+Customization)(Java) or [Manakin](https://wiki.duraspace.org/display/DSPACE/Manakin+theme+tutorial)(XML)                                                                     | Yes, [Islandora](https://github.com/islandora) or [Samvera](https://github.com/samvera/hydra-pcdm)                                                    | Yes, via [Zenodo REST API](http://developers.zenodo.org/) possible                                                                                                 |
 |                  | customizable                                    | Yes                                                                                                  | Yes                                                                        | Yes                                                                                                                               |
 | Metadata         | exporting shema filetype                        | [OAI-PMH](https://en.wikipedia.org/wiki/Open_Archives_Initiative_Protocol_for_Metadata_Harvesting), XML and [METs](https://de.wikipedia.org/wiki/Metadata_Encoding_%26_Transmission_Standard)                                                                                | OAI-PMH, [DC](https://en.wikipedia.org/wiki/Dublin_Core), [MODS](https://en.wikipedia.org/wiki/Metadata_Object_Description_Schema), XML;  others through conversion possible                | OAI-PMH, XML                                                                                                                      |
@@ -185,13 +194,17 @@ most well-documented and for our studies best to apply.
 |                  | community/curators                              | Yes                                                                                                  | Yes(requires development)                                                  | Yes                                                                                                                               |
 |                  | deletions possible                              | Yes                                                                                                  | Yes([CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete))                                                                  | Yes                                                                                                                               |
 #### 2.3.2 Resume
-:warning: to be done
+- particular differences between them, which includes almost every aspect of the development process
+- in the decision-process on what to pick for the project, it is about personal preferences only
+- there is not a difference in difficulty of developing with one of the repositories 
+- however for the most Invenio-type repositories there are docker-compose files available to simply setup the developent environment
+- whereas there is not in DSpace and over the course of over 15 years of development, there has been build a big framework of software and a big load of dependencies which leads automatically to more and more effort setting it up
 
 ---
 
 ## 3 Preservation
 ### 3.1 Data Preservation 
-- [_Wikipedia Link_](https://en.wikipedia.org/wiki/Data_preservation) 
+[_Wikipedia Link_](https://en.wikipedia.org/wiki/Data_preservation) 
 #### 3.1.1 Generall Meaning
 - act of conserving and maintaining both the safety and integrity of data
 #### 3.1.2 Goal
@@ -219,17 +232,15 @@ most well-documented and for our studies best to apply.
 <br>[_Source: Francine Berman, Got data?: a guide to data preservation in the information age (2008)_](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwi7jYrPmYPeAhWCFywKHQjJBBQQFjAAegQIAxAC&url=http%3A%2F%2Fwww.itpb.ucla.edu%2Fdocuments%2F2009%2Fp50-berman.pdf&usg=AOvVaw111q-vKcfasHBz12FnAg8K)
 
 ### 3.2 Digital Preservation
-- [_Wikipedia Link_](https://en.wikipedia.org/wiki/Digital_preservation) 
+[_Wikipedia Link_](https://en.wikipedia.org/wiki/Digital_preservation) 
 #### 3.2.1 Purpose
-- Digital Revolution make it easy to create, copy and transmit data all over the world
+- [Digital Revolution](http://www.dcc.ac.uk/digital-curation/why-preserve-digital-data) make it easy to create, copy and transmit data all over the world
     - -->increasingly vast amounts of digital research data
 - Research data are unique and cannot be replaced if destroyed or lost
 - Where resources are "born digital", there is no other format but the digital original
 - good practice for institutions and researchers to manage and retain their research data
 - A data preservation programme suited to the individual institution must be used to safeguard this huge investment of time and resources
-- “Digital Heritage” has cultural, historical, aesthetic, archaeological, scientific, ethnological or anthropological value and is increasing
-- [_DCC: Why preserve Digital_](http://www.dcc.ac.uk/digital-curation/why-preserve-digital-data)
-- [_UNESCO Digital Heritage_](http://www.unesco.org/new/en/communication-and-information/access-to-knowledge/preservation-of-documentary-heritage/digital-heritage/concept-of-digital-heritage/)
+- “[Digital Heritage](http://www.unesco.org/new/en/communication-and-information/access-to-knowledge/preservation-of-documentary-heritage/digital-heritage/concept-of-digital-heritage/)” has cultural, historical, aesthetic, archaeological, scientific, ethnological or anthropological value and is increasing
 #### 3.2.2 Problems
 - Technological advances even more rapidly, reducing the time before a technology becomes obsolete
 - Data is recorded on a transient medium, in a specific file format and needs a transient coding scheme to interpret them
