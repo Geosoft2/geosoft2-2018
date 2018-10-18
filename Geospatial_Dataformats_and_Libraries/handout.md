@@ -24,6 +24,7 @@
     + [2.2.3 (Geo)TIFF (Tagged Image File Format) | .tiff / .tif und Cloud Optimized GeoTIFF](#223--geo-tiff--tagged-image-file-format----tiff---tif-und-cloud-optimized-geotiff)
     + [2.2.4 BMP (Windows Bitmap) | .bmp](#224-bmp--windows-bitmap----bmp)
     + [2.2.5 NetCDF (Network Common Data Format)](#225-netcdf--network-common-data-format-)
+    + [2.2.6 JPEG2000](#226-JPEG2000)
 - [3. Geospatial Libraries](#3-geospatial-libraries)
   * [3.1 Was ist eine Programmbibliothek](#31-was-ist-eine-programmbibliothek)
   * [3.2 Programmbibliotheken für Geodaten und -anwendungen](#32-programmbibliotheken-f-r-geodaten-und--anwendungen)
@@ -693,6 +694,38 @@ Anmerkung: bei der Vergabe der Namen für die Attribute und Variablen sollten fo
 	- (optional) Daten der Variablen, für die nur ein Datenrecord in der Datei vorhanden ist
 	- (optional) Daten der Record-Variablen (mit einer unbegrenzten Dimension, z.B. time), die beliebig oft vorhanden sein können
 
+#### 2.2.6 JPEG2000
+
+*Spezifikation:*     
+https://jpeg.org/jpeg2000/
+
+- Herausgeber: Joint Photographic Expert Group 
+- Endungen: .jp2, .jpg2 u.a.
+- ermöglicht verlustfreie und verlustbehaftete Komprimierung 
+- Bilddaten können eine Reihe von Metadaten aufnehmen, welche das Verwalten und Auffinden der Bilder erleichtern 
+
+##### Vorteile zu JPEG:
+
+- bessere Komprimierungsrate bei gegebener Qualität
+- mehr als 8/12 Bits pro Farbkanal möglich 
+- bestimmte Bildregionen von Interesse (ROI = Region of Interest) können in höherer Qualität komprimiert und dekomprimiert werden 
+- bis zu 256 Kanäle
+- Raum für beliebige Metadaten in der Extensible Markup Language 
+- Alphakanäle zur Darstellung von Transparenz 
+
+##### Nachteile zu JPEG:
+
+- JPEG2000 inkompatibel zu JPEG 
+- Alle Erweiterungen von JPEG-2000-Dateiformaten, die über den reinen Bilddatenstrom hinausgehen (wie zum Beispiel Formate der Metadaten, Farbraumdaten), sind nicht gemeinfrei. Selbst für den Bilddatenstrom garantiert das JPEG-2000-Konsortium ausdrücklich nicht die Freiheit möglicher Lizenzansprüche Dritter.
+
+##### Aufbau:
+
+Der JPEG-2000 Standard definiert ein eigenes Containerformat, das J2P Format. Der Container ist flexibler und vielseitiger als das bei den Vorgängern verwendete Format JFIF. Metadaten und Header-Information werden in einer XML-Struktur gespeichert. Möglich sind Metadaten beliebigen Formates, denkbar wären z.B. auch Audiokommentare oder PDF-Dokumente.
+
+Weitere Informationen:
+
+http://jpylyzer.openpreservation.org/userManual.html#structure-jp2
+
 ## 3. Geospatial Libraries 
 
 ### 3.1 Was ist eine Programmbibliothek
@@ -744,17 +777,11 @@ siehe: https://www.gdal.org/ogr_formats.html
 - Untersuchen von Vektordaten 
 - Umwandlung von Vektordaten in andere Formate 
 
-##### Installationsbeispiel:
+##### Installationsanleitung:
 
-http://www.gisinternals.com/release.php
+Wenn nur GDAL für Windows installiert werden soll, können die Schritte zur Installation von Python unter folgendem Link übersprungen werden:
 
-Unter Downloads eine Version wählen, z.B.:
-
-*release-1911-gdal-2-3-1-mapserver-7-2-0*
-
-Auf der weiterführenden Seite erst die entsprechende Core Datei installieren:
-
-*gdal-203-1911-core.msi*
+*https://sandbox.idre.ucla.edu/sandbox/tutorials/installing-gdal-for-windows*
 
 ##### Einfache Beispiele für die Kommandozeile:
 
@@ -820,7 +847,7 @@ http://rgdal.sourceforge.net/
 
 ##### Mögliche Verwendung mit Python:
 
-Mögliche Installationsanleitung (Ergänzung zum obigen Installationsbeispiel):
+Mögliche Installationsanleitung:
 
 *https://sandbox.idre.ucla.edu/sandbox/tutorials/installing-gdal-for-windows*
 
@@ -1068,9 +1095,16 @@ http://www.kaudel.de/projekte/GIFundPNG.pdf (21.09.2018)
 
 https://www.dateiendung.com/format/gif (21.09.2018)
 
-*JPEG*:
+*JPEG:*
 
 http://www.digitalfotografie.de/jpg-format/02-was-ist-jpg-jpeg (19.09.2018)
+
+*JPEG 2000:*     
+
+https://de.wikipedia.org/wiki/JPEG_2000     
+http://www.codeclab.de/jpeg-bildstandards/jpeg-2000.html      
+
+
 
 *LAS:*
 
