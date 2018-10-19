@@ -1,6 +1,6 @@
 # Handout zu Publication Metadata
 
-###### Autorin: Lia Kirsch
+###### Autorin: Lia Kirsch @cherry13579
 
 # Was sind Metadaten
 #### Eine kurze Definition
@@ -197,7 +197,7 @@ Definition:|The spatial or temporal topic of the resource, the spatial applicabi
 Comment:  | Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.
 References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 
-( https://de.wikipedia.org/wiki/Dublin_Core )
+ https://de.wikipedia.org/wiki/Dublin_Core 
 
 ## British Library als Akteur*in, die Standarts setzt
 *	**Zur Aufbewahrung von digitalem Material**
@@ -237,7 +237,7 @@ References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 
 
 ##	Seite zum finden von Standarts:
-  * (http://www.dcc.ac.uk/resources/metadata-standards/list)  (auch im Geobereich bekannt)
+  * http://www.dcc.ac.uk/resources/metadata-standards/list  (auch im Geobereich bekannt)
 
 # Software Metadaten
 *	Hängt von Anwendungsfall ab
@@ -263,7 +263,7 @@ References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 *	Jedes CodeMeta-Dokumenr muss sich auf die codemeta.jsonld beziehen
 *	Alle begriffe sollen im Kontext von CodeMEta interpretiert werden
 *	Kontextdatei kann geändert und aktualisiert werden ( Bei Änderung der JSON-Eigenschaften)
-*      Beispiel einer CodeMeta-Datei ( https://github.com/codemeta/codemeta/blob/master/examples/codemeta.json )
+*      Beispiel einer CodeMeta-Datei  https://github.com/codemeta/codemeta/blob/master/examples/codemeta.json 
 * @cboettig
 
 
@@ -312,8 +312,8 @@ References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 
 
 # Was die Uni Münster benutzt:
-*	(https://www.uni-muenster.de/forschungaz/area/3763)
-*	(https://www.eurocris.org/cerif/main-features-cerif+)
+*	https://www.uni-muenster.de/forschungaz/area/3763
+*	https://www.eurocris.org/cerif/main-features-cerif+
 
 
 # Erklärung von Begriffen
@@ -380,17 +380,23 @@ References:| [TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html
 
 # Quellen
 ## Allgemeines über Metadaten
-*	(https://www.forschungsdaten.info/themen/aufbereiten-und-veroeffentlichen/metadaten-und-metadatenstandards/)
-*	(http://www2.bui.haw-hamburg.de/pers/ulrike.spree/sose2005/worg1/le-metadaten.html)
-*	(https://de.wikipedia.org/wiki/Metadaten )
-*	(https://www.mysciencework.com/omniscience/metadata-in-scientific-publication)
-*	(http://wwwis.win.tue.nl/infwet03/proceedings/8/ )
-## Informationen zum Dublin Core
-*	(http://dublincore.org/)
-## Informationen über METS,MOTS und PREMIS
-*	(https://www.loc.gov/standards/mods/presentations/habing-ala07/ )
-*	(http://www.dlib.org/dlib/september08/dappert/09dappert.html)
+##### Metadaten Themen: Zweck, Unterscheidung, Beispiele für Standards
+*	https://www.forschungsdaten.info/themen/aufbereiten-und-veroeffentlichen/metadaten-und-metadatenstandards/
+#### Metadaten Themen: Was sind Metadaten?, Wer braucht Metadaten, Worüber informieren Metadaten?, Wer erstellt Metadaten?
+*	http://www2.bui.haw-hamburg.de/pers/ulrike.spree/sose2005/worg1/le-metadaten.html
+#### Metadaten Themen: Unterschied Daten zu Metadaten,Anwendungsgebiete, Speicherung
+*	https://de.wikipedia.org/wiki/Metadaten 
+#### Metadaten Themen: Nutzung von Metadaten, Wie helfen Metadaten der Wissenschaft
+*	https://www.mysciencework.com/omniscience/metadata-in-scientific-publication
+#### Metadaten Themen: typen von Metadaten, Rechte,Klassifikationen
+*	http://wwwis.win.tue.nl/infwet03/proceedings/8/ 
+## Informationen zum Dublin Core, Wer, Was 
+*	http://dublincore.org/
+## Informationen über METS,MOTS und PREMIS 
+*	https://www.loc.gov/standards/mods/presentations/habing-ala07/ 
+*	http://www.dlib.org/dlib/september08/dappert/09dappert.html
 
 
 #### :cherries:
+#### @cherry13579
 #### Dieses Dokument enthält mehr Informationen, als später im Vortrag vorgestellt werden.
