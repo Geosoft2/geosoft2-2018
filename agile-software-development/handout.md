@@ -1,5 +1,7 @@
 # Agile und kollaborative Softwareenwicklung
 
+**Autor**: Daniel Nüst, [@nuest](https://github.com/nuest/)
+
 **Ziel**: Im Kurs Geosoftware II (WS 18/19) müssen neue Technologien erlernt und neue Software geschrieben werden um eine anspruchsvolle Aufgabenstellung im Team zu meistern.
 Niemand arbeitet alleine, also muss das Zusammenarbeiten ([Kollaboration, nicht Kooperation](https://www.twt.de/news/detail/kooperation-vs-kollaboration-das-sind-die-zentralen-unterschiede.html)) so gestaltet werden, dass alle Beteiligten Lernerfolge erzielen und Beiträge leisten, zugleich aer auch ein übergreifendes Entwicklungsziel erreicht wird.
 Hierzu sollen die Studenten agile Softwareentwicklung ausprobieren.
@@ -165,6 +167,7 @@ Es sollte `git` eingesetzt werden, weil es aktueller und weit verbreiteter Stand
 Ein sicherer Umgang mit `git` und den verwandten Entwicklungsworkflows ist sowohl auf der Kommandozeile als auch mit unterstützden graphischen Werkzeugen ist für Softwareentwickler unabdinglich.
 Es wird stark empfohlen ein **[fork](https://reflectoring.io/github-fork-and-pull/) [and](https://www.aitgmbh.de/blog/entwicklung/pull-request-auf-github-ueber-einen-fork/) [pull/merge](https://docs.gitlab.com/ee/workflow/forking_workflow.html) - Workflow** mit einem Hauptrepository in einer gemeinsamen Organisation umzusetzen.
 Dies erhöht die Transparenz (am Projektende müssen nur pull bzw. merge requests aufgelistet werden) und der Umgang mit mehreren branches und forks ist wichtiges Handwerkszeug, das nur praktisch erlernt werden kann.
+Daneben können [feature branches](https://t3n.de/news/git-workflows-zusammenarbeit-1095433/) sowohl das lokale Entwickeln vereinfachen als auch die Zusammenarbeit.
 
 Aufbauend auf `git` bieten sich drei **Kollaborationsplattformen** zu Online-Zusammenarbeit an:
 
