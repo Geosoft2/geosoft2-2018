@@ -1,8 +1,16 @@
 
 2018-08_intro/geosoft2-2018-intro-slides\.html
 
-2018-08_intro/geosoft2-2018-intro-slides_files/remark-css-0\.0\.1/
-
 2018-08_intro/geosoft2-2018-intro\.pdf
 
 2018-08_intro/\.Rhistory
+
+2018-10-10_meeting/\.Rhistory
+
+*.html
+
+**/*slides_files/*
+\.Rproj\.user
+\.Rproj\.user/**
+
+\.Rhistory
